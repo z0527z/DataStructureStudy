@@ -10,6 +10,10 @@
 		302CF1D82342328000277761 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 302CF1D72342328000277761 /* main.m */; };
 		302CF1F32342346C00277761 /* ReplaceBlank.m in Sources */ = {isa = PBXBuildFile; fileRef = 302CF1F22342346C00277761 /* ReplaceBlank.m */; };
 		302CF1F6234234C400277761 /* FindNumIn2DArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 302CF1F5234234C400277761 /* FindNumIn2DArray.m */; };
+		3032ACE22342D55A0033098C /* DJStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 3032ACE12342D55A0033098C /* DJStack.m */; };
+		3032ACE52342D9E20033098C /* PrintListFromTail.m in Sources */ = {isa = PBXBuildFile; fileRef = 3032ACE42342D9E20033098C /* PrintListFromTail.m */; };
+		3032ACE92342E4440033098C /* PreInOrderRebuildBinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 3032ACE82342E4440033098C /* PreInOrderRebuildBinaryTree.m */; };
+		3032ACEC23433E7C0033098C /* DJQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3032ACEB23433E7C0033098C /* DJQueue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +35,15 @@
 		302CF1F22342346C00277761 /* ReplaceBlank.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReplaceBlank.m; sourceTree = "<group>"; };
 		302CF1F4234234C400277761 /* FindNumIn2DArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindNumIn2DArray.h; sourceTree = "<group>"; };
 		302CF1F5234234C400277761 /* FindNumIn2DArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindNumIn2DArray.m; sourceTree = "<group>"; };
+		3032ACE02342D55A0033098C /* DJStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJStack.h; sourceTree = "<group>"; };
+		3032ACE12342D55A0033098C /* DJStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJStack.m; sourceTree = "<group>"; };
+		3032ACE32342D9E20033098C /* PrintListFromTail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrintListFromTail.h; sourceTree = "<group>"; };
+		3032ACE42342D9E20033098C /* PrintListFromTail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrintListFromTail.m; sourceTree = "<group>"; };
+		3032ACE62342DA570033098C /* StructureDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StructureDefine.h; sourceTree = "<group>"; };
+		3032ACE72342E4440033098C /* PreInOrderRebuildBinaryTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreInOrderRebuildBinaryTree.h; sourceTree = "<group>"; };
+		3032ACE82342E4440033098C /* PreInOrderRebuildBinaryTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreInOrderRebuildBinaryTree.m; sourceTree = "<group>"; };
+		3032ACEA23433E7C0033098C /* DJQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJQueue.h; sourceTree = "<group>"; };
+		3032ACEB23433E7C0033098C /* DJQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJQueue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +98,11 @@
 		302CF1E92342343800277761 /* CommonTools */ = {
 			isa = PBXGroup;
 			children = (
+				3032ACE62342DA570033098C /* StructureDefine.h */,
+				3032ACE02342D55A0033098C /* DJStack.h */,
+				3032ACE12342D55A0033098C /* DJStack.m */,
+				3032ACEA23433E7C0033098C /* DJQueue.h */,
+				3032ACEB23433E7C0033098C /* DJQueue.m */,
 			);
 			path = CommonTools;
 			sourceTree = "<group>";
@@ -92,6 +110,10 @@
 		302CF1EE2342343800277761 /* DataStucture */ = {
 			isa = PBXGroup;
 			children = (
+				3032ACE32342D9E20033098C /* PrintListFromTail.h */,
+				3032ACE42342D9E20033098C /* PrintListFromTail.m */,
+				3032ACE72342E4440033098C /* PreInOrderRebuildBinaryTree.h */,
+				3032ACE82342E4440033098C /* PreInOrderRebuildBinaryTree.m */,
 			);
 			path = DataStucture;
 			sourceTree = "<group>";
@@ -153,9 +175,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3032ACE92342E4440033098C /* PreInOrderRebuildBinaryTree.m in Sources */,
+				3032ACE22342D55A0033098C /* DJStack.m in Sources */,
 				302CF1F6234234C400277761 /* FindNumIn2DArray.m in Sources */,
 				302CF1F32342346C00277761 /* ReplaceBlank.m in Sources */,
 				302CF1D82342328000277761 /* main.m in Sources */,
+				3032ACEC23433E7C0033098C /* DJQueue.m in Sources */,
+				3032ACE52342D9E20033098C /* PrintListFromTail.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
