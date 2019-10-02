@@ -19,6 +19,8 @@
         int preOrder[] = {1, 2, 4, 7, 3, 5, 6, 8};
         int inOrder[] = {4, 7, 2, 1, 5, 3, 8, 6};
         TreeNode * root = rebuildBinaryTree(preOrder, inOrder, 8);
+        
+        printf("\n-------- levelPrintBinaryTree -------\n\n");
         levelPrintBinaryTree(root);
         printf("\n");
     }

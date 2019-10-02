@@ -44,6 +44,7 @@ void printListFromTail(ListNode * node)
         head = head->next;
     }
     
+    printf("\n--------- PrintListFromTail ---------\n\n");
     while (!stack.empty) {
         ListNode * p = stack.pop;
         printf("%d ", p->value);

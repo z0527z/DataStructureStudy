@@ -11,35 +11,18 @@
 #import "ReplaceBlank.h"
 #import "PrintListFromTail.h"
 #import "preInOrderRebuildBinaryTree.h"
+#import "QuickSort.h"
 
-void testFindNumIn2DArray()
-{
-    FindNumIn2DArray * _ = [[FindNumIn2DArray alloc] init];
-    
-}
-
-void testReplaceBlank()
-{
-    ReplaceBlank * _ = [[ReplaceBlank alloc] init];
-}
-
-void testPrintListFromTail()
-{
-    PrintListFromTail * _ = [[PrintListFromTail alloc] init];
-}
-
-void testPreInOrderRebuildBinaryTree()
-{
-    PreInOrderRebuildBinaryTree  * _ = [[PreInOrderRebuildBinaryTree alloc] init];
-}
 
 
 int main(int argc, const char * argv[]) {
+
+    FindNumIn2DArray * find = [[FindNumIn2DArray alloc] init];
+    ReplaceBlank * replaceBlank = [[ReplaceBlank alloc] init];
+    PrintListFromTail * listTail = [[PrintListFromTail alloc] init];
+    PreInOrderRebuildBinaryTree  * builBinaryTree = [[PreInOrderRebuildBinaryTree alloc] init];
+    QuickSort * quick = [[QuickSort alloc] init];
     
-    testFindNumIn2DArray();
-    testReplaceBlank();
-    testPrintListFromTail();
-    testPreInOrderRebuildBinaryTree();
-    
+    printf("\n");
     return 0;
 }

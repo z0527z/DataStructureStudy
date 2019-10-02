@@ -18,6 +18,7 @@
         char str[20] = " We are happy.";
         replaceBlankInString(str, 20);
         
+        printf("\n------------ ReplaceBlank -----------\n\n");
         printf("%s\n", str);
     }
     return self;
