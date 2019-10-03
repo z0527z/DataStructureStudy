@@ -16,6 +16,7 @@
         
         int array[] = {3, 5, 1, 7, 9, 20, 2, 8, 6, 9, 12, 1, 1, 16};
         int length = sizeof(array) / sizeof(array[0]);
+        
         quickSort(array, 0, length - 1);
         
         printf("\n----------- QuickSort -------------\n\n");
@@ -32,7 +33,7 @@
 
 void quickSort(int * array, int begin, int end)
 {
-    if (!array || begin >= end) return;
+    if (!array || begin < 0 || end < 1 || begin >= end) return;
 
     // 交换 begin和 (begin + end)/2 位置的数据
     int temp = array[begin];

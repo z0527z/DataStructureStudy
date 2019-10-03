@@ -1,13 +1,13 @@
 //
-//  QuickSort.h
+//  MergeSort.h
 //  MyStudy
 //
-//  Created by jolin on 2019/10/2.
+//  Created by jolin on 2019/10/3.
 //  Copyright © 2019年 jolin. All rights reserved.
-//  快速排序
+//  归并排序
 
 #import <Foundation/Foundation.h>
 
-@interface QuickSort : NSObject
+@interface MergeSort : NSObject
 
 @end

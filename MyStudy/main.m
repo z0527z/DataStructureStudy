@@ -12,8 +12,8 @@
 #import "PrintListFromTail.h"
 #import "preInOrderRebuildBinaryTree.h"
 #import "QuickSort.h"
-
-
+#import "HeapSort.h"
+#import "MergeSort.h"
 
 int main(int argc, const char * argv[]) {
 
@@ -22,6 +22,8 @@ int main(int argc, const char * argv[]) {
     PrintListFromTail * listTail = [[PrintListFromTail alloc] init];
     PreInOrderRebuildBinaryTree  * builBinaryTree = [[PreInOrderRebuildBinaryTree alloc] init];
     QuickSort * quick = [[QuickSort alloc] init];
+    HeapSort * heap = [[HeapSort alloc] init];
+    MergeSort * merge = [[MergeSort alloc] init];
     
     printf("\n");
     return 0;
