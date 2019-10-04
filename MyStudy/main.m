@@ -14,6 +14,8 @@
 #import "QuickSort.h"
 #import "HeapSort.h"
 #import "MergeSort.h"
+#import "SelectSort.h"
+#import "InsertSort.h"
 
 int main(int argc, const char * argv[]) {
 
@@ -24,6 +26,8 @@ int main(int argc, const char * argv[]) {
     QuickSort * quick = [[QuickSort alloc] init];
     HeapSort * heap = [[HeapSort alloc] init];
     MergeSort * merge = [[MergeSort alloc] init];
+    SelectSort * select = [[SelectSort alloc] init];
+    InsertSort * insert = [[InsertSort alloc] init];
     
     printf("\n");
     return 0;
