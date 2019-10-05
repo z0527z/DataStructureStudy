@@ -16,6 +16,7 @@
 #import "MergeSort.h"
 #import "SelectSort.h"
 #import "InsertSort.h"
+#import "Fibonacci.h"
 
 int main(int argc, const char * argv[]) {
 
@@ -28,6 +29,7 @@ int main(int argc, const char * argv[]) {
     MergeSort * merge = [[MergeSort alloc] init];
     SelectSort * select = [[SelectSort alloc] init];
     InsertSort * insert = [[InsertSort alloc] init];
+    Fibonacci * fibonacci = [[Fibonacci alloc] init];
     
     printf("\n");
     return 0;

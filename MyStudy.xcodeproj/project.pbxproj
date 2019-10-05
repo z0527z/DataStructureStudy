@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3020C5F3234749E30009117B /* SelectSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 3020C5F2234749E30009117B /* SelectSort.m */; };
 		3020C5F623474BCA0009117B /* InsertSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 3020C5F523474BCA0009117B /* InsertSort.m */; };
+		3021D45C2348355D007EDB4C /* Fibonacci.m in Sources */ = {isa = PBXBuildFile; fileRef = 3021D45B2348355D007EDB4C /* Fibonacci.m */; };
 		302C5A062345DAA500962CCD /* MergeSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 302C5A052345DAA500962CCD /* MergeSort.m */; };
 		302CF1D82342328000277761 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 302CF1D72342328000277761 /* main.m */; };
 		302CF1F32342346C00277761 /* ReplaceBlank.m in Sources */ = {isa = PBXBuildFile; fileRef = 302CF1F22342346C00277761 /* ReplaceBlank.m */; };
@@ -38,6 +39,8 @@
 		3020C5F2234749E30009117B /* SelectSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectSort.m; sourceTree = "<group>"; };
 		3020C5F423474BCA0009117B /* InsertSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InsertSort.h; sourceTree = "<group>"; };
 		3020C5F523474BCA0009117B /* InsertSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InsertSort.m; sourceTree = "<group>"; };
+		3021D45A2348355D007EDB4C /* Fibonacci.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fibonacci.h; sourceTree = "<group>"; };
+		3021D45B2348355D007EDB4C /* Fibonacci.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fibonacci.m; sourceTree = "<group>"; };
 		302C5A042345DAA500962CCD /* MergeSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MergeSort.h; sourceTree = "<group>"; };
 		302C5A052345DAA500962CCD /* MergeSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MergeSort.m; sourceTree = "<group>"; };
 		302CF1D42342328000277761 /* MyStudy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MyStudy; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +119,8 @@
 				3020C5F2234749E30009117B /* SelectSort.m */,
 				3020C5F423474BCA0009117B /* InsertSort.h */,
 				3020C5F523474BCA0009117B /* InsertSort.m */,
+				3021D45A2348355D007EDB4C /* Fibonacci.h */,
+				3021D45B2348355D007EDB4C /* Fibonacci.m */,
 			);
 			path = Arithmatic;
 			sourceTree = "<group>";
@@ -200,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3021D45C2348355D007EDB4C /* Fibonacci.m in Sources */,
 				302C5A062345DAA500962CCD /* MergeSort.m in Sources */,
 				3032ACE92342E4440033098C /* PreInOrderRebuildBinaryTree.m in Sources */,
 				3032ACE22342D55A0033098C /* DJStack.m in Sources */,
