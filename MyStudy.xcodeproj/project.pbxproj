@@ -21,6 +21,7 @@
 		3032ACE92342E4440033098C /* PreInOrderRebuildBinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 3032ACE82342E4440033098C /* PreInOrderRebuildBinaryTree.m */; };
 		3032ACEC23433E7C0033098C /* DJQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3032ACEB23433E7C0033098C /* DJQueue.m */; };
 		303BA707234B38530060E7C5 /* BinaryDigitalCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 303BA706234B38530060E7C5 /* BinaryDigitalCount.m */; };
+		303BA70A234B7C6E0060E7C5 /* DeleteListNodeInConstantTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 303BA709234B7C6E0060E7C5 /* DeleteListNodeInConstantTime.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -65,6 +66,8 @@
 		3032ACEB23433E7C0033098C /* DJQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJQueue.m; sourceTree = "<group>"; };
 		303BA705234B38530060E7C5 /* BinaryDigitalCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryDigitalCount.h; sourceTree = "<group>"; };
 		303BA706234B38530060E7C5 /* BinaryDigitalCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BinaryDigitalCount.m; sourceTree = "<group>"; };
+		303BA708234B7C6E0060E7C5 /* DeleteListNodeInConstantTime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeleteListNodeInConstantTime.h; sourceTree = "<group>"; };
+		303BA709234B7C6E0060E7C5 /* DeleteListNodeInConstantTime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeleteListNodeInConstantTime.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +129,8 @@
 				3021D45B2348355D007EDB4C /* Fibonacci.m */,
 				303BA705234B38530060E7C5 /* BinaryDigitalCount.h */,
 				303BA706234B38530060E7C5 /* BinaryDigitalCount.m */,
+				303BA708234B7C6E0060E7C5 /* DeleteListNodeInConstantTime.h */,
+				303BA709234B7C6E0060E7C5 /* DeleteListNodeInConstantTime.m */,
 			);
 			path = Arithmatic;
 			sourceTree = "<group>";
@@ -210,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				303BA70A234B7C6E0060E7C5 /* DeleteListNodeInConstantTime.m in Sources */,
 				3021D45C2348355D007EDB4C /* Fibonacci.m in Sources */,
 				302C5A062345DAA500962CCD /* MergeSort.m in Sources */,
 				3032ACE92342E4440033098C /* PreInOrderRebuildBinaryTree.m in Sources */,
