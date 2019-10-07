@@ -25,45 +25,6 @@
     }
     return self;
 }
-/*
-void Merging(int L1[], int L1_size, int L2[], int L2_size)
-{
-    int temp[100], i, j, k;
-    i = j = k = 0;
-    //按照大小放入temp数组
-    while (i < L1_size && j < L2_size)
-    {
-        if (L1[i] >= L2[j])
-            temp[k++] = L2[j++];
-        else
-            temp[k++] = L1[i++];
-    }
-    //对未处理完的数据全部放入temp数组
-    for (; i < L1_size; i++)
-        temp[k++] = L1[i];
-    for (; j < L2_size; j++)
-        temp[k++] = L2[j];
-    //将局部变量数据存放入L1中
-    for (i = 0; i < (L1_size + L2_size); i++)
-        L1[i] = temp[i];
-}
-
-void DJMergeSort(int k[], int n)
-{
-    if (n>1)
-    {
-        int *list1 = k;
-        int list1_size = n / 2;
-        int *list2 = k + n / 2;
-        int list2_size = n - list1_size;
-        
-        DJMergeSort(list1, list1_size);
-        DJMergeSort(list2, list2_size);
-        Merging(list1, list1_size, list2, list2_size);
-    }
-}
-*/
-
 
 void DJMergeSort(int * array, int length)
 {

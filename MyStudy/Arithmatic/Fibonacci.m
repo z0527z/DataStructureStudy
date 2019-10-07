@@ -29,6 +29,18 @@ long long fibonacci(int n)
     return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
+
+/**
+ 面试题9: 斐波那契数列
+ 
+ 写一个函数, 输入n, 求斐波那契(Fibonacci)数列的第n项。斐波那契数列的定义如下:
+        {       0           n = 0
+ f(n) = |       1           n = 1
+        {f(n-1) + f(n-2)    n > 1
+ 
+ @param n 斐波那契数列的第 n 项
+ @return 对应的值
+ */
 long long noneRecursiveFibonacci(int n)
 {
     if (n <= 0) return 0;
