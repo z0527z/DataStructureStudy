@@ -14,7 +14,7 @@
 {
     if (self = [super init]) {
         long long value = noneRecursiveFibonacci(50);
-        printf("\n------------- Fibonacci ------------\n\n");
+        printf("\n-------------- Fibonacci ------------\n\n");
         printf("%lld\n", value);
         
     }

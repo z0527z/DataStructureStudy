@@ -17,7 +17,7 @@
         int length = sizeof(array) / sizeof(array[0]);
         
         DJMergeSort(array, length);
-        printf("\n------------ MergeSort ------------\n\n");
+        printf("\n------------- MergeSort -------------\n\n");
         for (int index = 0; index < length; index ++) {
             printf("%d ", array[index]);
         }

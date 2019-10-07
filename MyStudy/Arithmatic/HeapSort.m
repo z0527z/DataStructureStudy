@@ -17,7 +17,7 @@
         int length = sizeof(array) / sizeof(array[0]);
         DJHeapSort(array, 0, length - 1);
         
-        printf("\n------------ heapSort -------------\n\n");
+        printf("\n------------- heapSort --------------\n\n");
         for (int index = 0; index < length; index ++) {
             printf("%d ", array[index]);
         }

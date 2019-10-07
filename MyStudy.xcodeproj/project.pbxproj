@@ -20,6 +20,7 @@
 		3032ACE52342D9E20033098C /* PrintListFromTail.m in Sources */ = {isa = PBXBuildFile; fileRef = 3032ACE42342D9E20033098C /* PrintListFromTail.m */; };
 		3032ACE92342E4440033098C /* PreInOrderRebuildBinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 3032ACE82342E4440033098C /* PreInOrderRebuildBinaryTree.m */; };
 		3032ACEC23433E7C0033098C /* DJQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3032ACEB23433E7C0033098C /* DJQueue.m */; };
+		303BA707234B38530060E7C5 /* BinaryDigitalCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 303BA706234B38530060E7C5 /* BinaryDigitalCount.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,6 +63,8 @@
 		3032ACE82342E4440033098C /* PreInOrderRebuildBinaryTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreInOrderRebuildBinaryTree.m; sourceTree = "<group>"; };
 		3032ACEA23433E7C0033098C /* DJQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJQueue.h; sourceTree = "<group>"; };
 		3032ACEB23433E7C0033098C /* DJQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJQueue.m; sourceTree = "<group>"; };
+		303BA705234B38530060E7C5 /* BinaryDigitalCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryDigitalCount.h; sourceTree = "<group>"; };
+		303BA706234B38530060E7C5 /* BinaryDigitalCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BinaryDigitalCount.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +124,8 @@
 				3020C5F523474BCA0009117B /* InsertSort.m */,
 				3021D45A2348355D007EDB4C /* Fibonacci.h */,
 				3021D45B2348355D007EDB4C /* Fibonacci.m */,
+				303BA705234B38530060E7C5 /* BinaryDigitalCount.h */,
+				303BA706234B38530060E7C5 /* BinaryDigitalCount.m */,
 			);
 			path = Arithmatic;
 			sourceTree = "<group>";
@@ -212,6 +217,7 @@
 				302CF1F6234234C400277761 /* FindNumIn2DArray.m in Sources */,
 				3020C5F623474BCA0009117B /* InsertSort.m in Sources */,
 				3020C5F3234749E30009117B /* SelectSort.m in Sources */,
+				303BA707234B38530060E7C5 /* BinaryDigitalCount.m in Sources */,
 				30315B002344F17C0001ABEB /* HeapSort.m in Sources */,
 				30315AFD234433C40001ABEB /* QuickSort.m in Sources */,
 				302CF1F32342346C00277761 /* ReplaceBlank.m in Sources */,

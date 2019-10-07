@@ -19,7 +19,7 @@
         
         quickSort(array, 0, length - 1);
         
-        printf("\n----------- QuickSort -------------\n\n");
+        printf("\n------------ QuickSort --------------\n\n");
         for (int index = 0; index < length; index ++) {
             printf("%d ", array[index]);
         }

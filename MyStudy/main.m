@@ -17,6 +17,7 @@
 #import "SelectSort.h"
 #import "InsertSort.h"
 #import "Fibonacci.h"
+#import "BinaryDigitalCount.h"
 
 int main(int argc, const char * argv[]) {
 
@@ -30,6 +31,7 @@ int main(int argc, const char * argv[]) {
     SelectSort * select = [[SelectSort alloc] init];
     InsertSort * insert = [[InsertSort alloc] init];
     Fibonacci * fibonacci = [[Fibonacci alloc] init];
+    BinaryDigitalCount * binaryDigitalCount = [[BinaryDigitalCount alloc] init];
     
     printf("\n");
     return 0;

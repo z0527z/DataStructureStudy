@@ -17,7 +17,7 @@
         int length = sizeof(array) / sizeof(array[0]);
         DJSelectSort(array, length);
         
-        printf("\n------------ SelectSort -----------\n\n");
+        printf("\n------------- SelectSort ------------\n\n");
         for (int index = 0; index < length; index ++) {
             printf("%d ", array[index]);
         }

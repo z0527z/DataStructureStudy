@@ -19,7 +19,7 @@
         
         insertSort(array, length);
         
-        printf("\n------------ InsertSort -----------\n\n");
+        printf("\n------------- InsertSort ------------\n\n");
         for (int index = 0; index < length; index ++) {
             printf("%d ", array[index]);
         }
