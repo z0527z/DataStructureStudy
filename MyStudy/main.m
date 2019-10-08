@@ -18,6 +18,7 @@
 #import "InsertSort.h"
 #import "Fibonacci.h"
 #import "BinaryDigitalCount.h"
+#import "DeleteListNodeInConstantTime.h"
 
 int main(int argc, const char * argv[]) {
 
@@ -32,6 +33,7 @@ int main(int argc, const char * argv[]) {
     InsertSort * insert = [[InsertSort alloc] init];
     Fibonacci * fibonacci = [[Fibonacci alloc] init];
     BinaryDigitalCount * binaryDigitalCount = [[BinaryDigitalCount alloc] init];
+    DeleteListNodeInConstantTime * deleteListNode = [[DeleteListNodeInConstantTime alloc] init];
     
     printf("\n");
     return 0;
