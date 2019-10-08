@@ -21,6 +21,7 @@
 #import "DeleteListNodeInConstantTime.h"
 #import "ReorderOddEven.h"
 #import "OutputKthNodeToTail.h"
+#import "ReverseList.h"
 
 int main(int argc, const char * argv[]) {
 
@@ -38,6 +39,7 @@ int main(int argc, const char * argv[]) {
     DeleteListNodeInConstantTime * deleteListNode = [[DeleteListNodeInConstantTime alloc] init];
     ReorderOddEven * reorderOddEven = [[ReorderOddEven alloc] init];
     OutputKthNodeToTail * outputKthNode = [[OutputKthNodeToTail alloc] init];
+    ReverseList * reverseList = [[ReverseList alloc] init];
     
     printf("\n");
     return 0;

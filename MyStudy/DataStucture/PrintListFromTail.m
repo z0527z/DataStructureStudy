@@ -18,6 +18,7 @@
         
         ListNode * head = malloc(sizeof(ListNode));
         head->value = 1;
+        head->next = NULL;
         ListNode * p = head;
         for (int index = 0; index < 10; index ++) {
             ListNode * temp = malloc(sizeof(ListNode));
