@@ -19,6 +19,7 @@
 #import "Fibonacci.h"
 #import "BinaryDigitalCount.h"
 #import "DeleteListNodeInConstantTime.h"
+#import "ReorderOddEven.h"
 
 int main(int argc, const char * argv[]) {
 
@@ -34,6 +35,7 @@ int main(int argc, const char * argv[]) {
     Fibonacci * fibonacci = [[Fibonacci alloc] init];
     BinaryDigitalCount * binaryDigitalCount = [[BinaryDigitalCount alloc] init];
     DeleteListNodeInConstantTime * deleteListNode = [[DeleteListNodeInConstantTime alloc] init];
+    ReorderOddEven * reorderOddEven = [[ReorderOddEven alloc] init];
     
     printf("\n");
     return 0;
