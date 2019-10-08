@@ -28,6 +28,11 @@
     return self;
 }
 
+/// 面试题14: 输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有奇数位于数组的前半部分
+///          所有偶数位于数组的后半部分
+/// @param array 用于调整的数组
+/// @param length 该数组的长度
+/// @param func 用于判定规则的函数指针
 void reorderOddEven(int * array, int length, int (*func)(int value))
 {
     if (!array || length <= 1) return;
