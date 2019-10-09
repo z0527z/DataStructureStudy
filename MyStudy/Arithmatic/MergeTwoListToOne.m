@@ -42,7 +42,7 @@
         
         ListNode * list = mergeTwoAscendingListToAscendingOne(head, head2);
         
-        printf("\n------- MergeTwoListToOne -------\n\n");
+        printf("\n------ MergeTwoListToOne ------\n\n");
         while (list) {
             printf("%d ", list->value);
             list = list->next;
@@ -61,34 +61,25 @@ ListNode * mergeTwoAscendingListToAscendingOne(ListNode * head1, ListNode * head
     ListNode * p2 = head2;
     ListNode * mergedHeader = NULL;
     ListNode * mergePtr = mergedHeader;
-    while (p1 && p2) {
-        
+    ListNode ** temp = &p1;
+    while (*temp) {
         int value1 = p1->value;
         int value2 = p2->value;
-        if (value1 < value2) {
-            if (!mergedHeader) {
-                mergedHeader = p1;
-                mergePtr = p1;
-            }
-            else {
-                mergePtr->next = p1;
-                mergePtr = mergePtr->next;
-            }
-            p1 = p1->next;
+        temp = value1 < value2 ? &p1 : &p2;
+        // 合并链表头结点为空时
+        if (!mergedHeader) {
+            mergedHeader = *temp;
+            mergePtr = *temp;
         }
         else {
-            if (!mergedHeader) {
-                mergedHeader = p2;
-                mergePtr = p2;
-            }
-            else {
-                mergePtr->next = p2;
-                mergePtr = mergePtr->next;
-            }
-            p2 = p2->next;
+            // 合并链表头结点存在
+            mergePtr->next = *temp;
+            mergePtr = mergePtr->next;
         }
+        // head1 更新节点
+        *temp = (*temp)->next;
     }
-    
+    // 将另一个链表剩余的节点添加到合并链表来
     while (p1) {
         mergePtr->next = p1;
         mergePtr = mergePtr->next;
