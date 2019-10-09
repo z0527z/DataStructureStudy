@@ -22,6 +22,7 @@
 #import "ReorderOddEven.h"
 #import "OutputKthNodeToTail.h"
 #import "ReverseList.h"
+#import "MergeTwoListToOne.h"
 
 int main(int argc, const char * argv[]) {
 
@@ -40,6 +41,7 @@ int main(int argc, const char * argv[]) {
     ReorderOddEven * reorderOddEven = [[ReorderOddEven alloc] init];
     OutputKthNodeToTail * outputKthNode = [[OutputKthNodeToTail alloc] init];
     ReverseList * reverseList = [[ReverseList alloc] init];
+    MergeTwoListToOne * mergerTwoList = [[MergeTwoListToOne alloc] init];
     
     printf("\n");
     return 0;
