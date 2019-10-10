@@ -26,6 +26,7 @@
 		43339EF7234C7CC1005DF1FE /* OutputKthNodeToTail.m in Sources */ = {isa = PBXBuildFile; fileRef = 43339EF6234C7CC1005DF1FE /* OutputKthNodeToTail.m */; };
 		43339EFA234C8888005DF1FE /* ReverseList.m in Sources */ = {isa = PBXBuildFile; fileRef = 43339EF9234C8888005DF1FE /* ReverseList.m */; };
 		439CC35E234DE72D00DDCC42 /* MergeTwoListToOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 439CC35D234DE72D00DDCC42 /* MergeTwoListToOne.m */; };
+		439CC361234EC9F900DDCC42 /* HasSubTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 439CC360234EC9F900DDCC42 /* HasSubTree.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -80,6 +81,8 @@
 		43339EF9234C8888005DF1FE /* ReverseList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReverseList.m; sourceTree = "<group>"; };
 		439CC35C234DE72D00DDCC42 /* MergeTwoListToOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MergeTwoListToOne.h; sourceTree = "<group>"; };
 		439CC35D234DE72D00DDCC42 /* MergeTwoListToOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MergeTwoListToOne.m; sourceTree = "<group>"; };
+		439CC35F234EC9F900DDCC42 /* HasSubTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HasSubTree.h; sourceTree = "<group>"; };
+		439CC360234EC9F900DDCC42 /* HasSubTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HasSubTree.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +154,8 @@
 				43339EF9234C8888005DF1FE /* ReverseList.m */,
 				439CC35C234DE72D00DDCC42 /* MergeTwoListToOne.h */,
 				439CC35D234DE72D00DDCC42 /* MergeTwoListToOne.m */,
+				439CC35F234EC9F900DDCC42 /* HasSubTree.h */,
+				439CC360234EC9F900DDCC42 /* HasSubTree.m */,
 			);
 			path = Arithmatic;
 			sourceTree = "<group>";
@@ -248,6 +253,7 @@
 				303BA707234B38530060E7C5 /* BinaryDigitalCount.m in Sources */,
 				30315B002344F17C0001ABEB /* HeapSort.m in Sources */,
 				30315AFD234433C40001ABEB /* QuickSort.m in Sources */,
+				439CC361234EC9F900DDCC42 /* HasSubTree.m in Sources */,
 				302CF1F32342346C00277761 /* ReplaceBlank.m in Sources */,
 				302CF1D82342328000277761 /* main.m in Sources */,
 				43339EFA234C8888005DF1FE /* ReverseList.m in Sources */,

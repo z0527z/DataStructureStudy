@@ -23,6 +23,7 @@
 #import "OutputKthNodeToTail.h"
 #import "ReverseList.h"
 #import "MergeTwoListToOne.h"
+#import "HasSubTree.h"
 
 int main(int argc, const char * argv[]) {
 
@@ -42,6 +43,7 @@ int main(int argc, const char * argv[]) {
     OutputKthNodeToTail * outputKthNode = [[OutputKthNodeToTail alloc] init];
     ReverseList * reverseList = [[ReverseList alloc] init];
     MergeTwoListToOne * mergerTwoList = [[MergeTwoListToOne alloc] init];
+    HasSubTree * hasSubTree = [[HasSubTree alloc] init];
     
     printf("\n");
     return 0;
