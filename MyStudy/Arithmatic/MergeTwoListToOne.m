@@ -42,7 +42,7 @@
         
         ListNode * list = mergeTwoAscendingListToAscendingOne(head, head2);
         
-        printf("\n------ MergeTwoListToOne ------\n\n");
+        printf("\n--------- MergeTwoListToOne ---------\n\n");
         while (list) {
             printf("%d ", list->value);
             list = list->next;

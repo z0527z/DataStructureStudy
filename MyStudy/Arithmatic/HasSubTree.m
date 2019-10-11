@@ -55,7 +55,7 @@
         
         int flag = hasSubTree(tree1, tree2);
         
-        printf("\n---------- HasSubTree ----------\n\n");
+        printf("\n------------- HasSubTree -------------\n\n");
         printf("%d\n", flag);
         
     }

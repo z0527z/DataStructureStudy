@@ -24,6 +24,7 @@
 #import "ReverseList.h"
 #import "MergeTwoListToOne.h"
 #import "HasSubTree.h"
+#import "MirrorOfBinaryTree.h"
 
 int main(int argc, const char * argv[]) {
 
@@ -44,6 +45,7 @@ int main(int argc, const char * argv[]) {
     ReverseList * reverseList = [[ReverseList alloc] init];
     MergeTwoListToOne * mergerTwoList = [[MergeTwoListToOne alloc] init];
     HasSubTree * hasSubTree = [[HasSubTree alloc] init];
+    MirrorOfBinaryTree * mirrorOfBinaryTree = [[MirrorOfBinaryTree alloc] init];
     
     printf("\n");
     return 0;

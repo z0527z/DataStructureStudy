@@ -31,7 +31,7 @@
 //        ListNode * list = reverseWholeList(head);
         ListNode * list = reverseGroupElementForK(head, 3);
         
-        printf("\n--------- ReverseList ---------\n\n");
+        printf("\n------------ ReverseList ------------\n\n");
         while (list) {
             printf("%d ", list->value);
             list = list->next;

@@ -30,7 +30,7 @@
         int k = 5;
         ListNode * kthNode = findKthNodeToTail(head, k);
         
-        printf("\n------- OutputKthNodeToTail -------\n\n");
+        printf("\n-------- OutputKthNodeToTail --------\n\n");
         p = head;
         while (p) {
             printf("%d ", p->value);

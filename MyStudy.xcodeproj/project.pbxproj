@@ -27,6 +27,7 @@
 		43339EFA234C8888005DF1FE /* ReverseList.m in Sources */ = {isa = PBXBuildFile; fileRef = 43339EF9234C8888005DF1FE /* ReverseList.m */; };
 		439CC35E234DE72D00DDCC42 /* MergeTwoListToOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 439CC35D234DE72D00DDCC42 /* MergeTwoListToOne.m */; };
 		439CC361234EC9F900DDCC42 /* HasSubTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 439CC360234EC9F900DDCC42 /* HasSubTree.m */; };
+		43C5390E23507B0E0049445B /* MirrorOfBinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C5390D23507B0E0049445B /* MirrorOfBinaryTree.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -83,6 +84,8 @@
 		439CC35D234DE72D00DDCC42 /* MergeTwoListToOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MergeTwoListToOne.m; sourceTree = "<group>"; };
 		439CC35F234EC9F900DDCC42 /* HasSubTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HasSubTree.h; sourceTree = "<group>"; };
 		439CC360234EC9F900DDCC42 /* HasSubTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HasSubTree.m; sourceTree = "<group>"; };
+		43C5390C23507B0E0049445B /* MirrorOfBinaryTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MirrorOfBinaryTree.h; sourceTree = "<group>"; };
+		43C5390D23507B0E0049445B /* MirrorOfBinaryTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MirrorOfBinaryTree.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +159,8 @@
 				439CC35D234DE72D00DDCC42 /* MergeTwoListToOne.m */,
 				439CC35F234EC9F900DDCC42 /* HasSubTree.h */,
 				439CC360234EC9F900DDCC42 /* HasSubTree.m */,
+				43C5390C23507B0E0049445B /* MirrorOfBinaryTree.h */,
+				43C5390D23507B0E0049445B /* MirrorOfBinaryTree.m */,
 			);
 			path = Arithmatic;
 			sourceTree = "<group>";
@@ -243,6 +248,7 @@
 				303BA70A234B7C6E0060E7C5 /* DeleteListNodeInConstantTime.m in Sources */,
 				3021D45C2348355D007EDB4C /* Fibonacci.m in Sources */,
 				302C5A062345DAA500962CCD /* MergeSort.m in Sources */,
+				43C5390E23507B0E0049445B /* MirrorOfBinaryTree.m in Sources */,
 				43339EF4234C6B3B005DF1FE /* ReorderOddEven.m in Sources */,
 				3032ACE92342E4440033098C /* PreInOrderRebuildBinaryTree.m in Sources */,
 				3032ACE22342D55A0033098C /* DJStack.m in Sources */,
