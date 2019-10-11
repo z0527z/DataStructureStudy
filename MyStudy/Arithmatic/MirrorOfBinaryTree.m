@@ -8,6 +8,7 @@
 
 #import "MirrorOfBinaryTree.h"
 #import "StructureDefine.h"
+#import "DJStack.h"
 
 @implementation MirrorOfBinaryTree
 
@@ -58,9 +59,10 @@
         rightTree->pRight = rightTree2;
 
         
-        TreeNode * mirror = mirrorBinaryTree(tree1);
+//        TreeNode * mirror = mirrorBinaryTree(tree1);
+        noneRecursiveMirrorBinaryTree(tree1);
         printf("\n--------- MirrorOfBinaryTree ---------\n\n");
-        printTree(mirror);
+        printTree(tree1);
         printf("\n");
         
     }
@@ -87,6 +89,32 @@ TreeNode * mirrorBinaryTree(TreeNode * tree)
     root->pRight = leftTree;
     
     return root;
+}
+
+void noneRecursiveMirrorBinaryTree(TreeNode * tree)
+{
+    if (!tree) return;
+    
+    DJStack * stack = [[DJStack alloc] init];
+    TreeNode * p = tree;
+    [stack push:p];
+    
+    while (!stack.empty) {
+        TreeNode * node = [stack pop];
+        
+        TreeNode * left = node->pLeft ? node->pLeft : NULL;
+        TreeNode * right = node->pRight ? node->pRight : NULL;
+        
+        node->pLeft = right;
+        node->pRight = left;
+        
+        if (right) {
+            [stack push:right];
+        }
+        if (left) {
+            [stack push:left];
+        }
+    }
 }
 
 @end
