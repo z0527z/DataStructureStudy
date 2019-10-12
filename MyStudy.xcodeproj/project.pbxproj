@@ -28,6 +28,7 @@
 		439CC35E234DE72D00DDCC42 /* MergeTwoListToOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 439CC35D234DE72D00DDCC42 /* MergeTwoListToOne.m */; };
 		439CC361234EC9F900DDCC42 /* HasSubTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 439CC360234EC9F900DDCC42 /* HasSubTree.m */; };
 		43C5390E23507B0E0049445B /* MirrorOfBinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C5390D23507B0E0049445B /* MirrorOfBinaryTree.m */; };
+		43C53911235167AC0049445B /* RemoveRepeatListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C53910235167AC0049445B /* RemoveRepeatListNode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -86,6 +87,8 @@
 		439CC360234EC9F900DDCC42 /* HasSubTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HasSubTree.m; sourceTree = "<group>"; };
 		43C5390C23507B0E0049445B /* MirrorOfBinaryTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MirrorOfBinaryTree.h; sourceTree = "<group>"; };
 		43C5390D23507B0E0049445B /* MirrorOfBinaryTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MirrorOfBinaryTree.m; sourceTree = "<group>"; };
+		43C5390F235167AC0049445B /* RemoveRepeatListNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoveRepeatListNode.h; sourceTree = "<group>"; };
+		43C53910235167AC0049445B /* RemoveRepeatListNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemoveRepeatListNode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +164,8 @@
 				439CC360234EC9F900DDCC42 /* HasSubTree.m */,
 				43C5390C23507B0E0049445B /* MirrorOfBinaryTree.h */,
 				43C5390D23507B0E0049445B /* MirrorOfBinaryTree.m */,
+				43C5390F235167AC0049445B /* RemoveRepeatListNode.h */,
+				43C53910235167AC0049445B /* RemoveRepeatListNode.m */,
 			);
 			path = Arithmatic;
 			sourceTree = "<group>";
@@ -261,6 +266,7 @@
 				30315AFD234433C40001ABEB /* QuickSort.m in Sources */,
 				439CC361234EC9F900DDCC42 /* HasSubTree.m in Sources */,
 				302CF1F32342346C00277761 /* ReplaceBlank.m in Sources */,
+				43C53911235167AC0049445B /* RemoveRepeatListNode.m in Sources */,
 				302CF1D82342328000277761 /* main.m in Sources */,
 				43339EFA234C8888005DF1FE /* ReverseList.m in Sources */,
 				3032ACEC23433E7C0033098C /* DJQueue.m in Sources */,

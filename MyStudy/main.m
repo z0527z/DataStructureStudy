@@ -25,6 +25,7 @@
 #import "MergeTwoListToOne.h"
 #import "HasSubTree.h"
 #import "MirrorOfBinaryTree.h"
+#import "RemoveRepeatListNode.h"
 
 int main(int argc, const char * argv[]) {
 
@@ -46,6 +47,7 @@ int main(int argc, const char * argv[]) {
     MergeTwoListToOne * mergerTwoList = [[MergeTwoListToOne alloc] init];
     HasSubTree * hasSubTree = [[HasSubTree alloc] init];
     MirrorOfBinaryTree * mirrorOfBinaryTree = [[MirrorOfBinaryTree alloc] init];
+    RemoveRepeatListNode * removeRepeatListNode = [[RemoveRepeatListNode alloc] init];
     
     printf("\n");
     return 0;
