@@ -102,6 +102,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		300A4E762353693000B6080E /* List */ = {
+			isa = PBXGroup;
+			children = (
+				303BA708234B7C6E0060E7C5 /* DeleteListNodeInConstantTime.h */,
+				303BA709234B7C6E0060E7C5 /* DeleteListNodeInConstantTime.m */,
+				43339EF5234C7CC1005DF1FE /* OutputKthNodeToTail.h */,
+				43339EF6234C7CC1005DF1FE /* OutputKthNodeToTail.m */,
+				43339EF8234C8888005DF1FE /* ReverseList.h */,
+				43339EF9234C8888005DF1FE /* ReverseList.m */,
+				439CC35C234DE72D00DDCC42 /* MergeTwoListToOne.h */,
+				439CC35D234DE72D00DDCC42 /* MergeTwoListToOne.m */,
+				43C5390F235167AC0049445B /* RemoveRepeatListNode.h */,
+				43C53910235167AC0049445B /* RemoveRepeatListNode.m */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		300A4E772353693000B6080E /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				439CC35F234EC9F900DDCC42 /* HasSubTree.h */,
+				439CC360234EC9F900DDCC42 /* HasSubTree.m */,
+				43C5390C23507B0E0049445B /* MirrorOfBinaryTree.h */,
+				43C5390D23507B0E0049445B /* MirrorOfBinaryTree.m */,
+			);
+			path = Tree;
+			sourceTree = "<group>";
+		};
+		300A4E782353693000B6080E /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				30315AFB234433C40001ABEB /* QuickSort.h */,
+				30315AFC234433C40001ABEB /* QuickSort.m */,
+				30315AFE2344F17C0001ABEB /* HeapSort.h */,
+				30315AFF2344F17C0001ABEB /* HeapSort.m */,
+				302C5A042345DAA500962CCD /* MergeSort.h */,
+				302C5A052345DAA500962CCD /* MergeSort.m */,
+				3020C5F1234749E30009117B /* SelectSort.h */,
+				3020C5F2234749E30009117B /* SelectSort.m */,
+				3020C5F423474BCA0009117B /* InsertSort.h */,
+				3020C5F523474BCA0009117B /* InsertSort.m */,
+			);
+			path = Sort;
+			sourceTree = "<group>";
+		};
+		300A4E79235369DF00B6080E /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				302CF1F4234234C400277761 /* FindNumIn2DArray.h */,
+				302CF1F5234234C400277761 /* FindNumIn2DArray.m */,
+				302CF1F12342346C00277761 /* ReplaceBlank.h */,
+				302CF1F22342346C00277761 /* ReplaceBlank.m */,
+				3021D45A2348355D007EDB4C /* Fibonacci.h */,
+				3021D45B2348355D007EDB4C /* Fibonacci.m */,
+				303BA705234B38530060E7C5 /* BinaryDigitalCount.h */,
+				303BA706234B38530060E7C5 /* BinaryDigitalCount.m */,
+				43339EF2234C6B3B005DF1FE /* ReorderOddEven.h */,
+				43339EF3234C6B3B005DF1FE /* ReorderOddEven.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		302CF1CB2342327F00277761 = {
 			isa = PBXGroup;
 			children = (
@@ -132,40 +194,10 @@
 		302CF1E82342343800277761 /* Arithmatic */ = {
 			isa = PBXGroup;
 			children = (
-				302CF1F4234234C400277761 /* FindNumIn2DArray.h */,
-				302CF1F5234234C400277761 /* FindNumIn2DArray.m */,
-				302CF1F12342346C00277761 /* ReplaceBlank.h */,
-				302CF1F22342346C00277761 /* ReplaceBlank.m */,
-				30315AFB234433C40001ABEB /* QuickSort.h */,
-				30315AFC234433C40001ABEB /* QuickSort.m */,
-				30315AFE2344F17C0001ABEB /* HeapSort.h */,
-				30315AFF2344F17C0001ABEB /* HeapSort.m */,
-				302C5A042345DAA500962CCD /* MergeSort.h */,
-				302C5A052345DAA500962CCD /* MergeSort.m */,
-				3020C5F1234749E30009117B /* SelectSort.h */,
-				3020C5F2234749E30009117B /* SelectSort.m */,
-				3020C5F423474BCA0009117B /* InsertSort.h */,
-				3020C5F523474BCA0009117B /* InsertSort.m */,
-				3021D45A2348355D007EDB4C /* Fibonacci.h */,
-				3021D45B2348355D007EDB4C /* Fibonacci.m */,
-				303BA705234B38530060E7C5 /* BinaryDigitalCount.h */,
-				303BA706234B38530060E7C5 /* BinaryDigitalCount.m */,
-				303BA708234B7C6E0060E7C5 /* DeleteListNodeInConstantTime.h */,
-				303BA709234B7C6E0060E7C5 /* DeleteListNodeInConstantTime.m */,
-				43339EF2234C6B3B005DF1FE /* ReorderOddEven.h */,
-				43339EF3234C6B3B005DF1FE /* ReorderOddEven.m */,
-				43339EF5234C7CC1005DF1FE /* OutputKthNodeToTail.h */,
-				43339EF6234C7CC1005DF1FE /* OutputKthNodeToTail.m */,
-				43339EF8234C8888005DF1FE /* ReverseList.h */,
-				43339EF9234C8888005DF1FE /* ReverseList.m */,
-				439CC35C234DE72D00DDCC42 /* MergeTwoListToOne.h */,
-				439CC35D234DE72D00DDCC42 /* MergeTwoListToOne.m */,
-				439CC35F234EC9F900DDCC42 /* HasSubTree.h */,
-				439CC360234EC9F900DDCC42 /* HasSubTree.m */,
-				43C5390C23507B0E0049445B /* MirrorOfBinaryTree.h */,
-				43C5390D23507B0E0049445B /* MirrorOfBinaryTree.m */,
-				43C5390F235167AC0049445B /* RemoveRepeatListNode.h */,
-				43C53910235167AC0049445B /* RemoveRepeatListNode.m */,
+				300A4E79235369DF00B6080E /* Other */,
+				300A4E762353693000B6080E /* List */,
+				300A4E782353693000B6080E /* Sort */,
+				300A4E772353693000B6080E /* Tree */,
 			);
 			path = Arithmatic;
 			sourceTree = "<group>";
