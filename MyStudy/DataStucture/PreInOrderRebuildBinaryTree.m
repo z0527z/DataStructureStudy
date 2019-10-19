@@ -28,6 +28,7 @@
     return self;
 }
 
+#pragma mark - 构建二叉树
 TreeNode * rebuildBinaryTree(int * preStart, int * inStart, int length)
 {
     if (preStart == NULL || inStart == NULL || length <= 0) return NULL;

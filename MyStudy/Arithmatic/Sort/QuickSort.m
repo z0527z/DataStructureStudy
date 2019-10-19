@@ -63,6 +63,7 @@ void quickSort(int * array, int begin, int end)
         // 将该数移到节点的右边
         if (left < right) {
             array[right] = array[left];
+            right --;
         }
         // 将节点交换到中间
         array[left] = jie;

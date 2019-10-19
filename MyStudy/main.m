@@ -26,6 +26,8 @@
 #import "HasSubTree.h"
 #import "MirrorOfBinaryTree.h"
 #import "RemoveRepeatListNode.h"
+#import "HasPathInMatrix.h"
+#import "DuplicateNumInArray.h"
 
 int main(int argc, const char * argv[]) {
 
@@ -48,6 +50,8 @@ int main(int argc, const char * argv[]) {
     HasSubTree * hasSubTree = [[HasSubTree alloc] init];
     MirrorOfBinaryTree * mirrorOfBinaryTree = [[MirrorOfBinaryTree alloc] init];
     RemoveRepeatListNode * removeRepeatListNode = [[RemoveRepeatListNode alloc] init];
+    HasPathInMatrix * hasPathInMatrix = [[HasPathInMatrix alloc] init];
+    DuplicateNumInArray * duplicateNumInArray = [[DuplicateNumInArray alloc] init];
     
     printf("\n");
     return 0;
