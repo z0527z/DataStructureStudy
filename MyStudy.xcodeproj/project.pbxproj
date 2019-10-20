@@ -16,6 +16,7 @@
 		302CF1D82342328000277761 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 302CF1D72342328000277761 /* main.m */; };
 		302CF1F32342346C00277761 /* ReplaceBlank.m in Sources */ = {isa = PBXBuildFile; fileRef = 302CF1F22342346C00277761 /* ReplaceBlank.m */; };
 		302CF1F6234234C400277761 /* FindNumIn2DArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 302CF1F5234234C400277761 /* FindNumIn2DArray.m */; };
+		302FE691235BF10600B3C7D4 /* DJHashMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 302FE690235BF10600B3C7D4 /* DJHashMap.m */; };
 		30315AFD234433C40001ABEB /* QuickSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 30315AFC234433C40001ABEB /* QuickSort.m */; };
 		30315B002344F17C0001ABEB /* HeapSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 30315AFF2344F17C0001ABEB /* HeapSort.m */; };
 		3032ACE22342D55A0033098C /* DJStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 3032ACE12342D55A0033098C /* DJStack.m */; };
@@ -64,6 +65,8 @@
 		302CF1F22342346C00277761 /* ReplaceBlank.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReplaceBlank.m; sourceTree = "<group>"; };
 		302CF1F4234234C400277761 /* FindNumIn2DArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindNumIn2DArray.h; sourceTree = "<group>"; };
 		302CF1F5234234C400277761 /* FindNumIn2DArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindNumIn2DArray.m; sourceTree = "<group>"; };
+		302FE68F235BF10600B3C7D4 /* DJHashMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJHashMap.h; sourceTree = "<group>"; };
+		302FE690235BF10600B3C7D4 /* DJHashMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJHashMap.m; sourceTree = "<group>"; };
 		30315AFB234433C40001ABEB /* QuickSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickSort.h; sourceTree = "<group>"; };
 		30315AFC234433C40001ABEB /* QuickSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickSort.m; sourceTree = "<group>"; };
 		30315AFE2344F17C0001ABEB /* HeapSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeapSort.h; sourceTree = "<group>"; };
@@ -228,6 +231,8 @@
 				3032ACE12342D55A0033098C /* DJStack.m */,
 				3032ACEA23433E7C0033098C /* DJQueue.h */,
 				3032ACEB23433E7C0033098C /* DJQueue.m */,
+				302FE68F235BF10600B3C7D4 /* DJHashMap.h */,
+				302FE690235BF10600B3C7D4 /* DJHashMap.m */,
 			);
 			path = CommonTools;
 			sourceTree = "<group>";
@@ -308,6 +313,7 @@
 				43339EF4234C6B3B005DF1FE /* ReorderOddEven.m in Sources */,
 				3032ACE92342E4440033098C /* PreInOrderRebuildBinaryTree.m in Sources */,
 				3032ACE22342D55A0033098C /* DJStack.m in Sources */,
+				302FE691235BF10600B3C7D4 /* DJHashMap.m in Sources */,
 				302CF1F6234234C400277761 /* FindNumIn2DArray.m in Sources */,
 				3020C5F623474BCA0009117B /* InsertSort.m in Sources */,
 				3020C5F3234749E30009117B /* SelectSort.m in Sources */,
