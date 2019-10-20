@@ -21,7 +21,7 @@
         bool hasPathStr = hasPathInMatrix((char *)matrix, 3, 4, str);
         
         printf("\n---------- HasPathInMatrix ---------\n\n");
-        printf("%d\n", hasPathStr);
+        printf("%s\n", hasPathStr ? "true" : "false");
         
         int count = totalMovingCountRobotCanArrive(12, 10, 10);
         printf("\n--- totalMovingCountRobotCanArrive ---\n\n");

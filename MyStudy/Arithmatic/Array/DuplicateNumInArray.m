@@ -16,38 +16,33 @@
         
         int array[] = {1, 3, 9, 2, 8, 9, 8, 6, 4, 5, 1};
         int length = sizeof(array) / sizeof(array[0]);
-        int * p = duplicateNumberInArray(array, 12);
+        
+        int duplicatedNum = -1;
+        bool didFind = duplicateNumberInArray(array, 12, &duplicatedNum);
         
         printf("\n------------ DuplicateNumInArray ----------\n\n");
-        while (p) {
-            printf("%d ", *p);
-            p++;
-        }
-        printf("\n");
+        printf("%s, %d\n", didFind ? "true" : "false", duplicatedNum);
     }
     return self;
 }
 
-int * duplicateNumberInArray(int * array, int length)
+bool duplicateNumberInArray(int * array, int length, int * duplicatedNum)
 {
-    if (!array || length < 1) return NULL;
+    if (!array || length < 1) return false;
     
     for (int i = 0; i < length; i ++) {
         if (array[i] < 0 || array[i] >= length) {
             printf("输入的数据 %d 超出范围", array[i]);
-            return NULL;
+            return false;
         }
     }
     
-    int * tempArray = malloc(sizeof(int) * length);
-    memset(tempArray, 0, length);
-    int j = 0;
     for (int i = 0; i < length; i ++) {
         while (array[i] != i) {
             
             if (array[i] == array[array[i]]) {
-                tempArray[j++] = array[i];
-                return tempArray;
+                *duplicatedNum = array[i];
+                return true;
             }
 
             int temp = array[i];
@@ -55,7 +50,7 @@ int * duplicateNumberInArray(int * array, int length)
             array[temp] = temp;
         }
     }
-    return tempArray;
+    return false;
 }
 
 @end

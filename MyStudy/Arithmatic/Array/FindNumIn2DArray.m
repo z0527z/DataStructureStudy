@@ -23,8 +23,9 @@
             {4, 7, 10, 13},
             {6, 8, 11, 15}
         };
-        BOOL didFind = findNum((int *)array, 4, 4,  7);
-        printf("%d\n", didFind);
+        bool didFind = findNum((int *)array, 4, 4,  7);
+        printf("\n---------- FindNumIn2DArray ---------\n\n");
+        printf("%s\n", didFind ? "true" : "false");
     }
     return self;
 }
@@ -34,7 +35,7 @@ bool findNum(int * array, int hLength, int vLength, int num)
     // 异常检测
     if (array == NULL || hLength <= 0 || vLength <= 0) return false;
     
-    BOOL flag = false;
+    bool flag = false;
     
     // 从右上角开始查找
     int column = hLength - 1;

@@ -53,10 +53,10 @@
         rightTree2->pRight = NULL;
         tree2->pRight = rightTree2;
         
-        int flag = hasSubTree(tree1, tree2);
+        bool flag = hasSubTree(tree1, tree2);
         
         printf("\n------------- HasSubTree -------------\n\n");
-        printf("%d\n", flag);
+        printf("%s\n", flag ? "true" : "false");
         
     }
     return self;
@@ -64,7 +64,7 @@
 
 bool hasSubTree(TreeNode * tree1, TreeNode * tree2)
 {
-    int flag = 0;
+    bool flag = false;
     if (!tree1 || !tree2) return flag;
     
     if (tree1->value == tree2->value) {
@@ -82,10 +82,10 @@ bool hasSubTree(TreeNode * tree1, TreeNode * tree2)
 
 bool doesTree1HasTree2(TreeNode * tree1, TreeNode * tree2)
 {
-    if (!tree2) return 1;
-    if (!tree1) return 0;
+    if (!tree2) return true;
+    if (!tree1) return false;
     
-    if (tree1->value != tree2->value) return 0;
+    if (tree1->value != tree2->value) return false;
     
     return doesTree1HasTree2(tree1->pLeft, tree2->pLeft) && doesTree1HasTree2(tree1->pRight, tree2->pRight);
 }
