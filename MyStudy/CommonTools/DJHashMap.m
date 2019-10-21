@@ -133,4 +133,13 @@ typedef struct DJHashValue {
     return (int)(key + 1) % _capacity;
 }
 
+- (void)dealloc
+{
+    dispatch_semaphore_wait(_sem, 5);
+    for (int i = 0; i < _capacity; i ++) {
+        free(_djHashMap[i]);
+    }
+    dispatch_semaphore_signal(_sem);
+}
+
 @end

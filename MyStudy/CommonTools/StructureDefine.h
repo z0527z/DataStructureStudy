@@ -22,4 +22,11 @@ typedef struct TreeNode {
     struct TreeNode * pRight;
 }TreeNode;
 
+typedef struct BinaryTree {
+    int value;
+    struct BinaryTree * pLeft;
+    struct BinaryTree * pRight;
+    struct BinaryTree * pParrent;
+}BinaryTree;
+
 #endif /* StructureDefine_h */

@@ -28,6 +28,7 @@
 #import "RemoveRepeatListNode.h"
 #import "HasPathInMatrix.h"
 #import "DuplicateNumInArray.h"
+#import "NextNodeInBinaryTree.h"
 
 int main(int argc, const char * argv[]) {
 
@@ -52,6 +53,7 @@ int main(int argc, const char * argv[]) {
     RemoveRepeatListNode * removeRepeatListNode = [[RemoveRepeatListNode alloc] init];
     HasPathInMatrix * hasPathInMatrix = [[HasPathInMatrix alloc] init];
     DuplicateNumInArray * duplicateNumInArray = [[DuplicateNumInArray alloc] init];
+    NextNodeInBinaryTree * nextNodeInBinaryTree = [[NextNodeInBinaryTree alloc] init];
     
     printf("\n");
     return 0;
