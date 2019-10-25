@@ -54,18 +54,25 @@
         
         left1->pRight = right1;
         
-        BinaryTree * nextNode = nextNodeInInOrderBinaryTreeTraverse(root);
+        BinaryTree * nextNodeInInOrder = nextNodeInInOrderBinaryTreeTraverse(right6);
+        BinaryTree * nextNodeInPreOrder = nextNodeInPreOrderBinaryTreeTraverse(left1);
         
         printf("\n-------- NextNodeInBinaryTree --------\n\n");
-        if (nextNode) {
-            printf("%d\n", nextNode->value);
+        if (nextNodeInInOrder) {
+            printf("%d, ", nextNodeInInOrder->value);
         }
-        
+        if (nextNodeInPreOrder) {
+            printf("%d", nextNodeInPreOrder->value);
+        }
+        printf("\n");
         
     }
     return self;
 }
 
+
+/// 找寻传入节点在中序遍历中的下一个节点
+/// @param node 传入节点
 BinaryTree * nextNodeInInOrderBinaryTreeTraverse(BinaryTree * node)
 {
     if (!node) return NULL;
@@ -85,6 +92,33 @@ BinaryTree * nextNodeInInOrderBinaryTreeTraverse(BinaryTree * node)
         }
         nextNode = parent;
     }
+    return nextNode;
+}
+
+
+/// 找寻传入节点在前序遍历中的下一个节点
+/// @param node 传入节点
+BinaryTree * nextNodeInPreOrderBinaryTreeTraverse(BinaryTree * node)
+{
+    if (!node) return NULL;
+    
+    BinaryTree * nextNode = NULL;
+    if (node->pLeft) {
+        nextNode = node->pLeft;
+    }
+    else if (node->pRight) {
+        nextNode = node->pRight;
+    }
+    else if (node->pParrent) {
+        BinaryTree * current = node;
+        BinaryTree * parent = node->pParrent;
+        while (parent && (parent->pRight == current || parent->pRight == NULL)) {
+            current = parent;
+            parent = parent->pParrent;
+        }
+        nextNode = parent ? parent->pRight : NULL;
+    }
+    
     return nextNode;
 }
 
