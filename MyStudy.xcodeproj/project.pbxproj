@@ -25,6 +25,7 @@
 		3032ACEC23433E7C0033098C /* DJQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3032ACEB23433E7C0033098C /* DJQueue.m */; };
 		303BA707234B38530060E7C5 /* BinaryDigitalCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 303BA706234B38530060E7C5 /* BinaryDigitalCount.m */; };
 		303BA70A234B7C6E0060E7C5 /* DeleteListNodeInConstantTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 303BA709234B7C6E0060E7C5 /* DeleteListNodeInConstantTime.m */; };
+		3049E72423632C8800411CE8 /* CountSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 3049E72323632C8800411CE8 /* CountSort.m */; };
 		30CDCB95235DDEA000730607 /* NextNodeInBinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CDCB94235DDEA000730607 /* NextNodeInBinaryTree.m */; };
 		43339EF4234C6B3B005DF1FE /* ReorderOddEven.m in Sources */ = {isa = PBXBuildFile; fileRef = 43339EF3234C6B3B005DF1FE /* ReorderOddEven.m */; };
 		43339EF7234C7CC1005DF1FE /* OutputKthNodeToTail.m in Sources */ = {isa = PBXBuildFile; fileRef = 43339EF6234C7CC1005DF1FE /* OutputKthNodeToTail.m */; };
@@ -85,6 +86,8 @@
 		303BA706234B38530060E7C5 /* BinaryDigitalCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BinaryDigitalCount.m; sourceTree = "<group>"; };
 		303BA708234B7C6E0060E7C5 /* DeleteListNodeInConstantTime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeleteListNodeInConstantTime.h; sourceTree = "<group>"; };
 		303BA709234B7C6E0060E7C5 /* DeleteListNodeInConstantTime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeleteListNodeInConstantTime.m; sourceTree = "<group>"; };
+		3049E72223632C8800411CE8 /* CountSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountSort.h; sourceTree = "<group>"; };
+		3049E72323632C8800411CE8 /* CountSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountSort.m; sourceTree = "<group>"; };
 		30CDCB93235DDEA000730607 /* NextNodeInBinaryTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextNodeInBinaryTree.h; sourceTree = "<group>"; };
 		30CDCB94235DDEA000730607 /* NextNodeInBinaryTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextNodeInBinaryTree.m; sourceTree = "<group>"; };
 		43339EF2234C6B3B005DF1FE /* ReorderOddEven.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReorderOddEven.h; sourceTree = "<group>"; };
@@ -157,6 +160,8 @@
 				3020C5F2234749E30009117B /* SelectSort.m */,
 				3020C5F423474BCA0009117B /* InsertSort.h */,
 				3020C5F523474BCA0009117B /* InsertSort.m */,
+				3049E72223632C8800411CE8 /* CountSort.h */,
+				3049E72323632C8800411CE8 /* CountSort.m */,
 			);
 			path = Sort;
 			sourceTree = "<group>";
@@ -324,6 +329,7 @@
 				3020C5F623474BCA0009117B /* InsertSort.m in Sources */,
 				3020C5F3234749E30009117B /* SelectSort.m in Sources */,
 				439CC35E234DE72D00DDCC42 /* MergeTwoListToOne.m in Sources */,
+				3049E72423632C8800411CE8 /* CountSort.m in Sources */,
 				303BA707234B38530060E7C5 /* BinaryDigitalCount.m in Sources */,
 				30315B002344F17C0001ABEB /* HeapSort.m in Sources */,
 				30315AFD234433C40001ABEB /* QuickSort.m in Sources */,

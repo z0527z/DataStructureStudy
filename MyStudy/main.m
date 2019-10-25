@@ -29,6 +29,7 @@
 #import "HasPathInMatrix.h"
 #import "DuplicateNumInArray.h"
 #import "NextNodeInBinaryTree.h"
+#import "CountSort.h"
 
 int main(int argc, const char * argv[]) {
 
@@ -54,6 +55,7 @@ int main(int argc, const char * argv[]) {
     HasPathInMatrix * hasPathInMatrix = [[HasPathInMatrix alloc] init];
     DuplicateNumInArray * duplicateNumInArray = [[DuplicateNumInArray alloc] init];
     NextNodeInBinaryTree * nextNodeInBinaryTree = [[NextNodeInBinaryTree alloc] init];
+    CountSort * countSort = [[CountSort alloc] init];
     
     printf("\n");
     return 0;
