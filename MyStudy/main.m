@@ -30,6 +30,7 @@
 #import "DuplicateNumInArray.h"
 #import "NextNodeInBinaryTree.h"
 #import "CountSort.h"
+#import "CutRopeForGreatestProduct.h"
 
 int main(int argc, const char * argv[]) {
 
@@ -56,6 +57,7 @@ int main(int argc, const char * argv[]) {
     DuplicateNumInArray * duplicateNumInArray = [[DuplicateNumInArray alloc] init];
     NextNodeInBinaryTree * nextNodeInBinaryTree = [[NextNodeInBinaryTree alloc] init];
     CountSort * countSort = [[CountSort alloc] init];
+    CutRopeForGreatestProduct * cutRope = [[CutRopeForGreatestProduct alloc] init];
     
     printf("\n");
     return 0;
