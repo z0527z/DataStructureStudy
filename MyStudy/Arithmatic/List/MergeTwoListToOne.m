@@ -40,7 +40,8 @@
             p2 = p2->next;
         }
         
-        ListNode * list = mergeTwoAscendingListToAscendingOne(head, head2);
+//        ListNode * list = noneRecursiveMergeTwoAscendingListInToAscendingOne(head, head2);
+        ListNode * list = mergeTwoAscendingListIntoAscendingOne(head, head2);
         
         printf("\n--------- MergeTwoListToOne ---------\n\n");
         while (list) {
@@ -61,7 +62,7 @@
  @param head2 递增链表2
  @return 合并的链表头结点
  */
-ListNode * mergeTwoAscendingListToAscendingOne(ListNode * head1, ListNode * head2)
+ListNode * noneRecursiveMergeTwoAscendingListInToAscendingOne(ListNode * head1, ListNode * head2)
 {
     if (!head1) return head2;
     if (!head2) return head1;
@@ -105,4 +106,22 @@ ListNode * mergeTwoAscendingListToAscendingOne(ListNode * head1, ListNode * head
     return mergedHeader;
 }
 
+#pragma mark - 递归实现
+ListNode * mergeTwoAscendingListIntoAscendingOne(ListNode * head1, ListNode * head2)
+{
+    if (!head1) return head2;
+    if (!head2) return head1;
+    
+    ListNode * mergeListHead = NULL;
+    
+    if (head1->value < head2->value) {
+        mergeListHead = head1;
+        mergeListHead->next = mergeTwoAscendingListIntoAscendingOne(head1->next, head2);
+    }
+    else {
+        mergeListHead = head2;
+        mergeListHead->next = mergeTwoAscendingListIntoAscendingOne(head1, head2->next);
+    }
+    return mergeListHead;
+}
 @end
