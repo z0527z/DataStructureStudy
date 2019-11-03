@@ -50,8 +50,8 @@
         p5->next = NULL;
         p4->next = p5;
         
-//        removeAllRepeatListNode(&head);
-        keepOneOnRepeatListNode(head);
+        removeAllRepeatListNode(&head);
+//        keepOneOnRepeatListNode(head);
         printf("\n------------ RemoveRepeatListNode ----------\n\n");
         while (head) {
             printf("%d ", head->value);

@@ -31,6 +31,7 @@
 #import "NextNodeInBinaryTree.h"
 #import "CountSort.h"
 #import "CutRopeForGreatestProduct.h"
+#import "CyclePositionInList.h"
 
 int main(int argc, const char * argv[]) {
 
@@ -58,6 +59,7 @@ int main(int argc, const char * argv[]) {
     NextNodeInBinaryTree * nextNodeInBinaryTree = [[NextNodeInBinaryTree alloc] init];
     CountSort * countSort = [[CountSort alloc] init];
     CutRopeForGreatestProduct * cutRope = [[CutRopeForGreatestProduct alloc] init];
+    CyclePositionInList * cyclePostionInList = [[CyclePositionInList alloc] init];
     
     printf("\n");
     return 0;
