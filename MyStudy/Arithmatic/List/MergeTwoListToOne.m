@@ -52,6 +52,15 @@
     return self;
 }
 
+/**
+ 面试题25: 合并两个排序的链表
+ 
+ 输入两个递增排序的链表，合并这两个链表并使新链表中的节点仍然是递增排序的。
+
+ @param head1 递增链表1
+ @param head2 递增链表2
+ @return 合并的链表头结点
+ */
 ListNode * mergeTwoAscendingListToAscendingOne(ListNode * head1, ListNode * head2)
 {
     if (!head1) return head2;
@@ -76,16 +85,17 @@ ListNode * mergeTwoAscendingListToAscendingOne(ListNode * head1, ListNode * head
             mergePtr->next = *temp;
             mergePtr = mergePtr->next;
         }
-        // head1 更新节点
+        // 取出几点的链表更新节点到下一个
         *temp = (*temp)->next;
     }
-    // 将另一个链表剩余的节点添加到合并链表来
+    // 如果链表1中有剩余的节点，则添加到合并链表来
     while (p1) {
         mergePtr->next = p1;
         mergePtr = mergePtr->next;
         p1 = p1->next;
     }
     
+    // 如果链表2中有剩余的节点，则添加到合并链表来
     while (p2) {
         mergePtr->next = p2;
         mergePtr = mergePtr->next;
