@@ -78,6 +78,15 @@ void printTree(TreeNode * tree)
     printTree(tree->pRight);
 }
 
+
+/**
+ 面试题27: 二叉树的镜像
+ 
+ 输入一颗二叉树，输出它的镜像
+
+ @param tree 二叉树的根节点
+ @return 二叉树镜像的根节点
+ */
 TreeNode * mirrorBinaryTree(TreeNode * tree)
 {
     if (!tree) return NULL;
