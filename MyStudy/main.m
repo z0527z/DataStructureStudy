@@ -32,6 +32,7 @@
 #import "CountSort.h"
 #import "CutRopeForGreatestProduct.h"
 #import "CyclePositionInList.h"
+#import "FindFirstCommonNode.h"
 
 int main(int argc, const char * argv[]) {
 
@@ -60,6 +61,7 @@ int main(int argc, const char * argv[]) {
     CountSort * countSort = [[CountSort alloc] init];
     CutRopeForGreatestProduct * cutRope = [[CutRopeForGreatestProduct alloc] init];
     CyclePositionInList * cyclePostionInList = [[CyclePositionInList alloc] init];
+    FindFirstCommonNode * findFirstCommonNode = [[FindFirstCommonNode alloc] init];
     
     printf("\n");
     return 0;
