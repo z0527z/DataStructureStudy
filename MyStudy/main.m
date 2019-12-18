@@ -33,6 +33,7 @@
 #import "CutRopeForGreatestProduct.h"
 #import "CyclePositionInList.h"
 #import "FindFirstCommonNode.h"
+#import "IsSymmetryTree.h"
 
 int main(int argc, const char * argv[]) {
 
@@ -62,6 +63,7 @@ int main(int argc, const char * argv[]) {
     CutRopeForGreatestProduct * cutRope = [[CutRopeForGreatestProduct alloc] init];
     CyclePositionInList * cyclePostionInList = [[CyclePositionInList alloc] init];
     FindFirstCommonNode * findFirstCommonNode = [[FindFirstCommonNode alloc] init];
+    IsSymmetryTree * isSymmetryTree = [[IsSymmetryTree alloc] init];
     
     printf("\n");
     return 0;
