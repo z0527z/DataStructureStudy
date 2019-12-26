@@ -65,7 +65,7 @@
 		3028646C235B1DC800593A13 /* DuplicateNumInArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DuplicateNumInArray.m; sourceTree = "<group>"; };
 		302C5A042345DAA500962CCD /* MergeSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MergeSort.h; sourceTree = "<group>"; };
 		302C5A052345DAA500962CCD /* MergeSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MergeSort.m; sourceTree = "<group>"; };
-		302CF1D42342328000277761 /* MyStudy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MyStudy; sourceTree = BUILT_PRODUCTS_DIR; };
+		302CF1D42342328000277761 /* DataStructureStudy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructureStudy; sourceTree = BUILT_PRODUCTS_DIR; };
 		302CF1D72342328000277761 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		302CF1F12342346C00277761 /* ReplaceBlank.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReplaceBlank.h; sourceTree = "<group>"; };
 		302CF1F22342346C00277761 /* ReplaceBlank.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReplaceBlank.m; sourceTree = "<group>"; };
@@ -215,7 +215,7 @@
 		302CF1CB2342327F00277761 = {
 			isa = PBXGroup;
 			children = (
-				302CF1D62342328000277761 /* MyStudy */,
+				302CF1D62342328000277761 /* DataStructureStudy */,
 				302CF1D52342328000277761 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -223,12 +223,12 @@
 		302CF1D52342328000277761 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				302CF1D42342328000277761 /* MyStudy */,
+				302CF1D42342328000277761 /* DataStructureStudy */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		302CF1D62342328000277761 /* MyStudy */ = {
+		302CF1D62342328000277761 /* DataStructureStudy */ = {
 			isa = PBXGroup;
 			children = (
 				302CF1E82342343800277761 /* Arithmatic */,
@@ -236,7 +236,7 @@
 				302CF1EE2342343800277761 /* DataStucture */,
 				302CF1D72342328000277761 /* main.m */,
 			);
-			path = MyStudy;
+			path = DataStructureStudy;
 			sourceTree = "<group>";
 		};
 		302CF1E82342343800277761 /* Arithmatic */ = {
@@ -289,9 +289,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		302CF1D32342328000277761 /* MyStudy */ = {
+		302CF1D32342328000277761 /* DataStructureStudy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 302CF1DB2342328000277761 /* Build configuration list for PBXNativeTarget "MyStudy" */;
+			buildConfigurationList = 302CF1DB2342328000277761 /* Build configuration list for PBXNativeTarget "DataStructureStudy" */;
 			buildPhases = (
 				302CF1D02342328000277761 /* Sources */,
 				302CF1D12342328000277761 /* Frameworks */,
@@ -301,9 +301,9 @@
 			);
 			dependencies = (
 			);
-			name = MyStudy;
+			name = DataStructureStudy;
 			productName = MyStudy;
-			productReference = 302CF1D42342328000277761 /* MyStudy */;
+			productReference = 302CF1D42342328000277761 /* DataStructureStudy */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -321,7 +321,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 302CF1CF2342327F00277761 /* Build configuration list for PBXProject "MyStudy" */;
+			buildConfigurationList = 302CF1CF2342327F00277761 /* Build configuration list for PBXProject "DataStructureStudy" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -333,7 +333,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				302CF1D32342328000277761 /* MyStudy */,
+				302CF1D32342328000277761 /* DataStructureStudy */,
 			);
 		};
 /* End PBXProject section */
@@ -508,7 +508,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		302CF1CF2342327F00277761 /* Build configuration list for PBXProject "MyStudy" */ = {
+		302CF1CF2342327F00277761 /* Build configuration list for PBXProject "DataStructureStudy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				302CF1D92342328000277761 /* Debug */,
@@ -517,7 +517,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		302CF1DB2342328000277761 /* Build configuration list for PBXNativeTarget "MyStudy" */ = {
+		302CF1DB2342328000277761 /* Build configuration list for PBXNativeTarget "DataStructureStudy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				302CF1DC2342328000277761 /* Debug */,

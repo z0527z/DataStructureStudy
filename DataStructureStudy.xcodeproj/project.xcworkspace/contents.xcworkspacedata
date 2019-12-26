@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:MyStudy.xcodeproj">
+      location = "self:/Users/jolin/Documents/GitHub/MyStudy/DataStructureStudy.xcodeproj">
    </FileRef>
 </Workspace>
