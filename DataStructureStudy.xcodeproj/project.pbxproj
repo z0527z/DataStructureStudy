@@ -33,7 +33,10 @@
 		43339EF4234C6B3B005DF1FE /* ReorderOddEven.m in Sources */ = {isa = PBXBuildFile; fileRef = 43339EF3234C6B3B005DF1FE /* ReorderOddEven.m */; };
 		43339EF7234C7CC1005DF1FE /* OutputKthNodeToTail.m in Sources */ = {isa = PBXBuildFile; fileRef = 43339EF6234C7CC1005DF1FE /* OutputKthNodeToTail.m */; };
 		43339EFA234C8888005DF1FE /* ReverseList.m in Sources */ = {isa = PBXBuildFile; fileRef = 43339EF9234C8888005DF1FE /* ReverseList.m */; };
+		4349982D241F871200CB8D3B /* No7_reverseInteger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4349982C241F871200CB8D3B /* No7_reverseInteger.m */; };
 		436101E123AA16A2007ED9BB /* IsSymmetryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 436101E023AA16A2007ED9BB /* IsSymmetryTree.m */; };
+		4385BBF924207B100082D834 /* No9_palindromicNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 4385BBF824207B100082D834 /* No9_palindromicNumber.m */; };
+		4385BBFC242084CF0082D834 /* No26_deleteDuplicateInOrderedArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 4385BBFB242084CF0082D834 /* No26_deleteDuplicateInOrderedArray.m */; };
 		439CC35E234DE72D00DDCC42 /* MergeTwoListToOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 439CC35D234DE72D00DDCC42 /* MergeTwoListToOne.m */; };
 		439CC361234EC9F900DDCC42 /* HasSubTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 439CC360234EC9F900DDCC42 /* HasSubTree.m */; };
 		43C5390E23507B0E0049445B /* MirrorOfBinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C5390D23507B0E0049445B /* MirrorOfBinaryTree.m */; };
@@ -106,8 +109,14 @@
 		43339EF6234C7CC1005DF1FE /* OutputKthNodeToTail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OutputKthNodeToTail.m; sourceTree = "<group>"; };
 		43339EF8234C8888005DF1FE /* ReverseList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseList.h; sourceTree = "<group>"; };
 		43339EF9234C8888005DF1FE /* ReverseList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReverseList.m; sourceTree = "<group>"; };
+		4349982B241F871200CB8D3B /* No7_reverseInteger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = No7_reverseInteger.h; sourceTree = "<group>"; };
+		4349982C241F871200CB8D3B /* No7_reverseInteger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = No7_reverseInteger.m; sourceTree = "<group>"; };
 		436101DF23AA16A2007ED9BB /* IsSymmetryTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IsSymmetryTree.h; sourceTree = "<group>"; };
 		436101E023AA16A2007ED9BB /* IsSymmetryTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IsSymmetryTree.m; sourceTree = "<group>"; };
+		4385BBF724207B100082D834 /* No9_palindromicNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = No9_palindromicNumber.h; sourceTree = "<group>"; };
+		4385BBF824207B100082D834 /* No9_palindromicNumber.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = No9_palindromicNumber.m; sourceTree = "<group>"; };
+		4385BBFA242084CF0082D834 /* No26_deleteDuplicateInOrderedArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = No26_deleteDuplicateInOrderedArray.h; sourceTree = "<group>"; };
+		4385BBFB242084CF0082D834 /* No26_deleteDuplicateInOrderedArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = No26_deleteDuplicateInOrderedArray.m; sourceTree = "<group>"; };
 		439CC35C234DE72D00DDCC42 /* MergeTwoListToOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MergeTwoListToOne.h; sourceTree = "<group>"; };
 		439CC35D234DE72D00DDCC42 /* MergeTwoListToOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MergeTwoListToOne.m; sourceTree = "<group>"; };
 		439CC35F234EC9F900DDCC42 /* HasSubTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HasSubTree.h; sourceTree = "<group>"; };
@@ -231,6 +240,7 @@
 		302CF1D62342328000277761 /* DataStructureStudy */ = {
 			isa = PBXGroup;
 			children = (
+				43499827241F7D0E00CB8D3B /* LeetCode */,
 				302CF1E82342343800277761 /* Arithmatic */,
 				302CF1E92342343800277761 /* CommonTools */,
 				302CF1EE2342343800277761 /* DataStucture */,
@@ -284,6 +294,19 @@
 				303AB70F236421D1005495F1 /* CutRopeForGreatestProduct.m */,
 			);
 			path = "Dynamic&Greedy";
+			sourceTree = "<group>";
+		};
+		43499827241F7D0E00CB8D3B /* LeetCode */ = {
+			isa = PBXGroup;
+			children = (
+				4349982B241F871200CB8D3B /* No7_reverseInteger.h */,
+				4349982C241F871200CB8D3B /* No7_reverseInteger.m */,
+				4385BBF724207B100082D834 /* No9_palindromicNumber.h */,
+				4385BBF824207B100082D834 /* No9_palindromicNumber.m */,
+				4385BBFA242084CF0082D834 /* No26_deleteDuplicateInOrderedArray.h */,
+				4385BBFB242084CF0082D834 /* No26_deleteDuplicateInOrderedArray.m */,
+			);
+			path = LeetCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,10 +374,12 @@
 				302C5A062345DAA500962CCD /* MergeSort.m in Sources */,
 				43C5390E23507B0E0049445B /* MirrorOfBinaryTree.m in Sources */,
 				43339EF4234C6B3B005DF1FE /* ReorderOddEven.m in Sources */,
+				4385BBFC242084CF0082D834 /* No26_deleteDuplicateInOrderedArray.m in Sources */,
 				303933C6236EAAED000A5029 /* CyclePositionInList.m in Sources */,
 				3032ACE92342E4440033098C /* PreInOrderRebuildBinaryTree.m in Sources */,
 				3032ACE22342D55A0033098C /* DJStack.m in Sources */,
 				302FE691235BF10600B3C7D4 /* DJHashMap.m in Sources */,
+				4349982D241F871200CB8D3B /* No7_reverseInteger.m in Sources */,
 				302CF1F6234234C400277761 /* FindNumIn2DArray.m in Sources */,
 				3020C5F623474BCA0009117B /* InsertSort.m in Sources */,
 				3020C5F3234749E30009117B /* SelectSort.m in Sources */,
@@ -374,6 +399,7 @@
 				3032ACE52342D9E20033098C /* PrintListFromTail.m in Sources */,
 				30286462235AE60B00593A13 /* HasPathInMatrix.m in Sources */,
 				43339EF7234C7CC1005DF1FE /* OutputKthNodeToTail.m in Sources */,
+				4385BBF924207B100082D834 /* No9_palindromicNumber.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

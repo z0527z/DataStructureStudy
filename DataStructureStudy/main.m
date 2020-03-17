@@ -34,9 +34,19 @@
 #import "CyclePositionInList.h"
 #import "FindFirstCommonNode.h"
 #import "IsSymmetryTree.h"
+#import "No7_reverseInteger.h"
+#import "No9_palindromicNumber.h"
+#import "No26_deleteDuplicateInOrderedArray.h"
 
-int main(int argc, const char * argv[]) {
+void testLeetCodeProblems()
+{
+    No7_reverseInteger * reverseInteger = [[No7_reverseInteger alloc] init];
+    No9_palindromicNumber * palindromicNumber = [[No9_palindromicNumber alloc] init];
+    No26_deleteDuplicateInOrderedArray * deleteDuplicate = [[No26_deleteDuplicateInOrderedArray alloc] init];
+}
 
+void testCodingInterviews()
+{
     FindNumIn2DArray * find = [[FindNumIn2DArray alloc] init];
     ReplaceBlank * replaceBlank = [[ReplaceBlank alloc] init];
     PrintListFromTail * listTail = [[PrintListFromTail alloc] init];
@@ -64,6 +74,13 @@ int main(int argc, const char * argv[]) {
     CyclePositionInList * cyclePostionInList = [[CyclePositionInList alloc] init];
     FindFirstCommonNode * findFirstCommonNode = [[FindFirstCommonNode alloc] init];
     IsSymmetryTree * isSymmetryTree = [[IsSymmetryTree alloc] init];
+}
+
+int main(int argc, const char * argv[]) {
+
+    testCodingInterviews();
+    
+    testLeetCodeProblems();
     
     printf("\n");
     return 0;
