@@ -9,6 +9,7 @@
 #ifndef StructureDefine_h
 #define StructureDefine_h
 
+#import <Foundation/Foundation.h>
 
 typedef struct ListNode {
     int value;
@@ -31,5 +32,7 @@ typedef struct BinaryTree {
 
 
 ListNode * constructList(int * array, int size);
+
+ListNode * nodeFromValue(int value);
 
 #endif /* StructureDefine_h */
