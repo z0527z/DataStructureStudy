@@ -27,6 +27,7 @@
 		303AB710236421D1005495F1 /* CutRopeForGreatestProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 303AB70F236421D1005495F1 /* CutRopeForGreatestProduct.m */; };
 		303BA707234B38530060E7C5 /* BinaryDigitalCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 303BA706234B38530060E7C5 /* BinaryDigitalCount.m */; };
 		303BA70A234B7C6E0060E7C5 /* DeleteListNodeInConstantTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 303BA709234B7C6E0060E7C5 /* DeleteListNodeInConstantTime.m */; };
+		3041D8AF2422E343008003F7 /* No4_medianOfTwoSortedArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 3041D8AE2422E343008003F7 /* No4_medianOfTwoSortedArray.m */; };
 		3049E72423632C8800411CE8 /* CountSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 3049E72323632C8800411CE8 /* CountSort.m */; };
 		30CDCB95235DDEA000730607 /* NextNodeInBinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CDCB94235DDEA000730607 /* NextNodeInBinaryTree.m */; };
 		4332F7E62370153F0080D998 /* FindFirstCommonNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4332F7E52370153F0080D998 /* FindFirstCommonNode.m */; };
@@ -97,6 +98,8 @@
 		303BA706234B38530060E7C5 /* BinaryDigitalCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BinaryDigitalCount.m; sourceTree = "<group>"; };
 		303BA708234B7C6E0060E7C5 /* DeleteListNodeInConstantTime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeleteListNodeInConstantTime.h; sourceTree = "<group>"; };
 		303BA709234B7C6E0060E7C5 /* DeleteListNodeInConstantTime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeleteListNodeInConstantTime.m; sourceTree = "<group>"; };
+		3041D8AD2422E343008003F7 /* No4_medianOfTwoSortedArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = No4_medianOfTwoSortedArray.h; sourceTree = "<group>"; };
+		3041D8AE2422E343008003F7 /* No4_medianOfTwoSortedArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = No4_medianOfTwoSortedArray.m; sourceTree = "<group>"; };
 		3049E72223632C8800411CE8 /* CountSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountSort.h; sourceTree = "<group>"; };
 		3049E72323632C8800411CE8 /* CountSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountSort.m; sourceTree = "<group>"; };
 		30CDCB93235DDEA000730607 /* NextNodeInBinaryTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextNodeInBinaryTree.h; sourceTree = "<group>"; };
@@ -305,6 +308,8 @@
 				4385BBF824207B100082D834 /* No9_palindromicNumber.m */,
 				4385BBFA242084CF0082D834 /* No26_deleteDuplicateInOrderedArray.h */,
 				4385BBFB242084CF0082D834 /* No26_deleteDuplicateInOrderedArray.m */,
+				3041D8AD2422E343008003F7 /* No4_medianOfTwoSortedArray.h */,
+				3041D8AE2422E343008003F7 /* No4_medianOfTwoSortedArray.m */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -399,6 +404,7 @@
 				3032ACE52342D9E20033098C /* PrintListFromTail.m in Sources */,
 				30286462235AE60B00593A13 /* HasPathInMatrix.m in Sources */,
 				43339EF7234C7CC1005DF1FE /* OutputKthNodeToTail.m in Sources */,
+				3041D8AF2422E343008003F7 /* No4_medianOfTwoSortedArray.m in Sources */,
 				4385BBF924207B100082D834 /* No9_palindromicNumber.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

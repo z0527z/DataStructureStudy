@@ -37,12 +37,14 @@
 #import "No7_reverseInteger.h"
 #import "No9_palindromicNumber.h"
 #import "No26_deleteDuplicateInOrderedArray.h"
+#import "No4_medianOfTwoSortedArray.h"
 
 void testLeetCodeProblems()
 {
     No7_reverseInteger * reverseInteger = [[No7_reverseInteger alloc] init];
     No9_palindromicNumber * palindromicNumber = [[No9_palindromicNumber alloc] init];
     No26_deleteDuplicateInOrderedArray * deleteDuplicate = [[No26_deleteDuplicateInOrderedArray alloc] init];
+    No4_medianOfTwoSortedArray * medianOfTwoSortedArray = [[No4_medianOfTwoSortedArray alloc] init];
 }
 
 void testCodingInterviews()
