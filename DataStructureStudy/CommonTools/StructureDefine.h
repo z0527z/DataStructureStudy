@@ -29,4 +29,7 @@ typedef struct BinaryTree {
     struct BinaryTree * pParrent;
 }BinaryTree;
 
+
+ListNode * constructList(int * array, int size);
+
 #endif /* StructureDefine_h */
