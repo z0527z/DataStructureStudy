@@ -31,8 +31,10 @@ typedef struct BinaryTree {
 }BinaryTree;
 
 
-ListNode * constructList(int * array, int size);
+ListNode * nodeFromArray(int * array, int size);
 
 ListNode * nodeFromValue(int value);
+
+void printListNode(ListNode * head);
 
 #endif /* StructureDefine_h */

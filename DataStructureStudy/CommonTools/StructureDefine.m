@@ -9,7 +9,7 @@
 #import "StructureDefine.h"
 
 
-ListNode * constructList(int * array, int size)
+ListNode * nodeFromArray(int * array, int size)
 {
     if (!array || size <= 0) return NULL;
     ListNode * head = NULL;
@@ -34,5 +34,13 @@ ListNode * nodeFromValue(int value)
     node->value = value;
     node->next = NULL;
     return node;
+}
+
+void printListNode(ListNode * head)
+{
+    while (head) {
+        printf("%d %s", head->value, head->next != NULL ? "->" : "");
+        head = head->next;
+    }
 }
 
