@@ -196,7 +196,7 @@ char * addTwoString(char * num1, char * num2)
 {
     if (!num1) return num2;
     if (!num2) return num1;
-    
+    // 分别计算 num1 和 num2 的长度
     char * p1 = num1, * p2 = num2;
     int n = 0, m = 0;
     while (*p1++ != '\0') n++;
@@ -208,12 +208,14 @@ char * addTwoString(char * num1, char * num2)
     memset(result, 0, maxSize + 1);
     int k = maxSize - 1;
     int i = n - 1, j = m - 1;
+    // 从后往前遍历 num1 和 num2，并对结果赋值到新的字符串
     while (i >= 0 || j >= 0) {
         if (i >= 0) sum += num1[i--] - '0';
         if (j >= 0) sum += num2[j--] - '0';
         result[k--] = sum % 10 + '0';
         sum /= 10;
     }
+    // 处理进位
     if (sum > 0) {
         char * newResult = malloc(maxSize + 2);
         memcpy(newResult + 1, result, maxSize + 1);
@@ -247,6 +249,7 @@ int * addIntergerInArrayForm(int * array, int size, int k, int * returnSize)
     int * result = malloc(sizeof(int) * maxSize);
     int sum = 0;
     m = maxSize;
+    // 从后往前遍历 num1 和 num2，并对结果赋值到新的字符串
     while (i >= 0 || k > 0) {
         if (i >= 0) sum += array[i--];
         if (k > 0) sum += k % 10;
@@ -255,6 +258,7 @@ int * addIntergerInArrayForm(int * array, int size, int k, int * returnSize)
         k /= 10;
         m --;
     }
+    // 处理进位
     if (sum) {
         int * newResult = malloc(sizeof(int) * (maxSize + 1));
         memcpy(newResult + 1, result, maxSize * sizeof(int));
