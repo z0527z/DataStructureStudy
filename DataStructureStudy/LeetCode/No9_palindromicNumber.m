@@ -17,7 +17,8 @@
         int value = 1221;
         bool isPalindromic = isPalindromicNumber(value);
         printf("\n----------- No9_palindromicNumber ----------\n\n");
-        printf("%s\n", isPalindromic == true ? "true" : "false");
+        printf("input: %d\n", value);
+        printf("output: %s\n", isPalindromic == true ? "true" : "false");
     }
     return self;
 }

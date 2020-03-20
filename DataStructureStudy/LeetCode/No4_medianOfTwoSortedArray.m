@@ -7,6 +7,7 @@
 //
 
 #import "No4_medianOfTwoSortedArray.h"
+#import "PrintDefine.h"
 
 @implementation No4_medianOfTwoSortedArray
 
@@ -21,7 +22,11 @@
         double median = medianOfTwoSortedArray(nums1, length1, nums2, length2);
         
         printf("\n----------- No4_medianOfTwoSortedArray ----------\n\n");
-        printf("%g\n", median);
+        printf("input: ");
+        printArray(nums1, length1);
+        printf(",");
+        printArray(nums2, length2);
+        printf("\noutput: %g\n", median);
         
     }
     return self;
@@ -50,7 +55,7 @@ int getKth(int * nums1, int start1, int end1, int * nums2, int start2, int end2,
     if (k == 1) {
         return MIN(nums1[start1], nums2[start2]);
     }
-    
+    // 递归实现二分查找
     int compareIndex1 = start1 + MIN(len1, k/2) - 1;
     int compareIndex2 = start2 + MIN(len2, k/2) - 1;
     if (nums1[compareIndex1] < nums2[compareIndex2]) {

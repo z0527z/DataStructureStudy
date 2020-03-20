@@ -38,9 +38,15 @@ ListNode * nodeFromValue(int value)
 
 void printListNode(ListNode * head)
 {
+    if (!head) {
+        printf(" 0 ");
+        return;
+    }
     while (head) {
         printf("%d %s", head->value, head->next != NULL ? "->" : "");
         head = head->next;
     }
 }
 
+
+#pragma mark - 树

@@ -30,11 +30,14 @@ typedef struct BinaryTree {
     struct BinaryTree * pParrent;
 }BinaryTree;
 
-
+#pragma mark - 链表
 ListNode * nodeFromArray(int * array, int size);
-
 ListNode * nodeFromValue(int value);
 
 void printListNode(ListNode * head);
+
+
+#pragma mark - 树
+
 
 #endif /* StructureDefine_h */

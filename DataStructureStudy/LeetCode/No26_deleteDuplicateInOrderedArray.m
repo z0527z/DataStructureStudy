@@ -7,6 +7,7 @@
 //
 
 #import "No26_deleteDuplicateInOrderedArray.h"
+#import "PrintDefine.h"
 
 @implementation No26_deleteDuplicateInOrderedArray
 
@@ -17,22 +18,16 @@
         int array[] = {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
         int length = sizeof(array) / sizeof(array[0]);
         printf("\n--------- No26_deleteDuplicateInOrderedArray --------\n\n");
-        printArray(array, length, true);
-        
+        printf("input:  ");
+        printArray(array, length);
+        printf("===> %d\n", length);
         int nLength = deleteDuplicateInOrderedArray(array, length);
-        printArray(array, nLength, false);
+        printf("output: ");
+        printArray(array, nLength);
+        printf("===> %d\n", nLength);
         
     }
     return self;
-}
-
-void printArray(int * array, int length, bool isInput)
-{
-    printf("%s: %d ==> [", isInput ? "input" : "output", length);
-    for (int i = 0; i < length; i ++) {
-        i == length -1 ? printf("%d", array[i]) : printf("%d,", array[i]);
-    }
-    printf("]\n");
 }
 
 int deleteDuplicateInOrderedArray(int * array, int length)

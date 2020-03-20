@@ -16,7 +16,7 @@
         int origin = -123;
         int value = reverseInteger(origin);
         printf("\n----------- No7_reverseInteger ----------\n\n");
-        printf("%d, %d\n", origin, value);
+        printf("input: %d\noutput: %d\n", origin, value);
         
     }
     return self;
