@@ -235,6 +235,7 @@ void testAddIntergerInArrayForm()
     int * result = addIntergerInArrayForm(array, size, k, &returnSize);
     printf("arrayForm: ");
     printArray(result, returnSize);
+    printf("\n");
 }
 
 int * addIntergerInArrayForm(int * array, int size, int k, int * returnSize)

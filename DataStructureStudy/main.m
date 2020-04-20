@@ -39,6 +39,7 @@
 #import "No26_deleteDuplicateInOrderedArray.h"
 #import "No4_medianOfTwoSortedArray.h"
 #import "No2_addTwoNumbers.h"
+#import "No3_findLonggestSubStringWithoutRepeating.h"
 
 void testLeetCodeProblems()
 {
@@ -47,6 +48,7 @@ void testLeetCodeProblems()
     No26_deleteDuplicateInOrderedArray * deleteDuplicate = [[No26_deleteDuplicateInOrderedArray alloc] init];
     No4_medianOfTwoSortedArray * medianOfTwoSortedArray = [[No4_medianOfTwoSortedArray alloc] init];
     No2_addTwoNumbers * addTwoNumbers = [[No2_addTwoNumbers alloc] init];
+    No3_findLonggestSubStringWithoutRepeating * findLonggestSubString = [[No3_findLonggestSubStringWithoutRepeating alloc] init];
 }
 
 void testCodingInterviews()

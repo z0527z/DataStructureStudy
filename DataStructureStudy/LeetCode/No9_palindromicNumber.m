@@ -30,7 +30,7 @@ bool isPalindromicNumber(int number)
     }
     
     int reverseNumber = 0;
-    // 反转一半，对于整合来说意味着 >
+    // 反转一半，对于整数来说意味着 >
     while (number > reverseNumber) {
         reverseNumber = reverseNumber * 10 + number % 10;
         number /= 10;
