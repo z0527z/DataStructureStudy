@@ -70,7 +70,7 @@ ListNode * findKthNodeToTail(ListNode * head, int k)
             return NULL;
         }
     }
-    
+    // p1、p2之间相隔 k-1 步
     while (p1->next) {
         p1 = p1->next;
         p2 = p2->next;

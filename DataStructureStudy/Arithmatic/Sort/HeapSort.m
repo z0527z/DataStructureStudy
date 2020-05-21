@@ -68,7 +68,7 @@ void maxHeapify(int * array, int begin, int end)
         if (son + 1 <= end && array[son] < array[son + 1]) {
             son ++;
         }
-        //父节点和最大值得孩子节点进行比较
+        //父节点和最大值的孩子节点进行比较
         if (array[dad] >= array[son]) {
             return;
         }
