@@ -37,7 +37,7 @@ void DJHeapSort(int * array, int begin, int end)
 //        minHeapify(array, i, end);
     }
     
-    // 交换堆顶和最后一个元素的位置
+    // 交换堆顶和第一个元素的位置
     for (int i = end; i > begin; i --) {
         int temp = array[i];
         array[i] = array[begin];
