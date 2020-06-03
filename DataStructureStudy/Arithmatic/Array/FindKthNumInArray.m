@@ -13,7 +13,7 @@
 - (instancetype)init
 {
     if (self = [super init]) {
-        getInputFromConsole();
+//        getInputFromConsole();
     }
     return self;
 }
@@ -22,8 +22,9 @@ void getInputFromConsole(void)
 {
     // 接收控制台输入
     int arrayLength = 0, k = 0;
+    printf("\n------------ FindKthNumInArray ----------\n\n");
     puts("\n请输入数组的长度和k的大小:");
-    scanf("%d %d", &arrayLength, &k);
+    scanf("%*c%d%*c%d", &arrayLength, &k);
     if (arrayLength <= 0 || k <= 0 || k >= arrayLength) return;
 
     int * array = malloc(sizeof(int) * arrayLength);
@@ -39,6 +40,7 @@ void getInputFromConsole(void)
             p++;
         }
     } while (c != '\n' || (p - array) < k);
+    
 
     
 //    int kthNum = findAllNumsToKByAscendingOrderInUnsortedArray(array, 0, arrayLength - 1, k - 1);

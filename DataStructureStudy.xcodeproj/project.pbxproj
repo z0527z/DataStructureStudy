@@ -31,6 +31,7 @@
 		3049C21B24260AFB0090A5F4 /* No3_longestSubString.m in Sources */ = {isa = PBXBuildFile; fileRef = 3049C21A24260AFB0090A5F4 /* No3_longestSubString.m */; };
 		3049E72423632C8800411CE8 /* CountSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 3049E72323632C8800411CE8 /* CountSort.m */; };
 		304C84B72475711E00396841 /* FindKthNumInArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 304C84B62475711E00396841 /* FindKthNumInArray.m */; };
+		305B68E82487D08F00CF4D5E /* FindLowestCommonAncestor.m in Sources */ = {isa = PBXBuildFile; fileRef = 305B68E72487D08F00CF4D5E /* FindLowestCommonAncestor.m */; };
 		30CDCB95235DDEA000730607 /* NextNodeInBinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CDCB94235DDEA000730607 /* NextNodeInBinaryTree.m */; };
 		4332F7E62370153F0080D998 /* FindFirstCommonNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4332F7E52370153F0080D998 /* FindFirstCommonNode.m */; };
 		43339EF4234C6B3B005DF1FE /* ReorderOddEven.m in Sources */ = {isa = PBXBuildFile; fileRef = 43339EF3234C6B3B005DF1FE /* ReorderOddEven.m */; };
@@ -112,6 +113,8 @@
 		3049E72323632C8800411CE8 /* CountSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountSort.m; sourceTree = "<group>"; };
 		304C84B52475711E00396841 /* FindKthNumInArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindKthNumInArray.h; sourceTree = "<group>"; };
 		304C84B62475711E00396841 /* FindKthNumInArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindKthNumInArray.m; sourceTree = "<group>"; };
+		305B68E62487D08F00CF4D5E /* FindLowestCommonAncestor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindLowestCommonAncestor.h; sourceTree = "<group>"; };
+		305B68E72487D08F00CF4D5E /* FindLowestCommonAncestor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindLowestCommonAncestor.m; sourceTree = "<group>"; };
 		30CDCB93235DDEA000730607 /* NextNodeInBinaryTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextNodeInBinaryTree.h; sourceTree = "<group>"; };
 		30CDCB94235DDEA000730607 /* NextNodeInBinaryTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextNodeInBinaryTree.m; sourceTree = "<group>"; };
 		4332F7E42370153F0080D998 /* FindFirstCommonNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindFirstCommonNode.h; sourceTree = "<group>"; };
@@ -190,6 +193,8 @@
 				30CDCB94235DDEA000730607 /* NextNodeInBinaryTree.m */,
 				436101DF23AA16A2007ED9BB /* IsSymmetryTree.h */,
 				436101E023AA16A2007ED9BB /* IsSymmetryTree.m */,
+				305B68E62487D08F00CF4D5E /* FindLowestCommonAncestor.h */,
+				305B68E72487D08F00CF4D5E /* FindLowestCommonAncestor.m */,
 			);
 			path = Tree;
 			sourceTree = "<group>";
@@ -407,6 +412,7 @@
 				3021D45C2348355D007EDB4C /* Fibonacci.m in Sources */,
 				302C5A062345DAA500962CCD /* MergeSort.m in Sources */,
 				43C5390E23507B0E0049445B /* MirrorOfBinaryTree.m in Sources */,
+				305B68E82487D08F00CF4D5E /* FindLowestCommonAncestor.m in Sources */,
 				43339EF4234C6B3B005DF1FE /* ReorderOddEven.m in Sources */,
 				4385BBFC242084CF0082D834 /* No26_deleteDuplicateInOrderedArray.m in Sources */,
 				3049C21B24260AFB0090A5F4 /* No3_longestSubString.m in Sources */,

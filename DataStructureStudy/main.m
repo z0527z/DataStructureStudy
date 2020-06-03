@@ -42,6 +42,7 @@
 #import "No3_longestSubString.h"
 #import "FindKthNumInArray.h"
 #import "No3_findLonggestSubStringWithoutRepeating.h"
+#import "FindLowestCommonAncestor.h"
 
 void testLeetCodeProblems()
 {
@@ -50,7 +51,6 @@ void testLeetCodeProblems()
     No26_deleteDuplicateInOrderedArray * deleteDuplicate = [[No26_deleteDuplicateInOrderedArray alloc] init];
     No4_medianOfTwoSortedArray * medianOfTwoSortedArray = [[No4_medianOfTwoSortedArray alloc] init];
     No2_addTwoNumbers * addTwoNumbers = [[No2_addTwoNumbers alloc] init];
-    FindKthNumInArray * findKthNmberInArray = [[FindKthNumInArray alloc] init];
     No3_findLonggestSubStringWithoutRepeating * findLonggestSubString = [[No3_findLonggestSubStringWithoutRepeating alloc] init];
 }
 
@@ -83,6 +83,8 @@ void testCodingInterviews()
     CyclePositionInList * cyclePostionInList = [[CyclePositionInList alloc] init];
     FindFirstCommonNode * findFirstCommonNode = [[FindFirstCommonNode alloc] init];
     IsSymmetryTree * isSymmetryTree = [[IsSymmetryTree alloc] init];
+    FindKthNumInArray * findKthNmberInArray = [[FindKthNumInArray alloc] init];
+    FindLowestCommonAncestor * findLowestCommonAncestor = [[FindLowestCommonAncestor alloc] init];
 }
 
 int main(int argc, const char * argv[]) {
