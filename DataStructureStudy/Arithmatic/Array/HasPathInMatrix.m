@@ -62,6 +62,7 @@ bool hasPathInMatrix(char * matrix, int rows, int columns, char * str)
     for (int i = 0; i < rows; i ++) {
         for (int j = 0; j < columns; j ++) {
             if (hasPathCore(matrix, rows, columns, i, j, &pathLength, str, visited)) {
+                free(visited);
                 return true;
             }
         }

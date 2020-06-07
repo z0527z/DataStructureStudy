@@ -41,6 +41,14 @@
             p = p->next;
         }
         printf("\n");
+        
+        // 回收内存
+        p = head;
+        while (p) {
+            ListNode * temp = p;
+            p = p->next;
+            free(temp);
+        }
     }
     return self;
 }
