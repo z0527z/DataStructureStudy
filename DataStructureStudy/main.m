@@ -43,6 +43,7 @@
 #import "FindKthNumInArray.h"
 #import "No3_findLonggestSubStringWithoutRepeating.h"
 #import "FindLowestCommonAncestor.h"
+#import "FindTreePathEqualToAnInteger.h"
 
 void testLeetCodeProblems()
 {
@@ -85,6 +86,7 @@ void testCodingInterviews()
     IsSymmetryTree * isSymmetryTree = [[IsSymmetryTree alloc] init];
     FindKthNumInArray * findKthNmberInArray = [[FindKthNumInArray alloc] init];
     FindLowestCommonAncestor * findLowestCommonAncestor = [[FindLowestCommonAncestor alloc] init];
+    FindTreePathEqualToAnInteger * findTreePath = [[FindTreePathEqualToAnInteger alloc] init];
 }
 
 int main(int argc, const char * argv[]) {
