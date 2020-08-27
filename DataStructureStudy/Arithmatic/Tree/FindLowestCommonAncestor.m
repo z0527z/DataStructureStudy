@@ -15,6 +15,16 @@
 {
     if (self = [super init]) {
         
+        /*
+                 1
+               /   \
+              2     3
+             / \   / \
+            4   5 6   7
+                     /
+                    8
+         */
+        
         // 构造一棵二叉树
         BinaryTree * rootNode = malloc(sizeof(BinaryTree));
         rootNode->value = 1;
@@ -60,15 +70,48 @@
         left4->pParrent = right3;
         left4->pLeft = NULL;
         left4->pRight = NULL;
-        
         right3->pLeft = left4;
+        
+        BinaryTree * param1 = right2;
+        BinaryTree * param2 = left4;
+        int value = findLowestCommonAncestor(param1, param2);
+        printf("\n--------- findLowestCommonAncestor ---------\n\n");
+        printf("[%d, %d] => %d\n", param1->value, param2->value, value);
     }
     return self;
 }
 
-void findLowestCommonAncestor(BinaryTree * node1, BinaryTree * node2)
+int findLowestCommonAncestor(BinaryTree * node1, BinaryTree * node2)
 {
+    if (!node1 || !node2) return 0;
     
+    int value[20];
+    int i = 0;
+    int tmp[20];
+    int j = 0;
+    BinaryTree * p1 = node1;
+    while (p1) {
+        value[i++] = p1->value;
+        p1 = p1->pParrent;
+    }
+    BinaryTree * p2 = node2->pParrent;
+    while (p2) {
+        tmp[j++] = p2->value;
+        p2 = p2->pParrent;
+    }
+    int m = i, n = j;
+    for ( ;m >= 0 && n >= 0; m--, n--) {
+        if (value[m] != 0 && tmp[n] != 0 && value[m] != tmp[n]) {
+            break;
+        }
+    }
+    
+    if (m == i && n == j) {
+        return 0;
+    }
+    else {
+        return value[m + 1];
+    }
 }
 
 @end
