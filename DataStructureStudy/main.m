@@ -44,6 +44,7 @@
 #import "No3_findLonggestSubStringWithoutRepeating.h"
 #import "FindLowestCommonAncestor.h"
 #import "FindTreePathEqualToAnInteger.h"
+#import "RegexMatch.h"
 
 void testLeetCodeProblems()
 {
@@ -87,6 +88,7 @@ void testCodingInterviews()
     FindKthNumInArray * findKthNmberInArray = [[FindKthNumInArray alloc] init];
     FindLowestCommonAncestor * findLowestCommonAncestor = [[FindLowestCommonAncestor alloc] init];
     FindTreePathEqualToAnInteger * findTreePath = [[FindTreePathEqualToAnInteger alloc] init];
+    RegexMatch * regexMatch = [[RegexMatch alloc] init];
 }
 
 int main(int argc, const char * argv[]) {
