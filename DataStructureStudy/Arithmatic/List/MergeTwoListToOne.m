@@ -86,7 +86,7 @@ ListNode * noneRecursiveMergeTwoAscendingListInToAscendingOne(ListNode * head1, 
             mergePtr->next = *temp;
             mergePtr = mergePtr->next;
         }
-        // 取出几点的链表更新节点到下一个
+        // 取出节点的链表更新节点到下一个
         *temp = (*temp)->next;
     }
     // 如果链表1中有剩余的节点，则添加到合并链表来

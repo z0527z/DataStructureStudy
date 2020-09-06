@@ -78,14 +78,8 @@ void composeBinaryTreeHasParentNode() {
     left4->pRight = NULL;
     right3->pLeft = left4;
     
-    BinaryTree * otherTree = malloc(sizeof(BinaryTree));
-    otherTree->value = 9;
-    otherTree->pLeft = right3;
-    otherTree->pRight = NULL;
-    otherTree->pParrent = NULL;
-    
     BinaryTree * param1 = left4;
-    BinaryTree * param2 = otherTree;
+    BinaryTree * param2 = right2;
     int value = findLowestCommonAncestor(param1, param2);
     printf("\n--------- findLowestCommonAncestor ---------\n\n");
     if (value >= 0) {

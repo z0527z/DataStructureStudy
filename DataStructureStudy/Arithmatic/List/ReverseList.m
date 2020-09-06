@@ -29,7 +29,8 @@
         }
         
 //        ListNode * list = reverseWholeList(head);
-        ListNode * list = reverseGroupElementForK(head, 3);
+//        ListNode * list = reverseGroupElementForK(head, 3);
+        ListNode * list = reverseWholeListRecursive(head);
         
         printf("\n------------ ReverseList ------------\n\n");
         while (list) {
@@ -67,6 +68,17 @@ ListNode * reverseWholeList(ListNode * head)
         reverseHead = tempNode;
     }
     return reverseHead;
+}
+
+ListNode * reverseWholeListRecursive(ListNode * head) {
+    // 链表节点为空或者单节点链表
+    if (!head || head->next == NULL) return head;
+    // 递归反转子链表
+    ListNode * newHead = reverseWholeListRecursive(head->next);
+    ListNode * tmp = head->next;
+    tmp->next = head;
+    head->next = NULL;
+    return newHead;
 }
 
 /// 反转链表变形:

@@ -16,7 +16,7 @@
     if (self = [super init]) {
         
         ListNode * head = malloc(sizeof(ListNode));
-        head->value = 1;
+        head->value = 2;
         head->next = NULL;
         
         ListNode * p = malloc(sizeof(ListNode));
@@ -50,8 +50,8 @@
         p5->next = NULL;
         p4->next = p5;
         
-        removeAllRepeatListNode(&head);
-//        keepOneOnRepeatListNode(head);
+//        removeAllRepeatListNode(&head);
+        keepOneOnRepeatListNode(head);
         printf("\n------------ RemoveRepeatListNode ----------\n\n");
         while (head) {
             printf("%d ", head->value);

@@ -63,7 +63,7 @@ ListNode * cyclePostionInList(ListNode * head)
     ListNode * secondPtr = head;
     bool isCycled = false;
     
-    // 查找是否有环，使用一块一慢两个指针，检测是否相交
+    // 查找是否有环，使用一快一慢两个指针，检测是否相交
     while (firstPtr && secondPtr) {
         firstPtr = firstPtr->next;
         if (!secondPtr->next->next) return NULL;
