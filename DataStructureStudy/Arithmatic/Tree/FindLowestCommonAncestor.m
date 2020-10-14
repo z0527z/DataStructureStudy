@@ -145,6 +145,8 @@ void composeBinaryTreeWithoutParentNode() {
     
     TreeNode * left3 = malloc(sizeof(TreeNode));
     left3->value = 6;
+    left3->pLeft = NULL;
+    left3->pRight = NULL;
     right1->pLeft = left3;
     
     TreeNode * right3 = malloc(sizeof(TreeNode));
