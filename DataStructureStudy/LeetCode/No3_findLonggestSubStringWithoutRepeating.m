@@ -23,8 +23,7 @@
     return self;
 }
 
-int findLonggestSubStringWithoutRepeating(char * s)
-{
+int findLonggestSubStringWithoutRepeating(char * s) {
     if (!s) return 0;
     
     int len = 0;

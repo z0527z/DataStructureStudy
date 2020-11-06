@@ -39,12 +39,12 @@
 #import "No26_deleteDuplicateInOrderedArray.h"
 #import "No4_medianOfTwoSortedArray.h"
 #import "No2_addTwoNumbers.h"
-#import "No3_longestSubString.h"
 #import "FindKthNumInArray.h"
 #import "No3_findLonggestSubStringWithoutRepeating.h"
 #import "FindLowestCommonAncestor.h"
 #import "FindTreePathEqualToAnInteger.h"
 #import "RegexMatch.h"
+#import "FindMinNumInRotateArray.h"
 
 void testLeetCodeProblems()
 {
@@ -89,6 +89,8 @@ void testCodingInterviews()
     FindLowestCommonAncestor * findLowestCommonAncestor = [[FindLowestCommonAncestor alloc] init];
     FindTreePathEqualToAnInteger * findTreePath = [[FindTreePathEqualToAnInteger alloc] init];
     RegexMatch * regexMatch = [[RegexMatch alloc] init];
+    FindMinNumInRotateArray * findMinNum = [[FindMinNumInRotateArray alloc] init];
+    
 }
 
 int main(int argc, const char * argv[]) {

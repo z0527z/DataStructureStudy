@@ -14,7 +14,7 @@
 - (instancetype)init
 {
     if (self = [super init]) {
-        // [1,1,2] --> 2, [1, 2, 1]
+        // [1,1,2] --> 2, [1, 2, 2]
         int array[] = {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
         int length = sizeof(array) / sizeof(array[0]);
         printf("\n--------- No26_deleteDuplicateInOrderedArray --------\n\n");
