@@ -16,6 +16,15 @@
 {
     if (self = [super init]) {
         
+        /*
+                1
+              /   \
+             2     6
+            / \   /
+           3   4 7
+         
+         */
+        
         BinaryTree * root = malloc(sizeof(BinaryTree));
         root->value = 1;
         root->pParrent = NULL;
@@ -33,8 +42,15 @@
         BinaryTree * right6 = malloc(sizeof(BinaryTree));
         right6->value = 6;
         right6->pParrent = root;
-        right6->pLeft = NULL;
         right6->pRight = NULL;
+        
+        BinaryTree * left7 = malloc(sizeof(BinaryTree));
+        left7->value = 7;
+        left7->pParrent = right6;
+        left7->pLeft = NULL;
+        left7->pRight = NULL;
+        
+        right6->pLeft = left7;
         
         root->pRight = right6;
         
@@ -55,7 +71,7 @@
         left1->pRight = right1;
         
         BinaryTree * nextNodeInInOrder = nextNodeInInOrderBinaryTreeTraverse(left1);
-        BinaryTree * nextNodeInPreOrder = nextNodeInPreOrderBinaryTreeTraverse(left1);
+        BinaryTree * nextNodeInPreOrder = nextNodeInPreOrderBinaryTreeTraverse(left7);
         BinaryTree * nextNodeInPostOrder = nextNodeInPostOrderBinaryTreeTraverse(left1);
         
         printf("\n-------- NextNodeInBinaryTree --------\n\n");

@@ -28,7 +28,10 @@
             p = p->next;
         }
         
-        printListFromTail(head);
+        printf("\n--------- PrintListFromTail ---------\n\n");
+//        printListFromTail(head);
+        printListFromTailRecursive(head);
+        printf("\n");
     }
     return self;
 }
@@ -46,12 +49,18 @@ void printListFromTail(ListNode * node)
         head = head->next;
     }
     
-    printf("\n--------- PrintListFromTail ---------\n\n");
     while (!stack.empty) {
         ListNode * p = stack.pop;
         printf("%d ", p->value);
     }
-    printf("\n");
+}
+
+
+void printListFromTailRecursive(ListNode * node) {
+    if (!node) return;
+    
+    printListFromTailRecursive(node->next);
+    printf("%d ", node->value);
 }
 
 @end

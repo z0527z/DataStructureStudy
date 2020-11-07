@@ -67,11 +67,12 @@ void quickSort(int * array, int begin, int end)
         }
         // 将节点交换到中间
         array[left] = jie;
-        
-        // 左右分别进行递归
-        quickSort(array, begin, left - 1);
-        quickSort(array, left + 1, end);
     }
+    
+    // 左右分别进行递归
+    quickSort(array, begin, left - 1);
+    quickSort(array, left + 1, end);
+
 }
 
 @end
