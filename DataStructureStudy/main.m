@@ -45,6 +45,7 @@
 #import "FindTreePathEqualToAnInteger.h"
 #import "RegexMatch.h"
 #import "FindMinNumInRotateArray.h"
+#import "RepeatedSubStrPattern.h"
 
 void testLeetCodeProblems()
 {
@@ -90,6 +91,7 @@ void testCodingInterviews()
     FindTreePathEqualToAnInteger * findTreePath = [[FindTreePathEqualToAnInteger alloc] init];
     RegexMatch * regexMatch = [[RegexMatch alloc] init];
     FindMinNumInRotateArray * findMinNum = [[FindMinNumInRotateArray alloc] init];
+    RepeatedSubStrPattern * repeatedSubStr = [[RepeatedSubStrPattern alloc] init];
     
 }
 
