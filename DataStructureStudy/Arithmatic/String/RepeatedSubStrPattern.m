@@ -37,7 +37,7 @@ bool repeatedSubstrPattern(char * str) {
         }
         else {
             int l = (int)(p2 - p1);
-            subStr = malloc(sizeof(l) + 1);
+            subStr = malloc(l + 1);
             strncpy(subStr, str, l);
             break;
         }
