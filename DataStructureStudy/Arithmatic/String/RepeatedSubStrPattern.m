@@ -23,6 +23,7 @@
 }
 
 #if 1
+#pragma mark - 方案1
 bool repeatedSubstrPattern(char * str) {
     if (!str) return false;
     
@@ -60,6 +61,54 @@ bool repeatedSubstrPattern(char * str) {
 
 #else
 
+int * nextArray(char * pattern) {
+    if (!pattern) return NULL;
+    
+    int len = (int)strlen(pattern);
+    int * nextArray = malloc(sizeof(int) * (len + 1));
+    nextArray[0] = -1;
+    int k = -1;
+    int j = 0;
+    
+    while (j < len - 1) {
+        if (k == -1 || nextArray[j] == nextArray[k]) {
+            if (pattern[++j]  == pattern[++k]) { // 当两个字符相等时要跳过
+                nextArray[j] = nextArray[k];
+            }
+            else {
+                nextArray[j] = k;
+            }
+        }
+        else {
+            k = nextArray[k];
+        }
+    }
+    return nextArray;
+}
+
+int kmp(char * str, char * pattern) {
+    int * next = nextArray(pattern);
+    int j = 0; // 主串的位置
+    int k = 0; // 模式串的位置
+    int len = (int)strlen(str);
+    int pLen = (int)strlen(pattern);
+    while (j < len && k < pLen) {
+        if (k == -1 || str[j] == pattern[k]) {
+            j++;
+            k++;
+        }
+        else {
+            k = next[k];
+        }
+    }
+    free(next);
+    if (k == pLen) {
+        return j - k;
+    }
+    else {
+        return -1;
+    }
+}
 
 
 #endif
