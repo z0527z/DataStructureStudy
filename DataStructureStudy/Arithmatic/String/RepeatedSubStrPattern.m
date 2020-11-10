@@ -13,7 +13,7 @@
 - (instancetype)init {
     if (self = [super init]) {
         
-        char * str = "abcabc";
+        char * str = "abaababaab";
         bool flag = repeatedSubstrPattern(str);
         printf("\n---------- RepeatedSubStrPattern ---------\n\n");
         printf("%s\n", flag ? "true" : "false");
@@ -22,56 +22,45 @@
     return self;
 }
 
+#if 1
 bool repeatedSubstrPattern(char * str) {
     if (!str) return false;
     
+    // 构造两个 str 相加后首位各减去一个的新串
     int len = (int)strlen(str);
-    char * p1 = str;
-    char * p2 = p1 + 1;
-    char * subStr = NULL;
-    bool isRepeated = true;
+    int compundLen = 2 * len - 2;
+    char * compoundStr = malloc(compundLen + 1);
+    strncpy(compoundStr, str + 1, len - 1);
+    strncpy(compoundStr + len - 1, str, len - 1);
+    compoundStr[compundLen] = '\0';
+    printf("%s", compoundStr);
     
-    for (int i = 0; i < len; i ++) {
-        if (*p1 != *p2) {
-            p2++;
-        }
-        else {
-            int l = (int)(p2 - p1);
-            subStr = malloc(l + 1);
-            strncpy(subStr, str, l);
-            break;
-        }
-    }
-    
-    if (subStr) {
-        while (*p2 != '\0') {
-            isRepeated = containSubStr(p2, subStr);
-            if (!isRepeated) {
+    bool ret = false;
+    // 检查构造的中是否含有str
+    int m = compundLen - len > 0 ? compundLen - len : 1;
+    for (int i = 0; i < compundLen; i ++) {
+        char * p = compoundStr + i;
+        bool dismatch = false;
+        for (int j = 0; j < len; j ++) {
+            if (str[j] != *p++) {
+                dismatch = true;
                 break;
             }
-            p2 += strlen(subStr);
         }
-        free(subStr);
-    }
-    else {
-        isRepeated = false;
-    }
-    
-    return isRepeated;
-}
-
-bool containSubStr(char * str, char * subStr) {
-    if (!str || !subStr) return false;
-    
-    int len = (int)MIN(strlen(str), strlen(subStr));
-    bool isContain = true;
-    for (int i = 0; i < len; i ++) {
-        if (str[i] != subStr[i]) {
-            isContain = false;
+        if (!dismatch) {
+            ret = true;
             break;
         }
     }
-    return isContain;
+    
+    free(compoundStr);
+    
+    return ret;
 }
 
+#else
+
+
+
+#endif
 @end
