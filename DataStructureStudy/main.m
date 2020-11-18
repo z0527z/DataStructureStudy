@@ -6,6 +6,7 @@
 //  Copyright © 2019年 jolin. All rights reserved.
 //
 
+#import <mach-o/dyld.h>
 #import <Foundation/Foundation.h>
 #import "FindNumIn2DArray.h"
 #import "ReplaceBlank.h"
@@ -46,6 +47,7 @@
 #import "RegexMatch.h"
 #import "FindMinNumInRotateArray.h"
 #import "RepeatedSubStrPattern.h"
+#import "No5_LongestPalindromicSubstring.h"
 
 void testLeetCodeProblems()
 {
@@ -55,6 +57,7 @@ void testLeetCodeProblems()
     No4_medianOfTwoSortedArray * medianOfTwoSortedArray = [[No4_medianOfTwoSortedArray alloc] init];
     No2_addTwoNumbers * addTwoNumbers = [[No2_addTwoNumbers alloc] init];
     No3_findLonggestSubStringWithoutRepeating * findLonggestSubString = [[No3_findLonggestSubStringWithoutRepeating alloc] init];
+    No5_LongestPalindromicSubstring * longgestPalindromicSubString = [[No5_LongestPalindromicSubstring alloc] init];
 }
 
 void testCodingInterviews()
@@ -100,6 +103,7 @@ int main(int argc, const char * argv[]) {
     testCodingInterviews();
     
     testLeetCodeProblems();
+    
     
     printf("\n");
     return 0;
