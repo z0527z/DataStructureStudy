@@ -98,12 +98,21 @@ void testCodingInterviews()
     
 }
 
+void generalLoadCls() {
+    const char * name = _dyld_get_image_name(0);
+    char * p = (char *)name;
+    printf("%s", p);
+}
+
 int main(int argc, const char * argv[]) {
 
     testCodingInterviews();
     
     testLeetCodeProblems();
     
+    generalLoadCls();
+
+
     
     printf("\n");
     return 0;
