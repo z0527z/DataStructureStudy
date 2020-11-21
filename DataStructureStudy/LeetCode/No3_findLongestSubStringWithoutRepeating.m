@@ -1,14 +1,14 @@
 //
-//  No3_findLonggestSubStringWithoutRepeating.m
+//  No3_findLongestSubStringWithoutRepeating.m
 //  DataStructureStudy
 //
 //  Created by jolin.ding on 2020/4/20.
 //  Copyright © 2020 jolin. All rights reserved.
 //
 
-#import "No3_findLonggestSubStringWithoutRepeating.h"
+#import "No3_findLongestSubStringWithoutRepeating.h"
 
-@implementation No3_findLonggestSubStringWithoutRepeating
+@implementation No3_findLongestSubStringWithoutRepeating
 
 - (instancetype)init
 {

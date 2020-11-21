@@ -41,7 +41,7 @@
 #import "No4_medianOfTwoSortedArray.h"
 #import "No2_addTwoNumbers.h"
 #import "FindKthNumInArray.h"
-#import "No3_findLonggestSubStringWithoutRepeating.h"
+#import "No3_findLongestSubStringWithoutRepeating.h"
 #import "FindLowestCommonAncestor.h"
 #import "FindTreePathEqualToAnInteger.h"
 #import "RegexMatch.h"
@@ -49,6 +49,7 @@
 #import "RepeatedSubStrPattern.h"
 #import "No5_LongestPalindromicSubstring.h"
 #import "No8_StringToInteger.h"
+#import "No14_LongestCommonPrefixInArray.h"
 
 void testLeetCodeProblems()
 {
@@ -57,9 +58,10 @@ void testLeetCodeProblems()
     No26_deleteDuplicateInOrderedArray * deleteDuplicate = [[No26_deleteDuplicateInOrderedArray alloc] init];
     No4_medianOfTwoSortedArray * medianOfTwoSortedArray = [[No4_medianOfTwoSortedArray alloc] init];
     No2_addTwoNumbers * addTwoNumbers = [[No2_addTwoNumbers alloc] init];
-    No3_findLonggestSubStringWithoutRepeating * findLonggestSubString = [[No3_findLonggestSubStringWithoutRepeating alloc] init];
+    No3_findLongestSubStringWithoutRepeating * findLonggestSubString = [[No3_findLongestSubStringWithoutRepeating alloc] init];
     No5_LongestPalindromicSubstring * longgestPalindromicSubString = [[No5_LongestPalindromicSubstring alloc] init];
     No8_StringToInteger * stringToInteger = [[No8_StringToInteger alloc] init];
+    No14_LongestCommonPrefixInArray * longestCommonPrefix = [[No14_LongestCommonPrefixInArray alloc] init];
 }
 
 void testCodingInterviews()

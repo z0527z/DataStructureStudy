@@ -1,5 +1,5 @@
 //
-//  No3_findLonggestSubStringWithoutRepeating.h
+//  No3_findLongestSubStringWithoutRepeating.h
 //  DataStructureStudy
 //
 //  Created by jolin.ding on 2020/4/20.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface No3_findLonggestSubStringWithoutRepeating : NSObject
+@interface No3_findLongestSubStringWithoutRepeating : NSObject
 
 @end
 

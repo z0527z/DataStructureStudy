@@ -50,7 +50,8 @@
 		43935495255149DF00A40F52 /* FindMinNumInRotateArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 43935494255149DF00A40F52 /* FindMinNumInRotateArray.m */; };
 		439CC35E234DE72D00DDCC42 /* MergeTwoListToOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 439CC35D234DE72D00DDCC42 /* MergeTwoListToOne.m */; };
 		439CC361234EC9F900DDCC42 /* HasSubTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 439CC360234EC9F900DDCC42 /* HasSubTree.m */; };
-		439D822A244D848200A8DBC2 /* No3_findLonggestSubStringWithoutRepeating.m in Sources */ = {isa = PBXBuildFile; fileRef = 439D8229244D848200A8DBC2 /* No3_findLonggestSubStringWithoutRepeating.m */; };
+		439D822A244D848200A8DBC2 /* No3_findLongestSubStringWithoutRepeating.m in Sources */ = {isa = PBXBuildFile; fileRef = 439D8229244D848200A8DBC2 /* No3_findLongestSubStringWithoutRepeating.m */; };
+		439E7D0625691A6D00A040A9 /* No14_LongestCommonPrefixInArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 439E7D0525691A6D00A040A9 /* No14_LongestCommonPrefixInArray.m */; };
 		43C5390E23507B0E0049445B /* MirrorOfBinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C5390D23507B0E0049445B /* MirrorOfBinaryTree.m */; };
 		43C53911235167AC0049445B /* RemoveRepeatListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C53910235167AC0049445B /* RemoveRepeatListNode.m */; };
 		43E5355624FA2CBE000DF579 /* RegexMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E5355524FA2CBE000DF579 /* RegexMatch.m */; };
@@ -155,8 +156,10 @@
 		439CC35D234DE72D00DDCC42 /* MergeTwoListToOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MergeTwoListToOne.m; sourceTree = "<group>"; };
 		439CC35F234EC9F900DDCC42 /* HasSubTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HasSubTree.h; sourceTree = "<group>"; };
 		439CC360234EC9F900DDCC42 /* HasSubTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HasSubTree.m; sourceTree = "<group>"; };
-		439D8228244D848200A8DBC2 /* No3_findLonggestSubStringWithoutRepeating.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = No3_findLonggestSubStringWithoutRepeating.h; sourceTree = "<group>"; };
-		439D8229244D848200A8DBC2 /* No3_findLonggestSubStringWithoutRepeating.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = No3_findLonggestSubStringWithoutRepeating.m; sourceTree = "<group>"; };
+		439D8228244D848200A8DBC2 /* No3_findLongestSubStringWithoutRepeating.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = No3_findLongestSubStringWithoutRepeating.h; sourceTree = "<group>"; };
+		439D8229244D848200A8DBC2 /* No3_findLongestSubStringWithoutRepeating.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = No3_findLongestSubStringWithoutRepeating.m; sourceTree = "<group>"; };
+		439E7D0425691A6D00A040A9 /* No14_LongestCommonPrefixInArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = No14_LongestCommonPrefixInArray.h; sourceTree = "<group>"; };
+		439E7D0525691A6D00A040A9 /* No14_LongestCommonPrefixInArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = No14_LongestCommonPrefixInArray.m; sourceTree = "<group>"; };
 		43C5390C23507B0E0049445B /* MirrorOfBinaryTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MirrorOfBinaryTree.h; sourceTree = "<group>"; };
 		43C5390D23507B0E0049445B /* MirrorOfBinaryTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MirrorOfBinaryTree.m; sourceTree = "<group>"; };
 		43C5390F235167AC0049445B /* RemoveRepeatListNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoveRepeatListNode.h; sourceTree = "<group>"; };
@@ -361,12 +364,14 @@
 				3041D8AE2422E343008003F7 /* No4_medianOfTwoSortedArray.m */,
 				4361D22B24237C2600FC9B6D /* No2_addTwoNumbers.h */,
 				4361D22C24237C2600FC9B6D /* No2_addTwoNumbers.m */,
-				439D8228244D848200A8DBC2 /* No3_findLonggestSubStringWithoutRepeating.h */,
-				439D8229244D848200A8DBC2 /* No3_findLonggestSubStringWithoutRepeating.m */,
+				439D8228244D848200A8DBC2 /* No3_findLongestSubStringWithoutRepeating.h */,
+				439D8229244D848200A8DBC2 /* No3_findLongestSubStringWithoutRepeating.m */,
 				307671052560BD2E00B3BE56 /* No5_LongestPalindromicSubstring.h */,
 				307671062560BD2E00B3BE56 /* No5_LongestPalindromicSubstring.m */,
 				309409A125673C93005C21FD /* No8_StringToInteger.h */,
 				309409A225673C93005C21FD /* No8_StringToInteger.m */,
+				439E7D0425691A6D00A040A9 /* No14_LongestCommonPrefixInArray.h */,
+				439E7D0525691A6D00A040A9 /* No14_LongestCommonPrefixInArray.m */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -467,10 +472,11 @@
 				436101E123AA16A2007ED9BB /* IsSymmetryTree.m in Sources */,
 				303BA707234B38530060E7C5 /* BinaryDigitalCount.m in Sources */,
 				30315B002344F17C0001ABEB /* HeapSort.m in Sources */,
-				439D822A244D848200A8DBC2 /* No3_findLonggestSubStringWithoutRepeating.m in Sources */,
+				439D822A244D848200A8DBC2 /* No3_findLongestSubStringWithoutRepeating.m in Sources */,
 				43706E52242473E20055AF17 /* PrintDefine.m in Sources */,
 				30315AFD234433C40001ABEB /* QuickSort.m in Sources */,
 				439CC361234EC9F900DDCC42 /* HasSubTree.m in Sources */,
+				439E7D0625691A6D00A040A9 /* No14_LongestCommonPrefixInArray.m in Sources */,
 				304C84B72475711E00396841 /* FindKthNumInArray.m in Sources */,
 				303AB710236421D1005495F1 /* CutRopeForGreatestProduct.m in Sources */,
 				302CF1F32342346C00277761 /* ReplaceBlank.m in Sources */,

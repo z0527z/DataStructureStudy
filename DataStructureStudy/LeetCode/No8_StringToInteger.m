@@ -12,7 +12,7 @@
 
 - (instancetype)init {
     if (self = [super init]) {
-        char * str = "   -124aab";
+        char * str = "2147483646";
         int ret = stringToInteger(str);
         printf("\n---------- No8_StringToInteger ---------\n\n");
         printf("ret: %d\n", ret);
@@ -50,7 +50,7 @@ int stringToInteger(char * str) {
             if (ret > INT_MAX / 10 || (ret == INT_MAX / 10 && *p - '0' > INT_MAX % 10)) {
                 return (nagitiveFlag == 1) ? INT_MAX : INT_MIN;
             }
-            ret = *p - '0' + ret * 10;
+            ret = (*p - '0') + ret * 10;
             p ++;
             continue;
         }
