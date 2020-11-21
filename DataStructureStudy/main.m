@@ -48,6 +48,7 @@
 #import "FindMinNumInRotateArray.h"
 #import "RepeatedSubStrPattern.h"
 #import "No5_LongestPalindromicSubstring.h"
+#import "No8_StringToInteger.h"
 
 void testLeetCodeProblems()
 {
@@ -58,6 +59,7 @@ void testLeetCodeProblems()
     No2_addTwoNumbers * addTwoNumbers = [[No2_addTwoNumbers alloc] init];
     No3_findLonggestSubStringWithoutRepeating * findLonggestSubString = [[No3_findLonggestSubStringWithoutRepeating alloc] init];
     No5_LongestPalindromicSubstring * longgestPalindromicSubString = [[No5_LongestPalindromicSubstring alloc] init];
+    No8_StringToInteger * stringToInteger = [[No8_StringToInteger alloc] init];
 }
 
 void testCodingInterviews()

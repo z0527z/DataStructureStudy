@@ -12,7 +12,7 @@
 
 - (instancetype)init {
     if (self = [super init]) {
-        char * str = "abaababaab";
+        char * str = "babad";
         char * subStr = longestPalindromicSubstring(str);
         printf("\n------- No5_LongestPalindromicSubstring ------\n\n");
         printf("subStr: %s\n", subStr);
@@ -49,7 +49,7 @@ char * longestPalindromicSubstring(char * str) {
     char * subStr = NULL;
     int subStrLen = end - start + 1;
     if (subStrLen > 0) {
-        subStr = (char *)malloc(subStrLen);
+        subStr = (char *)malloc(subStrLen + 1);
         strncpy(subStr, &str[start], subStrLen);
         subStr[subStrLen] = '\0';
     }
