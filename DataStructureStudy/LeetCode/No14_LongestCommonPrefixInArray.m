@@ -12,12 +12,12 @@
 
 - (instancetype)init {
     if (self = [super init]) {
-//        char * strs[] = {"flower","flow","flight"};
-//        char * prefix = longestCommonPrefix((char **)&strs, sizeof(strs));
-        NSArray * strs = @[@"flower", @"flow", @"flight"];
-        NSString * prefix = [self longestCommonPrefix:strs];
+        char * strs[] = {"flow", "flower","flight"};
+        char * prefix = longestCommonPrefix((char **)&strs, sizeof(strs) / sizeof(char *));
+//        NSArray * strs = @[@"flower", @"flow", @"flight"];
+//        NSString * prefix = [self longestCommonPrefix:strs];
         printf("\n---------- No14_LongestCommonPrefixInArray ---------\n\n");
-        NSLog(@"prefix:%@", prefix);
+        printf("prefix:%s", prefix);
     }
     return self;
 }
@@ -40,11 +40,21 @@ char * longestCommonPrefix(char ** str, int strSize) {
                 prefixLen ++;
             }
             else {
-                
-                
+                break;
             }
         }
+        if (prefixLen) {
+            char * temp = malloc(prefixLen + 1);
+            strncpy(temp, prefix, prefixLen);
+            temp[prefixLen] = '\0';
+            free(prefix);
+            prefix = temp;
+        }
+        else {
+            return "";
+        }
     }
+    return prefix;
 }
 
 
