@@ -12,7 +12,7 @@
 
 - (instancetype)init {
     if (self = [super init]) {
-        char * strs[] = {"flow", "flower","flight"};
+        char * strs[] = {};//{"flow", "flower","flight"};
         char * prefix = longestCommonPrefix((char **)&strs, sizeof(strs) / sizeof(char *));
         printf("\n---------- No14_LongestCommonPrefixInArray ---------\n\n");
         printf("prefix:%s\n", prefix);
@@ -23,9 +23,9 @@
     return self;
 }
 
-#if 0
+#if 1
 char * longestCommonPrefix(char ** str, int strSize) {
-    if (!str || !*str || strSize < 1) return "";
+    if (!str || strSize < 1) return "";
     int len = (int)strlen(*str);
     char * prefix = malloc(len + 1);
     strncpy(prefix, *str, len);
@@ -48,10 +48,12 @@ char * longestCommonPrefix(char ** str, int strSize) {
             char * temp = malloc(prefixLen + 1);
             strncpy(temp, prefix, prefixLen);
             temp[prefixLen] = '\0';
+            
             free(prefix);
             prefix = temp;
         }
         else {
+            free(prefix);
             return "";
         }
     }
