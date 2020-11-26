@@ -14,15 +14,16 @@
     if (self = [super init]) {
         char * strs[] = {"flow", "flower","flight"};
         char * prefix = longestCommonPrefix((char **)&strs, sizeof(strs) / sizeof(char *));
-//        NSArray * strs = @[@"flower", @"flow", @"flight"];
-//        NSString * prefix = [self longestCommonPrefix:strs];
         printf("\n---------- No14_LongestCommonPrefixInArray ---------\n\n");
-        printf("prefix:%s", prefix);
+        printf("prefix:%s\n", prefix);
+        if (strlen(prefix) > 0) {
+            free(prefix);
+        }
     }
     return self;
 }
 
-
+#if 0
 char * longestCommonPrefix(char ** str, int strSize) {
     if (!str || !*str || strSize < 1) return "";
     int len = (int)strlen(*str);
@@ -56,32 +57,44 @@ char * longestCommonPrefix(char ** str, int strSize) {
     }
     return prefix;
 }
+#else
 
-
-
-- (NSString *)longestCommonPrefix:(NSArray<NSString *> *)strs {
-    if (!strs || strs.count == 0) return @"";
+#pragma mark - 归并
+char * longestCommonPrefix(char ** strs, int strsSize) {
+    if (!strs || !*strs || strsSize < 1) return "";
     
-    return [self longestCommon:strs left:0 right:strs.count - 1];
+    return longestCommon(strs, 0, strsSize - 1);
 }
 
-- (NSString *)longestCommon:(NSArray<NSString *> *)strs left:(NSInteger)left right:(NSInteger)right {
-    if (left == right) return strs[left];
+char * longestCommon(char ** strs, int start, int end) {
+    if (start == end) return strs[start];
     
-    NSInteger mid = (left + right) / 2;
-    NSString * leftStr = [self longestCommon:strs left:left right:mid];
-    NSString * rightStr = [self longestCommon:strs left:mid + 1 right:right];
-    return [self commonPrefix:leftStr rightStr:rightStr];
+    int mid = (start + end) / 2;
+    
+    char * leftStr = longestCommon(strs, start, mid);
+    char * rightStr = longestCommon(strs, mid + 1, end);
+    
+    // 从左右中找出公共前缀
+    return commonPrefix(leftStr, rightStr);
 }
 
-- (NSString *)commonPrefix:(NSString *)leftStr rightStr:(NSString *)rightStr {
-    NSInteger min = MIN(leftStr.length, rightStr.length);
-    for (NSInteger i = 0; i < min; i ++) {
-        if ([leftStr characterAtIndex:i] != [rightStr characterAtIndex:i]) {
-            return [leftStr substringWithRange:NSMakeRange(0, i)];
+char * commonPrefix(char * leftStr, char * rightStr) {
+    int minLen = MIN((int)strlen(leftStr), (int)strlen(rightStr));
+    int len = minLen;
+    for (int i = 0; i < minLen; i ++) {
+        if (leftStr[i] != rightStr[i]) {
+            len = i;
+            break;
         }
     }
-    return [leftStr substringWithRange:NSMakeRange(0, min)];
+    char * result = malloc(sizeof(char) * len + 1);
+    strncpy(result, leftStr, len);
+    result[len + 1] = '\0';
+    return result;
+    
 }
+
+
+#endif
 
 @end
