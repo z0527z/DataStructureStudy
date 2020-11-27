@@ -48,6 +48,10 @@ void generalLoadCls() {
     }
 }
 
+__attribute__((constructor(5))) void preMainFunc (void) {
+    printf("main前调用，还可以指定 constructor的优先级\n");
+}
+
 int main(int argc, const char * argv[]) {
     
     generalLoadCls();
