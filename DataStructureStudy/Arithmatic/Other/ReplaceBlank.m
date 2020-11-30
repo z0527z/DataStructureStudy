@@ -50,7 +50,9 @@ void replaceBlankInString(char * str, int length)
             p1--;
         }
         else {
-            *p2-- = *p1--;
+            if (*p1 != '\0') {
+                *p2-- = *p1--;
+            }
         }
     }
 }

@@ -16,7 +16,7 @@
         char * prefix = longestCommonPrefix((char **)&strs, sizeof(strs) / sizeof(char *));
         printf("\n---------- No14_LongestCommonPrefixInArray ---------\n\n");
         printf("prefix:%s\n", prefix);
-        if (strlen(prefix) > 0) {
+        if (prefix) {
             free(prefix);
         }
     }
@@ -25,7 +25,7 @@
 
 #if 1
 char * longestCommonPrefix(char ** str, int strSize) {
-    if (!str || strSize < 1) return "";
+    if (!str || strSize < 1) return NULL;
     int len = (int)strlen(*str);
     char * prefix = malloc(len + 1);
     strncpy(prefix, *str, len);
@@ -54,7 +54,7 @@ char * longestCommonPrefix(char ** str, int strSize) {
         }
         else {
             free(prefix);
-            return "";
+            return NULL;
         }
     }
     return prefix;
@@ -63,7 +63,7 @@ char * longestCommonPrefix(char ** str, int strSize) {
 
 #pragma mark - 归并
 char * longestCommonPrefix(char ** strs, int strsSize) {
-    if (!strs || !*strs || strsSize < 1) return "";
+    if (!strs || !*strs || strsSize < 1) return NULL;
     
     return longestCommon(strs, 0, strsSize - 1);
 }
