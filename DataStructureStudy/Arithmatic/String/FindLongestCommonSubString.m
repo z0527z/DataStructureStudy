@@ -30,7 +30,7 @@
  *
  */
 
-int * getNext(char * pattern) {
+static int * getNext(char * pattern) {
     if (!pattern) return NULL;
     
     int len = (int)strlen(pattern);
@@ -92,7 +92,7 @@ char * findLongestCommonSubString(char * str1, char * str2) {
             strncpy(subStr, str1 + i, subLen);
             subStr[subLen] = '\0';
             
-            if (containSubStr(str2, subStr)) {
+            if (containSubStr(str2, subStr)) { // 同 strstr(str2, subStr)
                 if (!longestSubStr || strlen(longestSubStr) < strlen(subStr)) {
                     if (longestSubStr) {
                         free(longestSubStr);
