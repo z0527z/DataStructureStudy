@@ -8,7 +8,7 @@
 
 #import <mach-o/dyld.h>
 #import <objc/runtime.h>
-#import <dlfcn.h>
+#import <mach-o/getsect.h>
 #import <Foundation/Foundation.h>
 
 
@@ -17,33 +17,15 @@ void generalLoadCls() {
     
     struct mach_header_64 * header_64 = (struct mach_header_64 *)_dyld_get_image_header(0);
     if (header_64->magic != MH_MAGIC_64) return;
-    // 获取类的个数
-    int classNum = objc_getClassList(NULL, 0);
-    if (classNum > 0) {
-        Class * classes = (__unsafe_unretained Class *)malloc(sizeof(Class) * classNum);
-        // 获取到所有的类
-        classNum = objc_getClassList(classes, classNum);
-        FILE * file = fopen("./1.txt", "w");
-        if (!file) return;
-
-        for (int i = 0; i < classNum; i ++) {
-            Class c = classes[i];
-            
-            struct dl_info info = {0};
-            dladdr((__bridge void *)c, &info);
-            // 过滤到系统的类，取在本工程中新建的类
-            if (info.dli_fname != NULL && strstr(info.dli_fname, name)) {
-                // 调用类的初始化
-                __unused NSObject * obj = [[c alloc] init];
-                
-                // 将类名写入到文件
-                int len = (int)strlen(info.dli_sname);
-                fwrite(info.dli_sname, len, 1, file);
-                fwrite("\n", 1, 1, file);
-            }
-        }
-        if (file) {
-            fclose(file);
+    
+    unsigned long byte = 0;
+    void * classList = getsectiondata((void *)header_64, "__DATA", "__objc_classlist", &byte);
+    Class * clsList = (Class *)classList;
+    unsigned long count = byte / sizeof(Class);
+    for (unsigned long j = 0; j < count; j ++) {
+        Class cls = clsList[j];
+        if (![NSStringFromClass(cls) hasPrefix:@"DJ"]) {
+            __unused id unused = [[cls alloc] init];
         }
     }
 }
