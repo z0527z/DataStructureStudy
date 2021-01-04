@@ -44,7 +44,7 @@ bool isEqual(char * str1, char * str2) {
     }
     return equal;
 }
-
+// 暴力法
 char * findLongestRepeatedSubString(char * str) {
     if (!str || strlen(str) <= 1) return NULL;
     
@@ -54,6 +54,7 @@ char * findLongestRepeatedSubString(char * str) {
     
     char * tempStr = malloc(len + 1);
     int maxLen = 1, pos = 0, count = 0;
+    // 从长度1开始，依次截取子串进行比较
     for (int i = 1; i < len; i ++) {
         for (int j = 0; j < len - i - 1; j ++) {
             strncpy(tempStr, str + j, i + 1);
@@ -77,5 +78,10 @@ char * findLongestRepeatedSubString(char * str) {
     subStr[maxLen] = '\0';
     return subStr;
 }
+
+#pragma mark - 后缀数组
+
+
+#pragma mark - 后缀树
 
 @end

@@ -4,7 +4,7 @@
 //
 //  Created by jolin.ding on 2020/11/30.
 //  Copyright © 2020 jolin. All rights reserved.
-//
+//  查找最长公共子串
 
 #import "FindLongestCommonSubString.h"
 

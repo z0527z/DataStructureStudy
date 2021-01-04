@@ -373,8 +373,6 @@
 				3041D8AE2422E343008003F7 /* No4_medianOfTwoSortedArray.m */,
 				4361D22B24237C2600FC9B6D /* No2_addTwoNumbers.h */,
 				4361D22C24237C2600FC9B6D /* No2_addTwoNumbers.m */,
-				307671052560BD2E00B3BE56 /* No5_LongestPalindromicSubstring.h */,
-				307671062560BD2E00B3BE56 /* No5_LongestPalindromicSubstring.m */,
 				309409A125673C93005C21FD /* No8_StringToInteger.h */,
 				309409A225673C93005C21FD /* No8_StringToInteger.m */,
 				439E7D0425691A6D00A040A9 /* No14_LongestCommonPrefixInArray.h */,
@@ -388,6 +386,8 @@
 		436012EB2558D087006AC21D /* String */ = {
 			isa = PBXGroup;
 			children = (
+				307671052560BD2E00B3BE56 /* No5_LongestPalindromicSubstring.h */,
+				307671062560BD2E00B3BE56 /* No5_LongestPalindromicSubstring.m */,
 				436012EC2558D0C0006AC21D /* RepeatedSubStrPattern.h */,
 				436012ED2558D0C0006AC21D /* RepeatedSubStrPattern.m */,
 				439A4A7D2574863300DDC225 /* FindLongestCommonSubString.h */,
