@@ -21,17 +21,18 @@ void generalLoadCls() {
     unsigned long byte = 0;
     void * classList = getsectiondata((void *)header_64, "__DATA", "__objc_classlist", &byte);
     Class * clsList = (Class *)classList;
-    unsigned long count = byte / sizeof(Class);
-    for (unsigned long j = 0; j < count; j ++) {
-        Class cls = clsList[j];
+    int count = (int)(byte / sizeof(Class));
+    for (int i = 0; i < count; i ++) {
+        Class cls = clsList[i];
         if (![NSStringFromClass(cls) hasPrefix:@"DJ"]) {
-            __unused id unused = [[cls alloc] init];
+            __unused id obj = [[cls alloc] init];
         }
     }
+    printf("\n--------- load class over ---------------\n");
 }
 
 __attribute__((constructor(5))) void preMainFunc (void) {
-    printf("main前调用，还可以指定 constructor的优先级\n");
+    printf("main前调用，还可以指定 constructor的优先级\n\n");
 }
 
 int main(int argc, const char * argv[]) {

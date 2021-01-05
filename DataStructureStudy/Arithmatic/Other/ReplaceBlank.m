@@ -15,7 +15,7 @@
 {
     if (self = [super init]) {
         
-        char str[20] = " We are happy.";
+        char str[30] = " We are happy.";
         replaceBlankInString(str, 20);
         
         printf("\n------------ ReplaceBlank -----------\n\n");
@@ -50,9 +50,7 @@ void replaceBlankInString(char * str, int length)
             p1--;
         }
         else {
-            if (*p1 != '\0') {
-                *p2-- = *p1--;
-            }
+            *p2-- = *p1--;
         }
     }
 }

@@ -119,9 +119,9 @@ bool containSubStr(char * str, char * subStr) {
  * https://www.cnblogs.com/chenleideblog/p/10457320.html
  *
  * 对角线上连续的1越多，表示两个字符串的最长公共子串越长
- *      { 0                                  if i = 0 or j = 0
- * c[i, j] = | c[i - 1, j - 1] + 1            if i, j > 0 and xi = yi,
- *      { MAX(c[i, j])                  if i, j > 0 and xi  != yi;
+ *      {  0                                  if i = 0 or j = 0
+ * c[i, j] = |  c[i - 1, j - 1] + 1            if i, j > 0 and xi = yi,
+ *      {  MAX(c[i, j])                  if i, j > 0 and xi  != yi;
  */
 char * findLongestCommonSubStringLCS(char * str1, char * str2) {
     if (!str1 || !str2) return NULL;
@@ -133,7 +133,7 @@ char * findLongestCommonSubStringLCS(char * str1, char * str2) {
     int ** lcs = (int **)malloc(sizeof(int *) * len1);
     for (int i = 0; i < len1; i ++) {
         lcs[i] = malloc(sizeof(int) * len2);
-        memset(lcs, 0, len2);
+        memset(*lcs, 0, len2);
     }
     
     // 利用二维数组对对角线赋值
@@ -161,9 +161,10 @@ char * findLongestCommonSubStringLCS(char * str1, char * str2) {
         longestStr[k] = str2[j];
         k ++;
     }
+    longestStr[maxSubStrLen] = '\0';
     // 回收空间
     if (lcs) {
-        for (int i = 0; i < len2; i ++) {
+        for (int i = 0; i < len1; i ++) {
             if (lcs[i]) {
                 free(lcs[i]);
             }
