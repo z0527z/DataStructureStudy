@@ -61,6 +61,7 @@
 		43C53911235167AC0049445B /* RemoveRepeatListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C53910235167AC0049445B /* RemoveRepeatListNode.m */; };
 		43E5355624FA2CBE000DF579 /* RegexMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E5355524FA2CBE000DF579 /* RegexMatch.m */; };
 		43E5F6E125A5DA9F000A754A /* No53_MaxSubsequenceSum.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E5F6E025A5DA9F000A754A /* No53_MaxSubsequenceSum.m */; };
+		43E5F6E525A5EF8B000A754A /* No300_MaxAscendingSubsequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E5F6E425A5EF8B000A754A /* No300_MaxAscendingSubsequence.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -184,6 +185,8 @@
 		43E5355524FA2CBE000DF579 /* RegexMatch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegexMatch.m; sourceTree = "<group>"; };
 		43E5F6DF25A5DA9F000A754A /* No53_MaxSubsequenceSum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = No53_MaxSubsequenceSum.h; sourceTree = "<group>"; };
 		43E5F6E025A5DA9F000A754A /* No53_MaxSubsequenceSum.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = No53_MaxSubsequenceSum.m; sourceTree = "<group>"; };
+		43E5F6E325A5EF8B000A754A /* No300_MaxAscendingSubsequence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = No300_MaxAscendingSubsequence.h; sourceTree = "<group>"; };
+		43E5F6E425A5EF8B000A754A /* No300_MaxAscendingSubsequence.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = No300_MaxAscendingSubsequence.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -392,6 +395,8 @@
 				43983148256FC7750050B920 /* No28_Implement_strStr.m */,
 				43E5F6DF25A5DA9F000A754A /* No53_MaxSubsequenceSum.h */,
 				43E5F6E025A5DA9F000A754A /* No53_MaxSubsequenceSum.m */,
+				43E5F6E325A5EF8B000A754A /* No300_MaxAscendingSubsequence.h */,
+				43E5F6E425A5EF8B000A754A /* No300_MaxAscendingSubsequence.m */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -473,6 +478,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4381A29E25A35894004F74C1 /* FindLongestCommonSequence.m in Sources */,
+				43E5F6E525A5EF8B000A754A /* No300_MaxAscendingSubsequence.m in Sources */,
 				4332F7E62370153F0080D998 /* FindFirstCommonNode.m in Sources */,
 				303BA70A234B7C6E0060E7C5 /* DeleteListNodeInConstantTime.m in Sources */,
 				436012EE2558D0C0006AC21D /* RepeatedSubStrPattern.m in Sources */,
