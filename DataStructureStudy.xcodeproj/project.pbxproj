@@ -60,6 +60,7 @@
 		43C5390E23507B0E0049445B /* MirrorOfBinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C5390D23507B0E0049445B /* MirrorOfBinaryTree.m */; };
 		43C53911235167AC0049445B /* RemoveRepeatListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C53910235167AC0049445B /* RemoveRepeatListNode.m */; };
 		43E5355624FA2CBE000DF579 /* RegexMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E5355524FA2CBE000DF579 /* RegexMatch.m */; };
+		43E5F6E125A5DA9F000A754A /* No53_MaxSubsequenceSum.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E5F6E025A5DA9F000A754A /* No53_MaxSubsequenceSum.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -181,6 +182,8 @@
 		43C53910235167AC0049445B /* RemoveRepeatListNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemoveRepeatListNode.m; sourceTree = "<group>"; };
 		43E5355424FA2CBE000DF579 /* RegexMatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegexMatch.h; sourceTree = "<group>"; };
 		43E5355524FA2CBE000DF579 /* RegexMatch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegexMatch.m; sourceTree = "<group>"; };
+		43E5F6DF25A5DA9F000A754A /* No53_MaxSubsequenceSum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = No53_MaxSubsequenceSum.h; sourceTree = "<group>"; };
+		43E5F6E025A5DA9F000A754A /* No53_MaxSubsequenceSum.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = No53_MaxSubsequenceSum.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -387,6 +390,8 @@
 				439E7D0525691A6D00A040A9 /* No14_LongestCommonPrefixInArray.m */,
 				43983147256FC7750050B920 /* No28_Implement_strStr.h */,
 				43983148256FC7750050B920 /* No28_Implement_strStr.m */,
+				43E5F6DF25A5DA9F000A754A /* No53_MaxSubsequenceSum.h */,
+				43E5F6E025A5DA9F000A754A /* No53_MaxSubsequenceSum.m */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -472,6 +477,7 @@
 				303BA70A234B7C6E0060E7C5 /* DeleteListNodeInConstantTime.m in Sources */,
 				436012EE2558D0C0006AC21D /* RepeatedSubStrPattern.m in Sources */,
 				3028646D235B1DC800593A13 /* DuplicateNumInArray.m in Sources */,
+				43E5F6E125A5DA9F000A754A /* No53_MaxSubsequenceSum.m in Sources */,
 				30CDCB95235DDEA000730607 /* NextNodeInBinaryTree.m in Sources */,
 				4361D231242386FA00FC9B6D /* StructureDefine.m in Sources */,
 				3021D45C2348355D007EDB4C /* Fibonacci.m in Sources */,

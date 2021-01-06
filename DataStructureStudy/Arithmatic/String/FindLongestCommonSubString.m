@@ -142,6 +142,7 @@ char * findLongestCommonSubStringLCS(char * str1, char * str2) {
     for (int i = 1; i < len1; i ++) {
         for (int j = 1; j < len2; j ++) {
             if (str1[i - 1] == str2[j - 1]) {
+                // 下一个对角线的值 = 上一个对角线值 + 1
                 lcs[i][j] = lcs[i - 1][j - 1] + 1;
                 
                 if (lcs[i][j] > maxSubStrLen) {
