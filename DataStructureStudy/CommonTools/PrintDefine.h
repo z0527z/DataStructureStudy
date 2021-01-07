@@ -13,4 +13,6 @@
 
 void printArray(int * array, int size);
 
+void printArrayOfChar(char * array, int size);
+
 #endif /* PrintDefine_h */

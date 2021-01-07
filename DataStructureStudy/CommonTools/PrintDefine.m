@@ -8,8 +8,7 @@
 
 #include "PrintDefine.h"
 
-void printArray(int * array, int size)
-{
+void printArray(int * array, int size) {
     if (!array || size <= 0) {
         printf(" [] ");
         return;
@@ -17,6 +16,18 @@ void printArray(int * array, int size)
     printf(" [");
     for (int i = 0; i < size; i ++) {
         i == size -1 ? printf("%d", array[i]) : printf("%d,", array[i]);
+    }
+    printf("] ");
+}
+
+void printArrayOfChar(char * array, int size) {
+    if (!array || size <= 0) {
+        printf(" [] ");
+        return;
+    }
+    printf(" [");
+    for (int i = 0; i < size; i ++) {
+        i == size -1 ? printf("%c", array[i]) : printf("%c,", array[i]);
     }
     printf("] ");
 }
