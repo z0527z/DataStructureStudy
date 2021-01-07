@@ -1,5 +1,5 @@
 //
-//  No344_ReverseStringInArray.m
+//  ReverseString.m
 //  DataStructureStudy
 //
 //  Created by jolin.ding on 2021/1/7.
@@ -165,7 +165,7 @@ void reverseWord(char * str) {
 /**
  * 反转对应区间的字符串
  */
-void reverseString(char * str, int start, int end) {
+static void reverseString(char * str, int start, int end) {
     if (!str || (str && strlen(str) <= 1)) return;
     
     int len = (int)strlen(str);

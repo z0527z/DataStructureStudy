@@ -1,5 +1,5 @@
 //
-//  No344_ReverseStringInArray.h
+//  ReverseString.h
 //  DataStructureStudy
 //
 //  Created by jolin.ding on 2021/1/7.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ReverseStringInArray : NSObject
+@interface ReverseString : NSObject
 
 @end
 
