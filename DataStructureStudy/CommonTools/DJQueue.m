@@ -79,4 +79,8 @@
     return obj;
 }
 
+- (int)size {
+    return _currentIndex < _firstIndex ? kDJQueueSize - _firstIndex + _currentIndex : _currentIndex - _firstIndex;
+}
+
 @end

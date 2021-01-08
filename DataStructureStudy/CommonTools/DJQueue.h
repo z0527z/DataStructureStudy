@@ -16,4 +16,6 @@
 
 - (BOOL)empty;
 
+- (int)size;
+
 @end
