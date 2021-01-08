@@ -20,8 +20,21 @@
         int inOrder[] = {4, 7, 2, 1, 5, 3, 8, 6};
         TreeNode * root = rebuildBinaryTree(preOrder, inOrder, 8);
         
-        printf("\n-------- levelPrintBinaryTree -------\n\n");
-        levelPrintBinaryTree(root);
+        /**
+         *                         1
+         *                        /    \
+         *                       2       3
+         *                      /         /   \
+         *                     4         5      6
+         *                      \               /
+         *                      7             8
+         *
+         *      postOrder =>  { 7 4 2 5 8 6 3 1}
+         */
+        
+        printf("\n-------- PreInOrderRebuildBinaryTree -------\n\n");
+//        levelPrintBinaryTree(root);
+        nonRecursivePostOrderPrintBinaryTree2(root);
         printf("\n");
     }
     
@@ -177,6 +190,38 @@ void noneRecursivePostOrderPrintBinaryTree(TreeNode * root)
             }
         }
     }
+}
+
+/**
+ * 前序遍历是按照  =>   中 -> 左 -> 右 的顺序
+ * 将前序遍历处理成 => 中 -> 右 -> 左 的顺序，然后反转就可以得到 左右中(即后序遍历的结果)
+ */
+void nonRecursivePostOrderPrintBinaryTree2(TreeNode * root) {
+    if (!root) return;
+    
+    TreeNode * currentNode = root;
+    DJStack * stack = [[DJStack alloc] init];
+    [stack push:currentNode];
+    
+    NSMutableArray * result = [NSMutableArray arrayWithCapacity:10];
+    
+    while (!stack.empty) {
+        currentNode = stack.pop;
+        [result addObject:@(currentNode->value)];
+        
+        if (currentNode->pLeft) {
+            [stack push:currentNode->pLeft];
+        }
+        if (currentNode->pRight) {
+            [stack push:currentNode->pRight];
+        }
+    }
+    
+    // 将结果反转
+    [result enumerateObjectsWithOptions:NSEnumerationReverse usingBlock:^(NSNumber * obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        printf("%d ", obj.intValue);
+    }];
+    printf("\n");
 }
 
 #pragma mark - 层序遍历

@@ -75,6 +75,8 @@ void testReverseStringIn2K() {
  * 输入: s = "abcdefg", k = 2
  * 输出: "bacdfeg"
  *
+ * @note 当需要固定规律一段一段去处理字符串的时候，要想想在在for循环的表达式上做做文章
+ *
  */
 char * reverseStringIn2K(char * str, int k) {
     if (!str) return NULL;
