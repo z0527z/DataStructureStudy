@@ -45,6 +45,7 @@
 		436101E123AA16A2007ED9BB /* IsSymmetryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 436101E023AA16A2007ED9BB /* IsSymmetryTree.m */; };
 		4361D22D24237C2600FC9B6D /* No2_addTwoNumbers.m in Sources */ = {isa = PBXBuildFile; fileRef = 4361D22C24237C2600FC9B6D /* No2_addTwoNumbers.m */; };
 		4361D231242386FA00FC9B6D /* StructureDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4361D230242386FA00FC9B6D /* StructureDefine.m */; };
+		436E8A6525A94E35008B3B43 /* MaxDepthOfBinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 436E8A6425A94E35008B3B43 /* MaxDepthOfBinaryTree.m */; };
 		43706E52242473E20055AF17 /* PrintDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 43706E51242473E20055AF17 /* PrintDefine.m */; };
 		4381A29A25A34D0A004F74C1 /* Implement_pow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4381A29925A34D0A004F74C1 /* Implement_pow.m */; };
 		4381A29E25A35894004F74C1 /* FindLongestCommonSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 4381A29D25A35894004F74C1 /* FindLongestCommonSequence.m */; };
@@ -156,6 +157,8 @@
 		4361D22B24237C2600FC9B6D /* No2_addTwoNumbers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = No2_addTwoNumbers.h; sourceTree = "<group>"; };
 		4361D22C24237C2600FC9B6D /* No2_addTwoNumbers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = No2_addTwoNumbers.m; sourceTree = "<group>"; };
 		4361D230242386FA00FC9B6D /* StructureDefine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StructureDefine.m; sourceTree = "<group>"; };
+		436E8A6325A94E35008B3B43 /* MaxDepthOfBinaryTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaxDepthOfBinaryTree.h; sourceTree = "<group>"; };
+		436E8A6425A94E35008B3B43 /* MaxDepthOfBinaryTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaxDepthOfBinaryTree.m; sourceTree = "<group>"; };
 		43706E50242473E20055AF17 /* PrintDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrintDefine.h; sourceTree = "<group>"; };
 		43706E51242473E20055AF17 /* PrintDefine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrintDefine.m; sourceTree = "<group>"; };
 		4381A29825A34D0A004F74C1 /* Implement_pow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Implement_pow.h; sourceTree = "<group>"; };
@@ -245,6 +248,8 @@
 				305B68E72487D08F00CF4D5E /* FindLowestCommonAncestor.m */,
 				433FF32E24F60BFF007629BB /* FindTreePathEqualToAnInteger.h */,
 				433FF32F24F60BFF007629BB /* FindTreePathEqualToAnInteger.m */,
+				436E8A6325A94E35008B3B43 /* MaxDepthOfBinaryTree.h */,
+				436E8A6425A94E35008B3B43 /* MaxDepthOfBinaryTree.m */,
 			);
 			path = Tree;
 			sourceTree = "<group>";
@@ -549,6 +554,7 @@
 				43339EF7234C7CC1005DF1FE /* OutputKthNodeToTail.m in Sources */,
 				3041D8AF2422E343008003F7 /* No4_medianOfTwoSortedArray.m in Sources */,
 				43B231C525A734B400E4A486 /* LeftShiftString.m in Sources */,
+				436E8A6525A94E35008B3B43 /* MaxDepthOfBinaryTree.m in Sources */,
 				4385BBF924207B100082D834 /* No9_palindromicNumber.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
