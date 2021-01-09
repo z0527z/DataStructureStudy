@@ -34,7 +34,6 @@ bool repeatedSubstrPattern(char * str) {
     strncpy(compoundStr, str + 1, len - 1);
     strncpy(compoundStr + len - 1, str, len - 1);
     compoundStr[compundLen] = '\0';
-    printf("%s", compoundStr);
     
     bool ret = false;
     // 检查构造的中是否含有str
