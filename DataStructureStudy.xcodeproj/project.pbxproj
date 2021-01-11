@@ -64,6 +64,7 @@
 		43B231C525A734B400E4A486 /* LeftShiftString.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B231C425A734B400E4A486 /* LeftShiftString.m */; };
 		43C5390E23507B0E0049445B /* MirrorOfBinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C5390D23507B0E0049445B /* MirrorOfBinaryTree.m */; };
 		43C53911235167AC0049445B /* RemoveRepeatListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C53910235167AC0049445B /* RemoveRepeatListNode.m */; };
+		43E3317A25AC2DE900781422 /* BinaryTreePaths.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E3317925AC2DE900781422 /* BinaryTreePaths.m */; };
 		43E5355624FA2CBE000DF579 /* RegexMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E5355524FA2CBE000DF579 /* RegexMatch.m */; };
 		43E5F6E125A5DA9F000A754A /* No53_MaxSubsequenceSum.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E5F6E025A5DA9F000A754A /* No53_MaxSubsequenceSum.m */; };
 		43E5F6E525A5EF8B000A754A /* No300_MaxAscendingSubsequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E5F6E425A5EF8B000A754A /* No300_MaxAscendingSubsequence.m */; };
@@ -196,6 +197,8 @@
 		43C5390D23507B0E0049445B /* MirrorOfBinaryTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MirrorOfBinaryTree.m; sourceTree = "<group>"; };
 		43C5390F235167AC0049445B /* RemoveRepeatListNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoveRepeatListNode.h; sourceTree = "<group>"; };
 		43C53910235167AC0049445B /* RemoveRepeatListNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemoveRepeatListNode.m; sourceTree = "<group>"; };
+		43E3317825AC2DE900781422 /* BinaryTreePaths.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryTreePaths.h; sourceTree = "<group>"; };
+		43E3317925AC2DE900781422 /* BinaryTreePaths.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BinaryTreePaths.m; sourceTree = "<group>"; };
 		43E5355424FA2CBE000DF579 /* RegexMatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegexMatch.h; sourceTree = "<group>"; };
 		43E5355524FA2CBE000DF579 /* RegexMatch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegexMatch.m; sourceTree = "<group>"; };
 		43E5F6DF25A5DA9F000A754A /* No53_MaxSubsequenceSum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = No53_MaxSubsequenceSum.h; sourceTree = "<group>"; };
@@ -251,6 +254,8 @@
 				305B68E72487D08F00CF4D5E /* FindLowestCommonAncestor.m */,
 				433FF32E24F60BFF007629BB /* FindTreePathEqualToAnInteger.h */,
 				433FF32F24F60BFF007629BB /* FindTreePathEqualToAnInteger.m */,
+				43E3317825AC2DE900781422 /* BinaryTreePaths.h */,
+				43E3317925AC2DE900781422 /* BinaryTreePaths.m */,
 				436E8A6325A94E35008B3B43 /* MaxDepthOfBinaryTree.h */,
 				436E8A6425A94E35008B3B43 /* MaxDepthOfBinaryTree.m */,
 				436E8A6C25A99035008B3B43 /* IsAVLTree.h */,
@@ -558,6 +563,7 @@
 				30286462235AE60B00593A13 /* HasPathInMatrix.m in Sources */,
 				439A4A7F2574863300DDC225 /* FindLongestCommonSubString.m in Sources */,
 				43339EF7234C7CC1005DF1FE /* OutputKthNodeToTail.m in Sources */,
+				43E3317A25AC2DE900781422 /* BinaryTreePaths.m in Sources */,
 				3041D8AF2422E343008003F7 /* No4_medianOfTwoSortedArray.m in Sources */,
 				43B231C525A734B400E4A486 /* LeftShiftString.m in Sources */,
 				436E8A6525A94E35008B3B43 /* MaxDepthOfBinaryTree.m in Sources */,

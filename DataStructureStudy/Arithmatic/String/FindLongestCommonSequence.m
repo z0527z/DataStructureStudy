@@ -14,7 +14,7 @@
     if (self = [super init]) {
         
         char * str1 = "ABCBDAB";
-        char * str2 = "BDCABA";
+        char * str2 = "BDCABED";
         char * subSequence = findLongestCommonSequence(str1, str2);
         
         printf("\n---------- FindLongestCommonSequence ---------\n\n");
