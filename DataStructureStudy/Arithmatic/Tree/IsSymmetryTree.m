@@ -15,50 +15,16 @@
 - (instancetype)init
 {
     if (self = [super init]) {
+        /*
+                    8
+                  /   \
+                 6     6
+                / \   / \
+               5   7 7   5
+         */
+        TreeNode * tree = treeFromStringArray("[8,6,6,5,7,7,5]");
         
-        TreeNode * tree1 = malloc(sizeof(TreeNode));
-        tree1->pLeft = NULL;
-        tree1->pRight = NULL;
-        tree1->value = 8;
-        
-        TreeNode * leftTree = malloc(sizeof(TreeNode));
-        leftTree->value = 6;
-        leftTree->pLeft = NULL;
-        leftTree->pRight = NULL;
-        tree1->pLeft = leftTree;
-
-        TreeNode * rightTree = malloc(sizeof(TreeNode));
-        rightTree->value = 6;
-        rightTree->pLeft = NULL;
-        rightTree->pRight = NULL;
-        tree1->pRight = rightTree;
-
-        TreeNode * leftTree1 = malloc(sizeof(TreeNode));
-        leftTree1->value = 5;
-        leftTree1->pLeft = NULL;
-        leftTree1->pRight = NULL;
-        leftTree->pLeft = leftTree1;
-        
-        TreeNode * rightTree1 = malloc(sizeof(TreeNode));
-        rightTree1->value = 7;
-        rightTree1->pLeft = NULL;
-        rightTree1->pRight = NULL;
-
-        leftTree->pRight = rightTree1;
-
-        TreeNode * leftTree2 = malloc(sizeof(TreeNode));
-        leftTree2->value = 7;
-        leftTree2->pLeft = NULL;
-        leftTree2->pRight = NULL;
-        rightTree->pLeft = leftTree2;
-
-        TreeNode * rightTree2 = malloc(sizeof(TreeNode));
-        rightTree2->value = 5;
-        rightTree2->pLeft = NULL;
-        rightTree2->pRight = NULL;
-        rightTree->pRight = rightTree2;
-        
-        bool isSymmetry = isSymmetryTree(tree1);
+        bool isSymmetry = isSymmetryTree(tree);
         printf("\n------------ IsSymmetryTree ------------\n\n");
         printf("%s\n", isSymmetry ? "true" : "false");
         

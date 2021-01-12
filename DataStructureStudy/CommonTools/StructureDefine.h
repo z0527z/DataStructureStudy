@@ -39,5 +39,7 @@ void printListNode(ListNode * head);
 
 #pragma mark - 树
 
+TreeNode * treeFromStringArray(char * str);
+
 
 #endif /* StructureDefine_h */
