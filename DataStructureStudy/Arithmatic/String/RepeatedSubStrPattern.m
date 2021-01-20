@@ -27,7 +27,7 @@
 bool repeatedSubstrPattern(char * str) {
     if (!str) return false;
     
-    // 构造两个 str 相加后首位各减去一个的新串
+    // 构造两个 str 相加后首尾各减去一个的新串
     int len = (int)strlen(str);
     int compundLen = 2 * len - 2;
     char * compoundStr = malloc(compundLen + 1);

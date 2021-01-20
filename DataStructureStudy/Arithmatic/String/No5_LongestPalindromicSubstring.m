@@ -33,6 +33,9 @@ int findSubStrIndex(char * str, int start, int end) {
     return r -l -1;
 }
 
+/**
+ * 中心扩散算法
+ */
 char * longestPalindromicSubstring(char * str) {
     if (!str || strlen(str) < 1) return "";
     int len = (int)strlen(str);

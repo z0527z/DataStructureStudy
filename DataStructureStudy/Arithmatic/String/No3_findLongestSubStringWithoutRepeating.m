@@ -14,7 +14,7 @@
 {
     if (self = [super init]) {
         
-        char * s = "abcabcbb";
+        char * s = "abcababb";
         int length = findLonggestSubStringWithoutRepeating(s);
         printf("\n------- No3_findLonggestSubStringWithoutRepeating ------\n\n");
         printf("length: %d\n", length);

@@ -25,8 +25,8 @@
 #pragma mark - 贪心算法
 /**
  * 任何一个最大子序列和，它的第一位都不会是负数。结合贪心算法的定义，
- * 当thisSum小于零时，即使加上后面的数也不会是最大子序列和（不如直接不要当前的thisSum），
- * 所以直接将thisSum设为0，重新开始计算新的子序列和
+ * 当currentSum小于零时，即使加上后面的数也不会是最大子序列和（不如直接不要当前的currentSum），
+ * 所以直接将currentSum设为0，重新开始计算新的子序列和
  */
 int maxSubsequenceSumOfGreedy(int * array, int length) {
     if (!array || length < 1) return 0;

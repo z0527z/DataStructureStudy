@@ -12,8 +12,8 @@
 
 - (instancetype)init {
     if (self = [super init]) {
-        char * needle = "";
-        char * haystack = "";
+        char * needle = "fjl";
+        char * haystack = "ajdkaldkfjlajflaf";
         int pos = myStrStr(haystack, needle);
         printf("\n---------- No28_Implement_strStr ---------\n\n");
         printf("pos: %d\n", pos);

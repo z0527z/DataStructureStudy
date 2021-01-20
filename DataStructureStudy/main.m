@@ -31,8 +31,17 @@ void generalLoadCls() {
     printf("\n--------- load class over ---------------\n");
 }
 
-__attribute__((constructor(5))) void preMainFunc (void) {
-    printf("main前调用，还可以指定 constructor的优先级\n\n");
+/**
+ * 构造函数，括号里面可以指定优先级，数字越小优先级越高
+ */
+
+__attribute__((section("__TEXT, __init"))) void preInit(void) {
+    printf("__got 中存储数据符号地址，__la_symbol_ptr 中存储函数符号地址\n");
+}
+
+__attribute__((constructor(5))) void preMainFunc(void) {
+    printf("main前调用，还可以指定 constructor的优先级，数字越小优先级越高\n\n");
+    
 }
 
 int main(int argc, const char * argv[]) {
