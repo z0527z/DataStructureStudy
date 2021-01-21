@@ -15,7 +15,7 @@
     if (self = [super init]) {
         
         char * s = "abcababb";
-        int length = findLonggestSubStringWithoutRepeating(s);
+        int length = lengthOfLongestSubstring(s);
         printf("\n------- No3_findLonggestSubStringWithoutRepeating ------\n\n");
         printf("length: %d\n", length);
         
@@ -41,6 +41,39 @@ int findLonggestSubStringWithoutRepeating(char * s) {
     }
     len = end - s > len ? (int)(end - s) : len;
     return len;
+}
+
+int lengthOfLongestSubstring(char * s){
+    
+    int start = 0;
+    int end = 0;
+    int length = 0;
+    int max = 0;
+    
+    int len = (int)strlen(s);
+    while(end < len) {
+        /* 记录当前end值
+         * 用于和索引值index进行对比
+         */
+        char tmpchar = s[end];
+        
+        /* 索引值从start开始，计算到end-1位置处 */
+        for(int index = start; index < end; index++) {
+            /* 若发现最新得end值与索引值相同 */
+            if(tmpchar == s[index]) {
+                /* 将start移动到当前索引index下一个位置 */
+                start = index + 1;
+                /* 从新计算长度 */
+                length = end - start;
+                break;
+            }
+        }
+        length++;
+        end++;
+        max = max < length ? length : max;
+    }
+
+    return max;
 }
 
 @end
