@@ -31,7 +31,7 @@ char * findFirstCharactorOnlyAppearOnce(char * str) {
     
     int len = (int)strlen(str);
     char dp[26] = {0};
-    // 遍历第一遍，将对应的字符转成 index 在数组dp中存对应的计数
+    // 遍历第一遍，将对应的字符转成 index， 在数组dp中存对应的计数
     for (int i = 0; i < len; i ++) {
         char c = str[i];
         int index = c - 'a';

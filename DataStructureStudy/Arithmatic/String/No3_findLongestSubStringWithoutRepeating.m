@@ -14,7 +14,7 @@
 {
     if (self = [super init]) {
         
-        char * s = "abcababb";
+        char * s = "pwwkew";
         int length = lengthOfLongestSubstring(s);
         printf("\n------- No3_findLonggestSubStringWithoutRepeating ------\n\n");
         printf("length: %d\n", length);
@@ -43,6 +43,9 @@ int findLonggestSubStringWithoutRepeating(char * s) {
     return len;
 }
 
+/**
+ * 滑动窗口解法
+ */
 int lengthOfLongestSubstring(char * s){
     
     int start = 0;
