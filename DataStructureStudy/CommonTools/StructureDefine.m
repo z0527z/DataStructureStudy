@@ -40,7 +40,7 @@ ListNode * nodeFromValue(int value)
 void printListNode(ListNode * head)
 {
     if (!head) {
-        printf(" 0 ");
+        printf("NULL");
         return;
     }
     while (head) {

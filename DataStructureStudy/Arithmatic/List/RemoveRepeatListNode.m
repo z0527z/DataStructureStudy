@@ -15,48 +15,14 @@
 {
     if (self = [super init]) {
         
-        ListNode * head = malloc(sizeof(ListNode));
-        head->value = 2;
-        head->next = NULL;
-        
-        ListNode * p = malloc(sizeof(ListNode));
-        p->value = 2;
-        p->next = NULL;
-        head->next = p;
-        
-        ListNode * p1 = malloc(sizeof(ListNode));
-        p1->value = 2;
-        p1->next = NULL;
-        p->next = p1;
-        
-        
-        ListNode * p2 = malloc(sizeof(ListNode));
-        p2->value = 2;
-        p2->next = NULL;
-        p1->next = p2;
-        
-        ListNode * p3 = malloc(sizeof(ListNode));
-        p3->value = 3;
-        p3->next = NULL;
-        p2->next = p3;
-        
-        ListNode * p4 = malloc(sizeof(ListNode));
-        p4->value = 3;
-        p4->next = NULL;
-        p3->next = p4;
-        
-        ListNode * p5 = malloc(sizeof(ListNode));
-        p5->value = 3;
-        p5->next = NULL;
-        p4->next = p5;
+        int array[] = {2, 2, 2, 2, 3, 3, 3};
+        int size = sizeof(array) / sizeof(array[0]);
+        ListNode * head = nodeFromArray(array, size);
         
 //        removeAllRepeatListNode(&head);
         keepOneOnRepeatListNode(head);
         printf("\n------------ RemoveRepeatListNode ----------\n\n");
-        while (head) {
-            printf("%d ", head->value);
-            head = head->next;
-        }
+        printListNode(head);
         printf("\n");
     }
     return self;
