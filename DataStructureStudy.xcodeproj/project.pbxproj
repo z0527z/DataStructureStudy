@@ -59,6 +59,7 @@
 		439CC361234EC9F900DDCC42 /* HasSubTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 439CC360234EC9F900DDCC42 /* HasSubTree.m */; };
 		439D822A244D848200A8DBC2 /* No3_findLongestSubStringWithoutRepeating.m in Sources */ = {isa = PBXBuildFile; fileRef = 439D8229244D848200A8DBC2 /* No3_findLongestSubStringWithoutRepeating.m */; };
 		439E7D0625691A6D00A040A9 /* No14_LongestCommonPrefixInArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 439E7D0525691A6D00A040A9 /* No14_LongestCommonPrefixInArray.m */; };
+		43A3CFB825F7451700463610 /* RotateSingleList.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A3CFB725F7451700463610 /* RotateSingleList.m */; };
 		43B231B825A6B1BD00E4A486 /* FindFirstCharactorOnlyAppearOnce.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B231B725A6B1BD00E4A486 /* FindFirstCharactorOnlyAppearOnce.m */; };
 		43B231BC25A6DD1500E4A486 /* ReverseString.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B231BB25A6DD1500E4A486 /* ReverseString.m */; };
 		43B231C525A734B400E4A486 /* LeftShiftString.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B231C425A734B400E4A486 /* LeftShiftString.m */; };
@@ -187,6 +188,8 @@
 		439D8229244D848200A8DBC2 /* No3_findLongestSubStringWithoutRepeating.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = No3_findLongestSubStringWithoutRepeating.m; sourceTree = "<group>"; };
 		439E7D0425691A6D00A040A9 /* No14_LongestCommonPrefixInArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = No14_LongestCommonPrefixInArray.h; sourceTree = "<group>"; };
 		439E7D0525691A6D00A040A9 /* No14_LongestCommonPrefixInArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = No14_LongestCommonPrefixInArray.m; sourceTree = "<group>"; };
+		43A3CFB625F7451700463610 /* RotateSingleList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RotateSingleList.h; sourceTree = "<group>"; };
+		43A3CFB725F7451700463610 /* RotateSingleList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RotateSingleList.m; sourceTree = "<group>"; };
 		43B231B625A6B1BD00E4A486 /* FindFirstCharactorOnlyAppearOnce.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindFirstCharactorOnlyAppearOnce.h; sourceTree = "<group>"; };
 		43B231B725A6B1BD00E4A486 /* FindFirstCharactorOnlyAppearOnce.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindFirstCharactorOnlyAppearOnce.m; sourceTree = "<group>"; };
 		43B231BA25A6DD1500E4A486 /* ReverseString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseString.h; sourceTree = "<group>"; };
@@ -235,6 +238,8 @@
 				303933C5236EAAED000A5029 /* CyclePositionInList.m */,
 				4332F7E42370153F0080D998 /* FindFirstCommonNode.h */,
 				4332F7E52370153F0080D998 /* FindFirstCommonNode.m */,
+				43A3CFB625F7451700463610 /* RotateSingleList.h */,
+				43A3CFB725F7451700463610 /* RotateSingleList.m */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -513,6 +518,7 @@
 				303BA70A234B7C6E0060E7C5 /* DeleteListNodeInConstantTime.m in Sources */,
 				436012EE2558D0C0006AC21D /* RepeatedSubStrPattern.m in Sources */,
 				436E8A6E25A99035008B3B43 /* IsAVLTree.m in Sources */,
+				43A3CFB825F7451700463610 /* RotateSingleList.m in Sources */,
 				3028646D235B1DC800593A13 /* DuplicateNumInArray.m in Sources */,
 				43E5F6E125A5DA9F000A754A /* No53_MaxSubsequenceSum.m in Sources */,
 				30CDCB95235DDEA000730607 /* NextNodeInBinaryTree.m in Sources */,
