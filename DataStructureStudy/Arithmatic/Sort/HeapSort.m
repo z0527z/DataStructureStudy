@@ -27,6 +27,13 @@
 }
 
 
+/**
+ * 快 希 选 堆 （均为不稳定）
+ *
+ * 不稳定的算法（相同元素原来的顺序不能维持）
+ *
+ * 时间复杂度：平均 O(nlog₂n)        最坏 O(nlog₂n)         最好 O(nlog₂n)         空间复杂度 O(1)
+ */
 void DJHeapSort(int * array, int begin, int end)
 {
     if (!array || begin < 0 || begin >= end || end < 1) return;

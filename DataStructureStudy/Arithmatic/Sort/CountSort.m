@@ -28,6 +28,13 @@
     return self;
 }
 
+/**
+ * 快 希 选 堆 （均为不稳定）
+ *
+ * 稳定的算法（相同元素原来的顺序能维持）
+ *
+ * 时间复杂度：平均 O(n)        最坏 O(n)         最好 O(n)        空间复杂度 O(1)
+ */
 void countSort(int * array, int length)
 {
     if (!array || length < 1) return;
