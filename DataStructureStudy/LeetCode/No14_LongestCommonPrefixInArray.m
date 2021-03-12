@@ -12,7 +12,7 @@
 
 - (instancetype)init {
     if (self = [super init]) {
-        char * strs[] = {};//{"flow", "flower","flight"};
+        char * strs[] = {"flow", "flower","flight"};
         char * prefix = longestCommonPrefix((char **)&strs, sizeof(strs) / sizeof(char *));
         printf("\n---------- No14_LongestCommonPrefixInArray ---------\n\n");
         printf("prefix:%s\n", prefix);

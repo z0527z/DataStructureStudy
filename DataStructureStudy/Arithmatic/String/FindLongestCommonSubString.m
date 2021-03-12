@@ -133,10 +133,10 @@ char * findLongestCommonSubStringLCS(char * str1, char * str2) {
     int ** lcs = (int **)malloc(sizeof(int *) * len1);
     for (int i = 0; i < len1; i ++) {
         lcs[i] = malloc(sizeof(int) * len2);
-        memset(*lcs, 0, len2);
+        memset(*(lcs + i), 0, len2);
     }
     
-    // 利用二维数组对对角线赋值
+    // 利用二维数组对对角线赋
     int maxSubStrLen = 0;
     int endj = 0;
     for (int i = 1; i < len1; i ++) {

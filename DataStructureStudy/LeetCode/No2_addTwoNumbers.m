@@ -29,6 +29,11 @@
     return self;
 }
 
+/**
+ * 2 -> 4 -> 7 -> 9      +   5 -> 6 -> 4   =   7 ->0 ->2 ->0 ->1
+ *
+ *  直接从左往右加
+ */
 void testTwoNumbersAdd()
 {
     int array1[] = {2, 4, 7, 9};
@@ -82,6 +87,11 @@ ListNode * addTwoNumbers(ListNode * head1, ListNode * head2)
 }
 
 #pragma mark - 反向链表相加
+/**
+ * 5 ->4 ->4 ->3  + 5 ->6 ->4  = 6 ->0 ->0 ->7
+ *
+ * 从右往左加
+ */
 void testTwoNumbersReverseAdd()
 {
     int array1[] = {5, 4, 4, 3};

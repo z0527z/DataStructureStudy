@@ -14,7 +14,7 @@
 {
     if (self = [super init]) {
         
-        int value = 1221;
+        int value = 1221; // 12321
         bool isPalindromic = isPalindromicNumber(value);
         printf("\n----------- No9_palindromicNumber ----------\n\n");
         printf("input: %d\n", value);
