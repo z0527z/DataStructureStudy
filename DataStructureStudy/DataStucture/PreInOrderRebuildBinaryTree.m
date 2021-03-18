@@ -33,8 +33,8 @@
          */
         
         printf("\n-------- PreInOrderRebuildBinaryTree -------\n\n");
-//        levelPrintBinaryTree(root);
-        nonRecursivePostOrderPrintBinaryTree2(root);
+        levelPrintBinaryTree(root);
+//        nonRecursivePostOrderPrintBinaryTree2(root);
         printf("\n");
     }
     

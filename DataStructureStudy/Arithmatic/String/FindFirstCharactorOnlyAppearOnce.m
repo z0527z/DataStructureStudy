@@ -12,7 +12,7 @@
 
 - (instancetype)init {
     if (self = [super init]) {
-        char * str = "abaccdeff";
+        char * str = "abbaccff";
         char * result = findFirstCharactorOnlyAppearOnce(str);
         printf("\n---------- FindFirstCharactorOnlyAppearOnce ---------\n\n");
         printf("result:%s\n", result);

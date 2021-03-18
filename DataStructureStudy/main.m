@@ -41,7 +41,6 @@ __attribute__((section("__TEXT, __init"))) void preInit(void) {
 
 __attribute__((constructor(5))) void preMainFunc(void) {
     printf("main前调用，还可以指定 constructor的优先级，数字越小优先级越高\n\n");
-    
 }
 
 int main(int argc, const char * argv[]) {

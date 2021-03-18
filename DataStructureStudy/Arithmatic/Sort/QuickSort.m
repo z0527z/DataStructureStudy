@@ -36,7 +36,7 @@
  *
  * 不稳定的算法（相同元素原来的顺序不能维持）
  *
- * 时间复杂度：平均 O(nlog₂n)        最坏 O(n²)         最好 O(nlog₂n)         空间复杂度 O(nlog₂n)
+ * 时间复杂度：平均 O(nlog₂n)        最坏 O(n²)         最好 O(nlog₂n)         空间复杂度 O(log₂n)
  */
 void quickSort(int * array, int begin, int end)
 {

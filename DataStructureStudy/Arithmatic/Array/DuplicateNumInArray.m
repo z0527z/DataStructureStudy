@@ -29,8 +29,9 @@
             printf("%d ", duplicated[i]);
         }
         printf("\n");
-        
-        free(duplicated);
+        if (duplicated) {
+            free(duplicated);
+        }
         
     }
     return self;

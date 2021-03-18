@@ -37,7 +37,7 @@ int findSubStrIndex(char * str, int start, int end) {
  * 中心扩散算法
  */
 char * longestPalindromicSubstring(char * str) {
-    if (!str || strlen(str) < 1) return "";
+    if (!str || strlen(str) < 1) return NULL;
     int len = (int)strlen(str);
     int start = 0, end = 0;
     for (int i = 0; i < len; i ++) {
@@ -64,7 +64,7 @@ char * longestPalindromicSubstring(char * str) {
 
 #pragma mark - 动态规划方案
 char * longestPalindromicSubstringDynamic(char * str) {
-    if (!str || strlen(str) < 1) return "";
+    if (!str || strlen(str) < 1) return NULL;
     int len = (int)strlen(str);
     
     // 第 i 个字符到第 j 个字符是否是回文串
@@ -107,6 +107,15 @@ char * longestPalindromicSubstringDynamic(char * str) {
         tempStr[0] = str[0];
     }
     tempStr[maxLen] = '\0';
+    
+    if (dp) {
+        for (int i = 0; i < len; i ++) {
+            if (dp[i]) {
+                free(dp[i]);
+            }
+        }
+        free(dp);
+    }
     
     return tempStr;
 }

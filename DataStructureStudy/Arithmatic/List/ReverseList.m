@@ -28,9 +28,9 @@
             p = p->next;
         }
         
-//        ListNode * list = reverseWholeList(head);
+        ListNode * list = reverseWholeList(head);
 //        ListNode * list = reverseGroupElementForK(head, 3);
-        ListNode * list = reverseWholeListRecursive(head);
+//        ListNode * list = reverseWholeListRecursive(head);
         
         printf("\n------------ ReverseList ------------\n\n");
         while (list) {

@@ -31,6 +31,7 @@ char * longestCommonPrefix(char ** str, int strSize) {
     strncpy(prefix, *str, len);
     prefix[len] = '\0';
     
+    // 数组从第二项开始依次和prefix进行比较，得到公共前缀的长度，然后不断不更新prefix
     char ** p = str;
     for (int i = 1; i < strSize; i ++) {
         char * nextStr = *(p + i);

@@ -48,12 +48,16 @@
         temp2->value = 0;
         temp1->next = temp2;
         
-        temp2->next = node2;
+        temp2->next = NULL;
         
         ListNode * firstCommonNode = findFirstCommonNodeInTwoList(head1, head2);
         printf("\n------------- FindFirstCommonNode -----------\n\n");
-        printf("%d\n", firstCommonNode->value);
-        
+        if (firstCommonNode) {
+            printf("%d\n", firstCommonNode->value);
+        }
+        else {
+            printf("NULL\n");
+        }
     }
     return self;
 }
