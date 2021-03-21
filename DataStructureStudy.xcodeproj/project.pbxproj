@@ -30,6 +30,7 @@
 		3041D8AF2422E343008003F7 /* No4_medianOfTwoSortedArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 3041D8AE2422E343008003F7 /* No4_medianOfTwoSortedArray.m */; };
 		3049E72423632C8800411CE8 /* CountSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 3049E72323632C8800411CE8 /* CountSort.m */; };
 		304C84B72475711E00396841 /* FindKthNumInArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 304C84B62475711E00396841 /* FindKthNumInArray.m */; };
+		304CC87826074266001E17FD /* FindNumAppearsOnlyOnceInArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 304CC87726074266001E17FD /* FindNumAppearsOnlyOnceInArray.m */; };
 		305B68E82487D08F00CF4D5E /* FindLowestCommonAncestor.m in Sources */ = {isa = PBXBuildFile; fileRef = 305B68E72487D08F00CF4D5E /* FindLowestCommonAncestor.m */; };
 		307671072560BD2E00B3BE56 /* No5_LongestPalindromicSubstring.m in Sources */ = {isa = PBXBuildFile; fileRef = 307671062560BD2E00B3BE56 /* No5_LongestPalindromicSubstring.m */; };
 		309409A325673C93005C21FD /* No8_StringToInteger.m in Sources */ = {isa = PBXBuildFile; fileRef = 309409A225673C93005C21FD /* No8_StringToInteger.m */; };
@@ -132,6 +133,8 @@
 		3049E72323632C8800411CE8 /* CountSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountSort.m; sourceTree = "<group>"; };
 		304C84B52475711E00396841 /* FindKthNumInArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindKthNumInArray.h; sourceTree = "<group>"; };
 		304C84B62475711E00396841 /* FindKthNumInArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindKthNumInArray.m; sourceTree = "<group>"; };
+		304CC87626074266001E17FD /* FindNumAppearsOnlyOnceInArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindNumAppearsOnlyOnceInArray.h; sourceTree = "<group>"; };
+		304CC87726074266001E17FD /* FindNumAppearsOnlyOnceInArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindNumAppearsOnlyOnceInArray.m; sourceTree = "<group>"; };
 		305B68E62487D08F00CF4D5E /* FindLowestCommonAncestor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindLowestCommonAncestor.h; sourceTree = "<group>"; };
 		305B68E72487D08F00CF4D5E /* FindLowestCommonAncestor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindLowestCommonAncestor.m; sourceTree = "<group>"; };
 		307671052560BD2E00B3BE56 /* No5_LongestPalindromicSubstring.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = No5_LongestPalindromicSubstring.h; sourceTree = "<group>"; };
@@ -325,6 +328,8 @@
 				43935494255149DF00A40F52 /* FindMinNumInRotateArray.m */,
 				4305C940260375F1002629AD /* FindNumGreaterThanFrontSmallerThanBackwards.h */,
 				4305C941260375F1002629AD /* FindNumGreaterThanFrontSmallerThanBackwards.m */,
+				304CC87626074266001E17FD /* FindNumAppearsOnlyOnceInArray.h */,
+				304CC87726074266001E17FD /* FindNumAppearsOnlyOnceInArray.m */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -537,6 +542,7 @@
 				4385BBFC242084CF0082D834 /* No26_deleteDuplicateInOrderedArray.m in Sources */,
 				303933C6236EAAED000A5029 /* CyclePositionInList.m in Sources */,
 				3032ACE92342E4440033098C /* PreInOrderRebuildBinaryTree.m in Sources */,
+				304CC87826074266001E17FD /* FindNumAppearsOnlyOnceInArray.m in Sources */,
 				43935495255149DF00A40F52 /* FindMinNumInRotateArray.m in Sources */,
 				3032ACE22342D55A0033098C /* DJStack.m in Sources */,
 				309D416B257BD3600022015A /* FindLongestRepeatedSubString.m in Sources */,
