@@ -234,14 +234,18 @@ void levelPrintBinaryTree(TreeNode * root)
     [queue enqueue:currentNode];
     
     while (!queue.empty) {
-        currentNode = queue.dequeue;
-        printf("%d ", currentNode->value);
-        if (currentNode->pLeft) {
-            [queue enqueue:currentNode->pLeft];
+        int size = queue.size;
+        for (int i = 0; i < size; i ++) {
+            currentNode = queue.dequeue;
+            printf("%d ", currentNode->value);
+            if (currentNode->pLeft) {
+                [queue enqueue:currentNode->pLeft];
+            }
+            if (currentNode->pRight) {
+                [queue enqueue:currentNode->pRight];
+            }
         }
-        if (currentNode->pRight) {
-            [queue enqueue:currentNode->pRight];
-        }
+        printf("\n");
     }
 }
 
