@@ -36,6 +36,8 @@
         levelPrintBinaryTree(root);
 //        nonRecursivePostOrderPrintBinaryTree2(root);
         printf("\n");
+        
+        testRightViewOfBinaryTree();
     }
     
     return self;
@@ -225,6 +227,9 @@ void nonRecursivePostOrderPrintBinaryTree2(TreeNode * root) {
 }
 
 #pragma mark - 层序遍历
+/**
+ * 二叉树的层序遍历，按层打印
+ */
 void levelPrintBinaryTree(TreeNode * root)
 {
     if (!root) return;
@@ -247,6 +252,53 @@ void levelPrintBinaryTree(TreeNode * root)
         }
         printf("\n");
     }
+}
+
+#pragma mark - 二叉树的右视图
+/**
+ * 给定一棵二叉树，想象自己站在它的右侧，按照从顶部到底部的顺序，返回从右侧所能看到的节点值
+ */
+void testRightViewOfBinaryTree() {
+    TreeNode * tree = treeFromStringArray("[1,2,3,#,5]");
+    int size = 0;
+    int * rightViews = righViewOfBinaryTree(tree, &size);
+    if (rightViews) {
+        for (int i = 0; i < size; i ++) {
+            printf("%d ", rightViews[i]);
+        }
+        printf("\n");
+        free(rightViews);
+    }
+}
+
+int * righViewOfBinaryTree(TreeNode * root, int * returnSize) {
+    if (!root) return NULL;
+    
+    DJQueue * queue = [[DJQueue alloc] init];
+    [queue enqueue:root];
+    
+    int rightViews[100] = {0};
+    while (!queue.empty) {
+        int size = queue.size;
+        for (int i = 0; i < size; i ++) {
+            TreeNode * node = queue.dequeue;
+            if (i == (size - 1)) {
+                rightViews[(*returnSize)++] = node->value;
+            }
+            if (node->pLeft) {
+                [queue enqueue:node->pLeft];
+            }
+            if (node->pRight) {
+                [queue enqueue:node->pRight];
+            }
+        }
+    }
+    int * returnArray = (int *)malloc(sizeof(int) * (*returnSize));
+    for (int i = 0; i < *returnSize; i ++) {
+        returnArray[i] = rightViews[i];
+    }
+    return returnArray;
+    
 }
 
 @end

@@ -26,6 +26,8 @@
         printf("\n-------- findTreePathEqualToAnInteger --------\n\n");
         findTreePathEqualToAnInteger(tree, 8);
         
+        freeTree(tree);
+        
     }
     return self;
 }

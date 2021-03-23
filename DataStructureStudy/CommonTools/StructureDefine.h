@@ -41,5 +41,7 @@ void printListNode(ListNode * head);
 
 TreeNode * treeFromStringArray(char * str);
 
+void freeTree(TreeNode * root);
+
 
 #endif /* StructureDefine_h */

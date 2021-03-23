@@ -132,3 +132,21 @@ TreeNode * treeFromStringArray(char * str) {
     free(array);
     return root;
 }
+
+void freeTree(TreeNode * root) {
+    if (!root) return;
+    
+    DJQueue * queue = [[DJQueue alloc] init];
+    [queue enqueue:root];
+    
+    while (!queue.empty) {
+        TreeNode * node = queue.dequeue;
+        if (node->pLeft) {
+            [queue enqueue:node->pLeft];
+        }
+        if (node->pRight) {
+            [queue enqueue:node->pRight];
+        }
+        free(node);
+    }
+}

@@ -30,6 +30,8 @@
         bool isAVL = isAVLTree(tree);
         printf("\n------------- IsAVLTree ------------\n\n");
         printf("isAVL:%s\n", isAVL ? "true" : "false");
+        
+        freeTree(tree);
     }
     return self;
 }

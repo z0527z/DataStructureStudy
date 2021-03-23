@@ -30,6 +30,8 @@
         printf("\n-------- MaxDepthOfBinaryTree --------\n\n");
         printf("maxDepth:%d\n", maxDepth);
         
+        freeTree(tree);
+        
     }
     return self;
 }

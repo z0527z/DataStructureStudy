@@ -80,6 +80,8 @@
         nextNodeInPostOrder ? printf("%d", nextNodeInPostOrder->value) : printf("NULL");
         printf("\n");
         
+        freeTree((TreeNode *)root);
+        
     }
     return self;
 }

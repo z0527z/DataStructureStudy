@@ -28,6 +28,7 @@
         printf("\n------------ IsSymmetryTree ------------\n\n");
         printf("%s\n", isSymmetry ? "true" : "false");
         
+        freeTree(tree);
         
     }
     return self;
@@ -47,9 +48,11 @@ bool isSymmetryTree(TreeNode * tree)
 
 bool isSymmetric(TreeNode * leftTree, TreeNode * rightTree)
 {
+    // 首先排除空节点的情况
     if (!leftTree && !rightTree) return true;
+    // 排除左右子树有一个为空，或者数值不相同
     if (!leftTree || !rightTree || (leftTree->value != rightTree->value)) return false;
-    
+    // 对左右子树分别递归
     return isSymmetric(leftTree->pLeft, rightTree->pRight) && isSymmetric(leftTree->pRight, rightTree->pLeft);
 }
 

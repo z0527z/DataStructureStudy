@@ -41,6 +41,8 @@
             printf("\n");
             free(paths);
         }
+        
+        freeTree(tree);
     }
     return self;
 }

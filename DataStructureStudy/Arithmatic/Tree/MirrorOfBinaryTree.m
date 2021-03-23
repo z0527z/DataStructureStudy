@@ -32,6 +32,8 @@
         printTree(tree);
         printf("\n");
         
+        freeTree(tree);
+        
     }
     return self;
 }

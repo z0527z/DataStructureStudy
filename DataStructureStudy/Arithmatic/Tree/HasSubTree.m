@@ -35,6 +35,9 @@
         printf("\n------------- HasSubTree -------------\n\n");
         printf("%s\n", flag ? "true" : "false");
         
+        freeTree(tree1);
+        freeTree(tree2);
+        
     }
     return self;
 }
