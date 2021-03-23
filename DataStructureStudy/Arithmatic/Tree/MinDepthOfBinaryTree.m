@@ -8,6 +8,7 @@
 
 #import "MinDepthOfBinaryTree.h"
 #import "StructureDefine.h"
+#import "DJQueue.h"
 
 @implementation MinDepthOfBinaryTree
 
@@ -23,7 +24,7 @@
          *               6   5
          */
         TreeNode * tree = treeFromStringArray("[1,#,2,4,3,#,#,6,5]");
-        int minDepth = minDepthOfBinaryTree(tree);
+        int minDepth = nonrecursiveMinDepthOfBinaryTree(tree);
         printf("\n-------- MinDepthOfBinaryTree --------\n\n");
         printf("minDepth:%d\n", minDepth);
         
@@ -46,5 +47,39 @@ int minDepthOfBinaryTree(TreeNode * root) {
     int result = 1 + MIN(minDepthOfBinaryTree(root->pLeft), minDepthOfBinaryTree(root->pRight));
     return result;
 }
+
+#pragma mark - 迭代
+int nonrecursiveMinDepthOfBinaryTree(TreeNode * tree) {
+    if (!tree) return 0;
+    
+    DJQueue * queue = [[DJQueue alloc] init];
+    [queue enqueue:tree];
+    
+    int depth = 0;
+    while (!queue.empty) {
+        int size = queue.size;
+        depth++;
+        int flag = 0;
+        for (int i = 0; i < size; i ++) {
+            TreeNode * node = queue.dequeue;
+            if (node->pLeft) {
+                [queue enqueue:node->pLeft];
+            }
+            if (node->pRight) {
+                [queue enqueue:node->pRight];
+            }
+            // 当左右孩子都为空的时候，说明是最低点的一层了，退出
+            if (node->pLeft == NULL && node->pRight == NULL) {
+                flag = 1;
+                break;
+            }
+        }
+        if (flag == 1) {
+            break;
+        }
+    }
+    return depth;
+}
+
 
 @end
