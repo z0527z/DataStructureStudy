@@ -66,6 +66,7 @@
 		43B231B825A6B1BD00E4A486 /* FindFirstCharactorOnlyAppearOnce.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B231B725A6B1BD00E4A486 /* FindFirstCharactorOnlyAppearOnce.m */; };
 		43B231BC25A6DD1500E4A486 /* ReverseString.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B231BB25A6DD1500E4A486 /* ReverseString.m */; };
 		43B231C525A734B400E4A486 /* LeftShiftString.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B231C425A734B400E4A486 /* LeftShiftString.m */; };
+		43B6745A260AD12D0001DB72 /* SumOfLeftLeaves.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B67459260AD12D0001DB72 /* SumOfLeftLeaves.m */; };
 		43C5390E23507B0E0049445B /* MirrorOfBinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C5390D23507B0E0049445B /* MirrorOfBinaryTree.m */; };
 		43C53911235167AC0049445B /* RemoveRepeatListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C53910235167AC0049445B /* RemoveRepeatListNode.m */; };
 		43E3317A25AC2DE900781422 /* BinaryTreePaths.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E3317925AC2DE900781422 /* BinaryTreePaths.m */; };
@@ -205,6 +206,8 @@
 		43B231BB25A6DD1500E4A486 /* ReverseString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReverseString.m; sourceTree = "<group>"; };
 		43B231C325A734B400E4A486 /* LeftShiftString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftShiftString.h; sourceTree = "<group>"; };
 		43B231C425A734B400E4A486 /* LeftShiftString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftShiftString.m; sourceTree = "<group>"; };
+		43B67458260AD12D0001DB72 /* SumOfLeftLeaves.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SumOfLeftLeaves.h; sourceTree = "<group>"; };
+		43B67459260AD12D0001DB72 /* SumOfLeftLeaves.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SumOfLeftLeaves.m; sourceTree = "<group>"; };
 		43C5390C23507B0E0049445B /* MirrorOfBinaryTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MirrorOfBinaryTree.h; sourceTree = "<group>"; };
 		43C5390D23507B0E0049445B /* MirrorOfBinaryTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MirrorOfBinaryTree.m; sourceTree = "<group>"; };
 		43C5390F235167AC0049445B /* RemoveRepeatListNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoveRepeatListNode.h; sourceTree = "<group>"; };
@@ -276,6 +279,8 @@
 				4306B9FB26098C07006CD654 /* MinDepthOfBinaryTree.m */,
 				436E8A6C25A99035008B3B43 /* IsAVLTree.h */,
 				436E8A6D25A99035008B3B43 /* IsAVLTree.m */,
+				43B67458260AD12D0001DB72 /* SumOfLeftLeaves.h */,
+				43B67459260AD12D0001DB72 /* SumOfLeftLeaves.m */,
 			);
 			path = Tree;
 			sourceTree = "<group>";
@@ -556,6 +561,7 @@
 				302CF1F6234234C400277761 /* FindNumIn2DArray.m in Sources */,
 				4361D22D24237C2600FC9B6D /* No2_addTwoNumbers.m in Sources */,
 				433FF33024F60BFF007629BB /* FindTreePathEqualToAnInteger.m in Sources */,
+				43B6745A260AD12D0001DB72 /* SumOfLeftLeaves.m in Sources */,
 				307671072560BD2E00B3BE56 /* No5_LongestPalindromicSubstring.m in Sources */,
 				3020C5F623474BCA0009117B /* InsertSort.m in Sources */,
 				4306B9FC26098C07006CD654 /* MinDepthOfBinaryTree.m in Sources */,
