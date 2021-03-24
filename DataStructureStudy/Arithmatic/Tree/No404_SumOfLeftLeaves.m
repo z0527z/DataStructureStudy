@@ -1,16 +1,16 @@
 //
-//  SumOfLeftLeaves.m
+//  No404_SumOfLeftLeaves.m
 //  DataStructureStudy
 //
 //  Created by jolin.ding on 2021/3/24.
 //  Copyright © 2021 jolin. All rights reserved.
 //
 
-#import "SumOfLeftLeaves.h"
+#import "No404_SumOfLeftLeaves.h"
 #import "StructureDefine.h"
 #import "DJStack.h"
 
-@implementation SumOfLeftLeaves
+@implementation No404_SumOfLeftLeaves
 
 - (instancetype)init {
     if (self = [super init]) {
@@ -27,7 +27,7 @@
         TreeNode * root = treeFromStringArray("[3,9,20,#,#,15,7,5,12,16]");
         
         int sum = sumOfLeftLeavesNoneRecurisive(root);
-        printf("\n------------- SumOfLeftLeaves ------------\n\n");
+        printf("\n------------- No404_SumOfLeftLeaves ------------\n\n");
         printf("sum:%d", sum);
         
         freeTree(root);

@@ -1,5 +1,5 @@
 //
-//  SumOfLeftLeaves.h
+//  No513_FindBottomLeftTreeValue.h
 //  DataStructureStudy
 //
 //  Created by jolin.ding on 2021/3/24.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SumOfLeftLeaves : NSObject
+@interface No513_FindBottomLeftTreeValue : NSObject
 
 @end
 
