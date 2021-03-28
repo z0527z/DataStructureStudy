@@ -20,6 +20,7 @@
            2   3
           / \ / \
          4  5 6  7
+         
          */
         TreeNode * tree = treeFromStringArray("[1,2,3,4,5,6,7]");
         
