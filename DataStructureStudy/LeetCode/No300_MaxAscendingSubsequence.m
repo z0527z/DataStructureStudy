@@ -80,6 +80,9 @@ int maxLengthOfAscendingSubsequenceByDynamic(int * array, int length) {
             }
         }
     }
+    if (dp) {
+        free(dp);
+    }
     return maxLen;
 }
 

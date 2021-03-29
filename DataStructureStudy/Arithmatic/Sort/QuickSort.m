@@ -52,7 +52,6 @@ void quickSort(int * array, int begin, int end)
     int left = begin;
     int right = end;
     
-    
     while (left < right) {
         // 从右边开始找比节点小的数位置
         while (left < right && array[right] >= jie) {
