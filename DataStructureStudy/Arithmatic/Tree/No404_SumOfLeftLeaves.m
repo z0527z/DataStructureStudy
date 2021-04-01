@@ -28,7 +28,7 @@
         
         int sum = sumOfLeftLeavesNoneRecurisive(root);
         printf("\n------------- No404_SumOfLeftLeaves ------------\n\n");
-        printf("sum:%d", sum);
+        printf("sum:%d\n", sum);
         
         freeTree(root);
     }

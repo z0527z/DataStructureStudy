@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3020AE1D26147E7700336966 /* FormatItemWithCountInArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 3020AE1C26147E7700336966 /* FormatItemWithCountInArray.m */; };
 		3020C5F3234749E30009117B /* SelectSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 3020C5F2234749E30009117B /* SelectSort.m */; };
 		3020C5F623474BCA0009117B /* InsertSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 3020C5F523474BCA0009117B /* InsertSort.m */; };
 		3021D45C2348355D007EDB4C /* Fibonacci.m in Sources */ = {isa = PBXBuildFile; fileRef = 3021D45B2348355D007EDB4C /* Fibonacci.m */; };
@@ -90,6 +91,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3020AE1B26147E7700336966 /* FormatItemWithCountInArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FormatItemWithCountInArray.h; sourceTree = "<group>"; };
+		3020AE1C26147E7700336966 /* FormatItemWithCountInArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FormatItemWithCountInArray.m; sourceTree = "<group>"; };
 		3020C5F1234749E30009117B /* SelectSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectSort.h; sourceTree = "<group>"; };
 		3020C5F2234749E30009117B /* SelectSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectSort.m; sourceTree = "<group>"; };
 		3020C5F423474BCA0009117B /* InsertSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InsertSort.h; sourceTree = "<group>"; };
@@ -350,6 +353,8 @@
 				304CC87726074266001E17FD /* FindNumAppearsOnlyOnceInArray.m */,
 				305CBF8A261097AC006B778A /* No46_Permutations.h */,
 				305CBF8B261097AC006B778A /* No46_Permutations.m */,
+				3020AE1B26147E7700336966 /* FormatItemWithCountInArray.h */,
+				3020AE1C26147E7700336966 /* FormatItemWithCountInArray.m */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -573,6 +578,7 @@
 				4361D22D24237C2600FC9B6D /* No2_addTwoNumbers.m in Sources */,
 				433FF33024F60BFF007629BB /* FindTreePathEqualToAnInteger.m in Sources */,
 				43B6745A260AD12D0001DB72 /* No404_SumOfLeftLeaves.m in Sources */,
+				3020AE1D26147E7700336966 /* FormatItemWithCountInArray.m in Sources */,
 				307671072560BD2E00B3BE56 /* No5_LongestPalindromicSubstring.m in Sources */,
 				3020C5F623474BCA0009117B /* InsertSort.m in Sources */,
 				4306B9FC26098C07006CD654 /* MinDepthOfBinaryTree.m in Sources */,

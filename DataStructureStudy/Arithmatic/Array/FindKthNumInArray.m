@@ -7,55 +7,43 @@
 //
 
 #import "FindKthNumInArray.h"
+#import "PrintDefine.h"
 
 @implementation FindKthNumInArray
 
 - (instancetype)init
 {
     if (self = [super init]) {
-//        getInputFromConsole();
+
+        int array[] = {1, 3, 8, 7, 9, 18, 5, 9};
+        int length = sizeof(array) / sizeof(array[0]);
+        int k = 4;
+        
+        int result = findAllNumsToKByAscendingOrderInUnsortedArray(array, 0, length - 1, k - 1);
+        printf("\n------------ FindKthNumInArray ----------\n\n");
+        printf("result:%d\n", result);
+        
     }
     return self;
 }
 
-void getInputFromConsole(void)
-{
-    // 接收控制台输入
-    int arrayLength = 0, k = 0;
-    printf("\n------------ FindKthNumInArray ----------\n\n");
-    puts("\n请输入数组的长度和k的大小:");
-    scanf("%*c%d%*c%d", &arrayLength, &k);
-    if (arrayLength <= 0 || k <= 0 || k >= arrayLength) return;
-
-    int * array = malloc(sizeof(int) * arrayLength);
+int partition(int * array, int start, int end) {
+    int pivot = array[start];
     
-    // 处理从控制台输入参数问题
-    getchar();
-    int * p = array;
-    char c;
-    do {
-        c = getchar();
-        if (c != '\n' && c != ' ') {
-            *p = c - '0';
-            p++;
+    while (start < end) {
+        while (start < end && array[end] >= pivot) {
+            end --;
         }
-    } while (c != '\n' || (p - array) < k);
-    
-
-    
-//    int kthNum = findAllNumsToKByAscendingOrderInUnsortedArray(array, 0, arrayLength - 1, k - 1);
-//    int kthNum = findAllNumsToKthByAscendingOrder(array, arrayLength, k - 1);
-    int kthNum = findAllTopKthInUnsortedArray(array, arrayLength, k - 1);
-    printf("k:%d, Kth:%d", k, kthNum);
-    
-    printf("\narray: ");
-    for (int i = 0; i < arrayLength; i ++) {
-        printf("%d", array[i]);
+        array[start] = array[end];
+        
+        while (start < end && array[start] <= pivot) {
+            start ++;
+        }
+        array[end] = array[start];
     }
+    array[start] = pivot;
     
-    if (arrayLength >= 10) {
-        free(array);
-    }
+    return start;
 }
 
 /**
@@ -63,44 +51,18 @@ void getInputFromConsole(void)
  */
 int findAllNumsToKByAscendingOrderInUnsortedArray(int * array, int start, int end, int k)
 {
-    if (!array || start < 0 || end < 1 || start >= end || k > end || k < start) return 0;
-    // 交换中间位置和节点
-    int mid = (start + end) / 2;
-    int temp = array[mid];
-    array[mid] = array[start];
-    array[start] = temp;
+    if (!array || start < 0 || end < 1 || start > end) return 0;
     
-    int jie = array[start];
-    int l = start;
-    int r = end;
-    while (l < r) {
-        // 从右边开始找到比节点小的数
-        while (l < r && array[r] >= jie) {
-            r--;
-        }
-        if (l < r) {
-            array[l] = array[r];
-            l++;
-        }
-        while (l < r && array[l] <= jie) {
-            l++;
-        }
-        if (l < r) {
-            array[r] = array[l];
-            r--;
-        }
-        // 交换节点和左指针的位置
-        array[l] = jie;
-        
-        // 判断 k 在哪个区间范围内
-        if (k < l) {
-            return findAllNumsToKByAscendingOrderInUnsortedArray(array, start, l - 1, k);;
-        }
-        else if (k > l) {
-            return findAllNumsToKByAscendingOrderInUnsortedArray(array, l+1, end, k);;
-        }
+    int pos = partition(array, start, end);
+    if (k == pos) {
+        return array[k];
     }
-    return array[l];
+    else if (k > pos) {
+        return findAllNumsToKByAscendingOrderInUnsortedArray(array, pos + 1, end, k);
+    }
+    else {
+        return findAllNumsToKByAscendingOrderInUnsortedArray(array, start, pos - 1, k);
+    }
 }
 
 /**
